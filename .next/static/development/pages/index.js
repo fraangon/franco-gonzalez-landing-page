@@ -272,120 +272,132 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PersonalInfoBox; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/personal_info_box.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function PersonalInfoBox() {
   return __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.personal_info_box,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 9
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 9
+      lineNumber: 7,
+      columnNumber: 11
     }
-  }, "PERFIL PHOTO"), __jsx("div", {
+  }, "PERFIL PHOTO")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("h1", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 10,
       columnNumber: 13
     }
   }, "I'm Franco Gonzalez"), __jsx("h2", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, "Motion graphics designer and web developer."), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 13,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 14,
       columnNumber: 17
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 15,
       columnNumber: 21
     }
   }, "Age"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 16,
       columnNumber: 21
     }
   }, "Based In"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 17,
       columnNumber: 21
     }
   }, "E-Mail"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 18,
       columnNumber: 21
     }
   }, "Website")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 21,
       columnNumber: 17
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 22,
       columnNumber: 21
     }
   }, "20"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 23,
       columnNumber: 21
     }
   }, "Buenos Aires, Argentina"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 24,
       columnNumber: 21
     }
   }, "francogonzalez2303@gmail.com"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 25,
       columnNumber: 21
     }
   }, "francogonzalez.com")))));
@@ -454,47 +466,111 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _footer_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.module.css */ "./components/footer/footer.module.css");
+/* harmony import */ var _footer_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/footer/footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function Footer() {
   return __jsx("div", {
-    className: styleMedia.footer,
+    className: _footer_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.footer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
+      lineNumber: 6,
       columnNumber: 9
     }
   }, "Logo"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, "\xA9 2020"), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, "Logos social media sites. ")));
+}
+
+/***/ }),
+
+/***/ "./components/footer/footer.module.css":
+/*!*********************************************!*\
+  !*** ./components/footer/footer.module.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./footer.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/footer/footer.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./footer.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/footer/footer.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./footer.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/footer/footer.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
 }
 
 /***/ }),
@@ -529,6 +605,7 @@ function Home(_ref) {
       columnNumber: 7
     }
   }, __jsx("div", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -536,6 +613,7 @@ function Home(_ref) {
       columnNumber: 9
     }
   }, __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -543,38 +621,50 @@ function Home(_ref) {
       columnNumber: 13
     }
   }, "I,m "), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 26
+      lineNumber: 8,
+      columnNumber: 13
     }
-  }, "Franco Gonzalez"), __jsx("h2", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 50
-    }
-  }, " .")), __jsx("div", {
+  }, "Franco"), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 9
+      columnNumber: 13
     }
-  }, __jsx("h2", {
+  }, "Gonzalez"), __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 13
     }
-  }, "Motion graphics designer and"), __jsx("h2", {
+  }, " .")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }, "Motion graphics designer and"), __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
       columnNumber: 13
     }
   }, "web developer.")));
@@ -1129,10 +1219,29 @@ module.exports = _typeof;
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".about_about__1jfcF{\n    background-color: var(--color-pallete1);\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/about.module.css"],"names":[],"mappings":"AAAA;IACI,uCAAuC;AAC3C","file":"about.module.css","sourcesContent":[".about{\n    background-color: var(--color-pallete1);\n}"]}]);
+exports.push([module.i, ".about_about__1jfcF{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.about_personal_info_box__3ZJhz{\n    background: var(--color-white);\n    margin:auto;\n    height: 300px;\n    width: 700px;\n    color: var(--color-pallete1);\n    display:flex;\n    flex-direction: row;\n    justify-content: center;\n}\n\n.about_photo__1Egy-{\n    height: 300px;\n    width: 400px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n\n\n\n", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/about.module.css"],"names":[],"mappings":"AAAA;IACI,uCAAuC;IACvC,aAAa;IACb,mBAAmB;IACnB,oBAAoB;AACxB;;AAEA;IACI,8BAA8B;IAC9B,WAAW;IACX,aAAa;IACb,YAAY;IACZ,4BAA4B;IAC5B,YAAY;IACZ,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,mCAAmC;IACnC,YAAY;AAChB","file":"about.module.css","sourcesContent":[".about{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.personal_info_box{\n    background: var(--color-white);\n    margin:auto;\n    height: 300px;\n    width: 700px;\n    color: var(--color-pallete1);\n    display:flex;\n    flex-direction: row;\n    justify-content: center;\n}\n\n.photo{\n    height: 300px;\n    width: 400px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n\n\n\n"]}]);
 // Exports
 exports.locals = {
-	"about": "about_about__1jfcF"
+	"about": "about_about__1jfcF",
+	"personal_info_box": "about_personal_info_box__3ZJhz",
+	"photo": "about_photo__1Egy-"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/footer/footer.module.css":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/footer/footer.module.css ***!
+  \************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".footer_footer__1pkyR{\n    background-color: var(-color-pallete1);\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/footer/footer.module.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;AAC1C","file":"footer.module.css","sourcesContent":[".footer{\n    background-color: var(-color-pallete1);\n}"]}]);
+// Exports
+exports.locals = {
+	"footer": "footer_footer__1pkyR"
 };
 
 /***/ }),
@@ -1146,10 +1255,14 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".home_home__3Di1D{\n    background-color: var(--color-grey);\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,mCAAmC;AACvC","file":"home.module.css","sourcesContent":[".home{\n    background-color: var(--color-grey);\n}"]}]);
+exports.push([module.i, ".home_home__3Di1D{\n    background-color: var(--color-grey);\n    height: 100vh;\n    padding-left: 100px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n}\n\n.home_title__12-BX{\n    font-size: 50px;\n    display:flex;\n    margin: 0px;\n}\n\n.home_title_regular__nVw9N{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.home_title_bold__1SHMj{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.home_subtitle__2UEuF{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,mCAAmC;IACnC,aAAa;IACb,oBAAoB;IACpB,YAAY;IACZ,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,WAAW;IACX,WAAW;AACf","file":"home.module.css","sourcesContent":[".home{\n    background-color: var(--color-grey);\n    height: 100vh;\n    padding-left: 100px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n}\n\n.title{\n    font-size: 50px;\n    display:flex;\n    margin: 0px;\n}\n\n.title_regular{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.title_bold{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.subtitle{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}"]}]);
 // Exports
 exports.locals = {
-	"home": "home_home__3Di1D"
+	"home": "home_home__3Di1D",
+	"title": "home_title__12-BX",
+	"title_regular": "home_title_regular__nVw9N",
+	"title_bold": "home_title_bold__1SHMj",
+	"subtitle": "home_subtitle__2UEuF"
 };
 
 /***/ }),
@@ -2093,7 +2206,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Fmy-landing-page%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************/
@@ -2116,5 +2229,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

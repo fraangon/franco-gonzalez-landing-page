@@ -1,6 +1,8 @@
+import styles from './footer.module.css'
+
 export default function Footer() {
     return (
-      <div className={styleMedia.footer}>
+      <div className={styles.footer}>
         <p>Logo</p>
         <p>© 2020</p>
         <div>

@@ -1,7 +1,11 @@
+import styles from "./about.module.css"
+
 export default function PersonalInfoBox() {
     return (
-      <div>
-        <p>PERFIL PHOTO</p>
+      <div className={styles.personal_info_box}>
+        <div className={styles.photo}>
+          <p>PERFIL PHOTO</p>
+        </div>
         <div>
             <h1>I'm Franco Gonzalez</h1>
             <h2>Motion graphics designer and web developer.</h2>

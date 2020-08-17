@@ -161,7 +161,9 @@ function About() {
 
 // Exports
 module.exports = {
-	"about": "about_about__1jfcF"
+	"about": "about_about__1jfcF",
+	"personal_info_box": "about_personal_info_box__3ZJhz",
+	"photo": "about_photo__1Egy-"
 };
 
 /***/ }),
@@ -318,120 +320,132 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PersonalInfoBox; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/personal_info_box.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function PersonalInfoBox() {
   return __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.personal_info_box,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 9
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 9
+      lineNumber: 7,
+      columnNumber: 11
     }
-  }, "PERFIL PHOTO"), __jsx("div", {
+  }, "PERFIL PHOTO")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("h1", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 10,
       columnNumber: 13
     }
   }, "I'm Franco Gonzalez"), __jsx("h2", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, "Motion graphics designer and web developer."), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 13,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 14,
       columnNumber: 17
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 15,
       columnNumber: 21
     }
   }, "Age"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 16,
       columnNumber: 21
     }
   }, "Based In"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 17,
       columnNumber: 21
     }
   }, "E-Mail"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 18,
       columnNumber: 21
     }
   }, "Website")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 21,
       columnNumber: 17
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 22,
       columnNumber: 21
     }
   }, "20"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 23,
       columnNumber: 21
     }
   }, "Buenos Aires, Argentina"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 24,
       columnNumber: 21
     }
   }, "francogonzalez2303@gmail.com"), __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 25,
       columnNumber: 21
     }
   }, "francogonzalez.com")))));
@@ -500,48 +514,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _footer_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.module.css */ "./components/footer/footer.module.css");
+/* harmony import */ var _footer_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/footer/footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function Footer() {
   return __jsx("div", {
-    className: styleMedia.footer,
+    className: _footer_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.footer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
+      lineNumber: 6,
       columnNumber: 9
     }
   }, "Logo"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, "\xA9 2020"), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, "Logos social media sites. ")));
 }
+
+/***/ }),
+
+/***/ "./components/footer/footer.module.css":
+/*!*********************************************!*\
+  !*** ./components/footer/footer.module.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"footer": "footer_footer__1pkyR"
+};
 
 /***/ }),
 
@@ -576,6 +607,7 @@ function Home({
       columnNumber: 7
     }
   }, __jsx("div", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -583,6 +615,7 @@ function Home({
       columnNumber: 9
     }
   }, __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -590,38 +623,50 @@ function Home({
       columnNumber: 13
     }
   }, "I,m "), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 26
+      lineNumber: 8,
+      columnNumber: 13
     }
-  }, "Franco Gonzalez"), __jsx("h2", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 50
-    }
-  }, " .")), __jsx("div", {
+  }, "Franco"), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 9
+      columnNumber: 13
     }
-  }, __jsx("h2", {
+  }, "Gonzalez"), __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 13
     }
-  }, "Motion graphics designer and"), __jsx("h2", {
+  }, " .")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }, "Motion graphics designer and"), __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
       columnNumber: 13
     }
   }, "web developer.")));
@@ -638,7 +683,11 @@ function Home({
 
 // Exports
 module.exports = {
-	"home": "home_home__3Di1D"
+	"home": "home_home__3Di1D",
+	"title": "home_title__12-BX",
+	"title_regular": "home_title_regular__nVw9N",
+	"title_bold": "home_title_bold__1SHMj",
+	"subtitle": "home_subtitle__2UEuF"
 };
 
 /***/ }),
