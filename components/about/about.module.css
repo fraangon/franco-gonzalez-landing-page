@@ -7,22 +7,103 @@
 
 .personal_info_box{
     background: var(--color-white);
-    margin:auto;
-    height: 300px;
-    width: 700px;
+    margin: auto;
+    height: 340px;
+    width: 870px;
     color: var(--color-pallete1);
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
 }
 
 .photo{
-    height: 300px;
-    width: 400px;
+    width: 340px;
     background-color: var(--color-grey);
     color: white;
 }
 
+.contenedor_info_personal{
+    padding-top: 47px ;
+    margin: 0px;
+    padding-left: 50px ;
+    display: flex;
+    flex-direction: column;
+}
 
+.title_info_personal{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px;
+}
 
+.subtitle_info_personal{
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0px;
+}
 
+.contenedor_data_info_personal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.data1_info_personal{
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0px;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+
+.data2_info_personal{
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0px;
+    margin-top: 13px;
+}
+
+.skills{
+    margin-top: 40px;
+}
+
+.titles_about{
+    font-weight: 100;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.logos_skills{
+    height: 82px;
+}
+
+.container_logos_skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px;
+}
+
+.experience_and_education{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.box_exp_and_edu {
+    width: 350px;
+    margin: 7px;
+    padding:30px ;
+    background-color: var(--color-pallete2);
+}
+
+.title_box_exp_and_edu{
+    font-weight: 500 ;
+    font-size: 22px ;
+}
+
+.text_box_exp_and_edu{
+    font-weight: 400 ;
+    font-size: 19px ;
+}

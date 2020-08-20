@@ -132,127 +132,153 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ExperienceAndEducation; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/experience_and_education.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function ExperienceAndEducation() {
   return __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.experience_and_education,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 13
-    }
-  }, "Laboral Experience."), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 13
-    }
-  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
-      columnNumber: 17
+      columnNumber: 13
     }
-  }, "Congress City"), __jsx("p", {
+  }, "Laboral Experience."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.experience_and_education,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 17
+      columnNumber: 13
     }
-  }, "General administrative"), __jsx("p", {
+  }, __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 17
     }
-  }, "2016 - Current")), __jsx("div", {
+  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 21
+    }
+  }, "Congress City"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
-      columnNumber: 13
+      columnNumber: 21
     }
-  }, __jsx("h4", {
+  }, "General administrative"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
-      columnNumber: 17
+      columnNumber: 21
     }
-  }, "Freelance"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 17
-    }
-  }, "Motion graphics designer"), __jsx("p", {
+  }, "2016 - Current")), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 17
     }
-  }, "2018 - Current"))), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 13
-    }
-  }, "Education."), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
   }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
+      lineNumber: 16,
+      columnNumber: 21
     }
-  }, "Software Engenier"), __jsx("p", {
+  }, "Freelance"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 21
+    }
+  }, "Motion graphics designer"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 21
+    }
+  }, "2018 - Current")))), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 17
+      columnNumber: 9
     }
-  }, "UTN FRBA, now in 3rd yeay"), __jsx("p", {
+  }, __jsx("h3", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
+      columnNumber: 13
+    }
+  }, "Education."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  }, "Software Engenier"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 17
+    }
+  }, "UTN FRBA, now in 3rd yeay"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
       columnNumber: 17
     }
   }, "2018 - Current"))));
@@ -288,116 +314,138 @@ function PersonalInfoBox() {
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
-      columnNumber: 11
-    }
-  }, "PERFIL PHOTO")), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
       columnNumber: 9
     }
-  }, __jsx("h1", {
+  }, __jsx("img", {
+    src: "/images/porfile_photo.jpg",
+    alt: "Porfile photo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 8,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contenedor_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
       columnNumber: 13
     }
-  }, "I'm Franco Gonzalez"), __jsx("h2", {
+  }, "I'm Franco Gonzalez."), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 20,
       columnNumber: 13
     }
-  }, "Motion graphics designer and web developer."), __jsx("div", {
+  }, "Motion graphics designer and"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }, "web developer."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contenedor_data_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 29,
       columnNumber: 17
     }
-  }, __jsx("h3", {
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 30,
       columnNumber: 21
     }
-  }, "Age"), __jsx("h3", {
+  }, "Age"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 31,
       columnNumber: 21
     }
-  }, "Based In"), __jsx("h3", {
+  }, "Based In"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 32,
       columnNumber: 21
     }
-  }, "E-Mail"), __jsx("h3", {
+  }, "E-Mail"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 33,
       columnNumber: 21
     }
   }, "Website")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 36,
       columnNumber: 17
     }
-  }, __jsx("h3", {
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 37,
       columnNumber: 21
     }
-  }, "20"), __jsx("h3", {
+  }, "20"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 38,
       columnNumber: 21
     }
-  }, "Buenos Aires, Argentina"), __jsx("h3", {
+  }, "Buenos Aires, Argentina"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 39,
       columnNumber: 21
     }
-  }, "francogonzalez2303@gmail.com"), __jsx("h3", {
+  }, "francogonzalez2303@gmail.com"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 40,
       columnNumber: 21
     }
   }, "francogonzalez.com")))));
@@ -417,39 +465,138 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Skills; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/skills.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function Skills() {
   return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3,
-      columnNumber: 7
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 9
-    }
-  }, "Skills."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.skills,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5,
-      columnNumber: 9
+      columnNumber: 7
     }
   }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
+      columnNumber: 9
+    }
+  }, "Software Skills."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container_logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    src: "/social_icons_svg/PS.svg",
+    alt: "Photoshop Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
       columnNumber: 13
     }
-  }, "Here all the icons of each skill.")));
+  }), __jsx("img", {
+    src: "/social_icons_svg/AI.svg",
+    alt: "Illustrator Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/AI.svg",
+    alt: "Illustrator Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/PR.svg",
+    alt: "Premiere Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/AE.svg",
+    alt: "After Effects Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/XD.svg",
+    alt: "XD Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/Blender.svg",
+    alt: "Blender Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/Java.svg",
+    alt: "Java Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/JS.svg",
+    alt: "Java Script Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/React.svg",
+    alt: "React Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 13
+    }
+  })));
 }
 
 /***/ }),
@@ -1219,12 +1366,26 @@ module.exports = _typeof;
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".about_about__1jfcF{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.about_personal_info_box__3ZJhz{\n    background: var(--color-white);\n    margin:auto;\n    height: 300px;\n    width: 700px;\n    color: var(--color-pallete1);\n    display:flex;\n    flex-direction: row;\n    justify-content: center;\n}\n\n.about_photo__1Egy-{\n    height: 300px;\n    width: 400px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n\n\n\n", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/about.module.css"],"names":[],"mappings":"AAAA;IACI,uCAAuC;IACvC,aAAa;IACb,mBAAmB;IACnB,oBAAoB;AACxB;;AAEA;IACI,8BAA8B;IAC9B,WAAW;IACX,aAAa;IACb,YAAY;IACZ,4BAA4B;IAC5B,YAAY;IACZ,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,mCAAmC;IACnC,YAAY;AAChB","file":"about.module.css","sourcesContent":[".about{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.personal_info_box{\n    background: var(--color-white);\n    margin:auto;\n    height: 300px;\n    width: 700px;\n    color: var(--color-pallete1);\n    display:flex;\n    flex-direction: row;\n    justify-content: center;\n}\n\n.photo{\n    height: 300px;\n    width: 400px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n\n\n\n"]}]);
+exports.push([module.i, ".about_about__1jfcF{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.about_personal_info_box__3ZJhz{\n    background: var(--color-white);\n    margin: auto;\n    height: 340px;\n    width: 870px;\n    color: var(--color-pallete1);\n    display: flex;\n    flex-direction: row;\n    justify-content: left;\n}\n\n.about_photo__1Egy-{\n    width: 340px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n.about_contenedor_info_personal__1M6XW{\n    padding-top: 47px ;\n    margin: 0px;\n    padding-left: 50px ;\n    display: flex;\n    flex-direction: column;\n}\n\n.about_title_info_personal__ZJeX8{\n    font-weight: 600;\n    font-size: 30px;\n    margin: 0px;\n}\n\n.about_subtitle_info_personal__2WXsl{\n    font-weight: 600;\n    font-size: 19px;\n    margin: 0px;\n}\n\n.about_contenedor_data_info_personal__1NSI2{\n    display: flex;\n    flex-direction: row;\n    margin-top: 10px;\n}\n\n.about_data1_info_personal__slxzP{\n    font-weight: 600;\n    font-size: 19px;\n    margin: 0px;\n    margin-right: 20px;\n    margin-top: 13px;\n}\n\n.about_data2_info_personal__uBeQT{\n    font-weight: 500;\n    font-size: 19px;\n    margin: 0px;\n    margin-top: 13px;\n}\n\n.about_skills__3RJIV{\n    margin-top: 40px;\n}\n\n.about_titles_about__3bSZl{\n    font-weight: 100;\n    font-size: 40px;\n    margin-left: 50px;\n}\n\n.about_logos_skills__2ml0Y{\n    height: 82px;\n}\n\n.about_container_logos_skills__21I19{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding:20px;\n}\n\n.about_experience_and_education__3jwj0{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n}\n\n.about_box_exp_and_edu__3xXjA {\n    width: 350px;\n    margin: 7px;\n    padding:30px ;\n    background-color: var(--color-pallete2);\n}\n\n.about_title_box_exp_and_edu__26BCF{\n    font-weight: 500 ;\n    font-size: 22px ;\n}\n\n.about_text_box_exp_and_edu__14zsG{\n    font-weight: 400 ;\n    font-size: 19px ;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/about.module.css"],"names":[],"mappings":"AAAA;IACI,uCAAuC;IACvC,aAAa;IACb,mBAAmB;IACnB,oBAAoB;AACxB;;AAEA;IACI,8BAA8B;IAC9B,YAAY;IACZ,aAAa;IACb,YAAY;IACZ,4BAA4B;IAC5B,aAAa;IACb,mBAAmB;IACnB,qBAAqB;AACzB;;AAEA;IACI,YAAY;IACZ,mCAAmC;IACnC,YAAY;AAChB;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,mBAAmB;IACnB,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,eAAe;IACf,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,eAAe;IACf,WAAW;AACf;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,eAAe;IACf,WAAW;IACX,kBAAkB;IAClB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,eAAe;IACf,WAAW;IACX,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,eAAe;IACf,iBAAiB;AACrB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;;AAElC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,aAAa;IACb,uCAAuC;AAC3C;;AAEA;IACI,iBAAiB;IACjB,gBAAgB;AACpB;;AAEA;IACI,iBAAiB;IACjB,gBAAgB;AACpB","file":"about.module.css","sourcesContent":[".about{\n    background-color: var(--color-pallete1);\n    height: 100vh;\n    padding-left: 100px;\n    padding-right: 100px;\n}\n\n.personal_info_box{\n    background: var(--color-white);\n    margin: auto;\n    height: 340px;\n    width: 870px;\n    color: var(--color-pallete1);\n    display: flex;\n    flex-direction: row;\n    justify-content: left;\n}\n\n.photo{\n    width: 340px;\n    background-color: var(--color-grey);\n    color: white;\n}\n\n.contenedor_info_personal{\n    padding-top: 47px ;\n    margin: 0px;\n    padding-left: 50px ;\n    display: flex;\n    flex-direction: column;\n}\n\n.title_info_personal{\n    font-weight: 600;\n    font-size: 30px;\n    margin: 0px;\n}\n\n.subtitle_info_personal{\n    font-weight: 600;\n    font-size: 19px;\n    margin: 0px;\n}\n\n.contenedor_data_info_personal{\n    display: flex;\n    flex-direction: row;\n    margin-top: 10px;\n}\n\n.data1_info_personal{\n    font-weight: 600;\n    font-size: 19px;\n    margin: 0px;\n    margin-right: 20px;\n    margin-top: 13px;\n}\n\n.data2_info_personal{\n    font-weight: 500;\n    font-size: 19px;\n    margin: 0px;\n    margin-top: 13px;\n}\n\n.skills{\n    margin-top: 40px;\n}\n\n.titles_about{\n    font-weight: 100;\n    font-size: 40px;\n    margin-left: 50px;\n}\n\n.logos_skills{\n    height: 82px;\n}\n\n.container_logos_skills{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding:20px;\n}\n\n.experience_and_education{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n}\n\n.box_exp_and_edu {\n    width: 350px;\n    margin: 7px;\n    padding:30px ;\n    background-color: var(--color-pallete2);\n}\n\n.title_box_exp_and_edu{\n    font-weight: 500 ;\n    font-size: 22px ;\n}\n\n.text_box_exp_and_edu{\n    font-weight: 400 ;\n    font-size: 19px ;\n}"]}]);
 // Exports
 exports.locals = {
 	"about": "about_about__1jfcF",
 	"personal_info_box": "about_personal_info_box__3ZJhz",
-	"photo": "about_photo__1Egy-"
+	"photo": "about_photo__1Egy-",
+	"contenedor_info_personal": "about_contenedor_info_personal__1M6XW",
+	"title_info_personal": "about_title_info_personal__ZJeX8",
+	"subtitle_info_personal": "about_subtitle_info_personal__2WXsl",
+	"contenedor_data_info_personal": "about_contenedor_data_info_personal__1NSI2",
+	"data1_info_personal": "about_data1_info_personal__slxzP",
+	"data2_info_personal": "about_data2_info_personal__uBeQT",
+	"skills": "about_skills__3RJIV",
+	"titles_about": "about_titles_about__3bSZl",
+	"logos_skills": "about_logos_skills__2ml0Y",
+	"container_logos_skills": "about_container_logos_skills__21I19",
+	"experience_and_education": "about_experience_and_education__3jwj0",
+	"box_exp_and_edu": "about_box_exp_and_edu__3xXjA",
+	"title_box_exp_and_edu": "about_title_box_exp_and_edu__26BCF",
+	"text_box_exp_and_edu": "about_text_box_exp_and_edu__14zsG"
 };
 
 /***/ }),
@@ -2206,7 +2367,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Fmy-landing-page%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************/
@@ -2229,5 +2390,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

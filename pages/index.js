@@ -14,7 +14,6 @@ export default function Main() {
         <Projects/>
         <Footer/>
       </section>
-
     </Layout>
   )
 }

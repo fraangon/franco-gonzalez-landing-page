@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,7 +163,21 @@ function About() {
 module.exports = {
 	"about": "about_about__1jfcF",
 	"personal_info_box": "about_personal_info_box__3ZJhz",
-	"photo": "about_photo__1Egy-"
+	"photo": "about_photo__1Egy-",
+	"contenedor_info_personal": "about_contenedor_info_personal__1M6XW",
+	"title_info_personal": "about_title_info_personal__ZJeX8",
+	"subtitle_info_personal": "about_subtitle_info_personal__2WXsl",
+	"contenedor_data_info_personal": "about_contenedor_data_info_personal__1NSI2",
+	"data1_info_personal": "about_data1_info_personal__slxzP",
+	"data2_info_personal": "about_data2_info_personal__uBeQT",
+	"skills": "about_skills__3RJIV",
+	"titles_about": "about_titles_about__3bSZl",
+	"logos_skills": "about_logos_skills__2ml0Y",
+	"container_logos_skills": "about_container_logos_skills__21I19",
+	"experience_and_education": "about_experience_and_education__3jwj0",
+	"box_exp_and_edu": "about_box_exp_and_edu__3xXjA",
+	"title_box_exp_and_edu": "about_title_box_exp_and_edu__26BCF",
+	"text_box_exp_and_edu": "about_text_box_exp_and_edu__14zsG"
 };
 
 /***/ }),
@@ -180,127 +194,153 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ExperienceAndEducation; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/experience_and_education.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function ExperienceAndEducation() {
   return __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.experience_and_education,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3,
+      lineNumber: 5,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 13
-    }
-  }, "Laboral Experience."), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 13
-    }
-  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
-      columnNumber: 17
+      columnNumber: 13
     }
-  }, "Congress City"), __jsx("p", {
+  }, "Laboral Experience."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.experience_and_education,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 17
+      columnNumber: 13
     }
-  }, "General administrative"), __jsx("p", {
+  }, __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 17
     }
-  }, "2016 - Current")), __jsx("div", {
+  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 21
+    }
+  }, "Congress City"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
-      columnNumber: 13
+      columnNumber: 21
     }
-  }, __jsx("h4", {
+  }, "General administrative"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
-      columnNumber: 17
+      columnNumber: 21
     }
-  }, "Freelance"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 17
-    }
-  }, "Motion graphics designer"), __jsx("p", {
+  }, "2016 - Current")), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 17
     }
-  }, "2018 - Current"))), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 13
-    }
-  }, "Education."), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
   }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
+      lineNumber: 16,
+      columnNumber: 21
     }
-  }, "Software Engenier"), __jsx("p", {
+  }, "Freelance"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 21
+    }
+  }, "Motion graphics designer"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 21
+    }
+  }, "2018 - Current")))), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 17
+      columnNumber: 9
     }
-  }, "UTN FRBA, now in 3rd yeay"), __jsx("p", {
+  }, __jsx("h3", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
+      columnNumber: 13
+    }
+  }, "Education."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, __jsx("h4", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  }, "Software Engenier"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 17
+    }
+  }, "UTN FRBA, now in 3rd yeay"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text_box_exp_and_edu,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
       columnNumber: 17
     }
   }, "2018 - Current"))));
@@ -336,116 +376,138 @@ function PersonalInfoBox() {
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
-      columnNumber: 11
-    }
-  }, "PERFIL PHOTO")), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
       columnNumber: 9
     }
-  }, __jsx("h1", {
+  }, __jsx("img", {
+    src: "/images/porfile_photo.jpg",
+    alt: "Porfile photo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.photo,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 8,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contenedor_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
       columnNumber: 13
     }
-  }, "I'm Franco Gonzalez"), __jsx("h2", {
+  }, "I'm Franco Gonzalez."), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 20,
       columnNumber: 13
     }
-  }, "Motion graphics designer and web developer."), __jsx("div", {
+  }, "Motion graphics designer and"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }, "web developer."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contenedor_data_info_personal,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 29,
       columnNumber: 17
     }
-  }, __jsx("h3", {
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 30,
       columnNumber: 21
     }
-  }, "Age"), __jsx("h3", {
+  }, "Age"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 31,
       columnNumber: 21
     }
-  }, "Based In"), __jsx("h3", {
+  }, "Based In"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 32,
       columnNumber: 21
     }
-  }, "E-Mail"), __jsx("h3", {
+  }, "E-Mail"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data1_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 33,
       columnNumber: 21
     }
   }, "Website")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 36,
       columnNumber: 17
     }
-  }, __jsx("h3", {
+  }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 37,
       columnNumber: 21
     }
-  }, "20"), __jsx("h3", {
+  }, "20"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 38,
       columnNumber: 21
     }
-  }, "Buenos Aires, Argentina"), __jsx("h3", {
+  }, "Buenos Aires, Argentina"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 39,
       columnNumber: 21
     }
-  }, "francogonzalez2303@gmail.com"), __jsx("h3", {
+  }, "francogonzalez2303@gmail.com"), __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.data2_info_personal,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 40,
       columnNumber: 21
     }
   }, "francogonzalez.com")))));
@@ -465,39 +527,138 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Skills; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.module.css */ "./components/about/about.module.css");
+/* harmony import */ var _about_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/about/skills.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function Skills() {
   return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3,
-      columnNumber: 7
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 9
-    }
-  }, "Skills."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.skills,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5,
-      columnNumber: 9
+      columnNumber: 7
     }
   }, __jsx("p", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.titles_about,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
+      columnNumber: 9
+    }
+  }, "Software Skills."), __jsx("div", {
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container_logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    src: "/social_icons_svg/PS.svg",
+    alt: "Photoshop Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
       columnNumber: 13
     }
-  }, "Here all the icons of each skill.")));
+  }), __jsx("img", {
+    src: "/social_icons_svg/AI.svg",
+    alt: "Illustrator Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/AI.svg",
+    alt: "Illustrator Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/PR.svg",
+    alt: "Premiere Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/AE.svg",
+    alt: "After Effects Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/XD.svg",
+    alt: "XD Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/Blender.svg",
+    alt: "Blender Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/Java.svg",
+    alt: "Java Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/JS.svg",
+    alt: "Java Script Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 13
+    }
+  }), __jsx("img", {
+    src: "/social_icons_svg/React.svg",
+    alt: "React Logo",
+    className: _about_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos_skills,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 13
+    }
+  })));
 }
 
 /***/ }),
@@ -901,7 +1062,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

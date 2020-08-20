@@ -3,31 +3,48 @@ import styles from "./about.module.css"
 export default function PersonalInfoBox() {
     return (
       <div className={styles.personal_info_box}>
-        <div className={styles.photo}>
-          <p>PERFIL PHOTO</p>
-        </div>
+
         <div>
-            <h1>I'm Franco Gonzalez</h1>
-            <h2>Motion graphics designer and web developer.</h2>
+          <img 
+            src="/images/porfile_photo.jpg" 
+            alt="Porfile photo" 
+            className={styles.photo}
+          ></img>
+        </div>
+
+        <div className={styles.contenedor_info_personal} >
+           
+            <p className={styles.title_info_personal}>
+              I'm Franco Gonzalez.
+            </p>
+            <p className={styles.subtitle_info_personal}>
+              Motion graphics designer and 
+            </p>
+            <p className={styles.subtitle_info_personal}>
+              web developer.
+            </p>
             
-            <div>
+            <div className={styles.contenedor_data_info_personal}>
+               
                 <div>
-                    <h3>Age</h3>
-                    <h3>Based In</h3>
-                    <h3>E-Mail</h3>
-                    <h3>Website</h3>
+                    <p className={styles.data1_info_personal}>Age</p>
+                    <p className={styles.data1_info_personal}>Based In</p>
+                    <p className={styles.data1_info_personal}>E-Mail</p>
+                    <p className={styles.data1_info_personal}>Website</p>
                 </div>
 
                 <div>
-                    <h3>20</h3>
-                    <h3>Buenos Aires, Argentina</h3>
-                    <h3>francogonzalez2303@gmail.com</h3>
-                    <h3>francogonzalez.com</h3>
+                    <p className={styles.data2_info_personal} >20</p>
+                    <p className={styles.data2_info_personal} >Buenos Aires, Argentina</p>
+                    <p className={styles.data2_info_personal} >francogonzalez2303@gmail.com</p>
+                    <p className={styles.data2_info_personal} >francogonzalez.com</p>
                 </div>
 
             </div>
 
         </div>
+
       </div>
     )
   }
+  
