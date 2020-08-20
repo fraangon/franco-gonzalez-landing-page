@@ -12,6 +12,10 @@
     --color-pallete2: #200a48;
     --color-pallete3: #2d1753;
     --color-pallete4: #2d1753;
+    
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed:500ms;
 
   }
 
@@ -20,4 +24,15 @@ body {
   font-family: 'Montserrat';
   font-weight: regular;
   background-color: var(--color-background);
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
