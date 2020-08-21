@@ -1,0 +1,30 @@
+.contenedor_img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img_style{
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+.shadow{
+    max-height: 100vh;
+    max-width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.contenedor_bg{
+    display: flex;
+    justify-items: center;
+}
+
+.div_background_image{
+    background-image: url("/background_parallax/layer_3.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}

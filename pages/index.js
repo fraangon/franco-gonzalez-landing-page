@@ -10,10 +10,10 @@ export default function Main() {
   return (
     <Layout>
      <section>
-          <Home/>
-          <About/>
-          <Projects/>
-          <Footer/>
+        <Home/>
+        <About/>
+        <Projects/>
+        <Footer/>  
       </section>
     </Layout>
   )
