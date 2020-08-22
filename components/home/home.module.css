@@ -1,10 +1,14 @@
 .home{
-    background-color: var(--color-grey);
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
     height: 100vh;
     padding-left: 100px ;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    z-index: -2;
 }
 
 .title{
@@ -30,4 +34,21 @@
     font-weight: 600;
     padding:0px;
     margin: 0px;
+}
+
+.fix_pos{
+    position: fixed;
+    top: 20px;
+    height: auto;
+    width: 100%;
+    z-index: -3;
+}
+
+.container_fix_pos{
+    overflow: scroll;
+}
+
+.plain__bg{
+    background-color: red;
+    z-index: 1;
 }

@@ -23,26 +23,26 @@ export default function Background() {
           }
       }
   
-      return (
-        <div>
+      return (<div >
+        <div >
             <ParallaxMousemove containerStyle={style.outter} fullHeight={true}>
 
             <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
                 xFactor: -0.03,
                 yFactor: 0.03,
                 springSettings: {
-                    stiffness: 50,
+                    stiffness: 150,
                     damping: 50
                 }
                 }}>
-                <img className={styles.shadow} src="/background_parallax/shadow.png" alt="Parallax Layer"></img>
+                <img className={styles.shadow} src="/background_parallax/bg.png" alt="Parallax Layer"></img>
             </ParallaxMousemove.Layer>
 
             <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
-                xFactor: 0.03,
+                xFactor: 0.05,
                 yFactor: -0.03,
                 springSettings: {
-                    stiffness: 50,
+                    stiffness: 150,
                     damping: 50
                 }
                 }}>
@@ -50,10 +50,10 @@ export default function Background() {
             </ParallaxMousemove.Layer>
 
             <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
-                xFactor: 0.06,
-                yFactor: -0.03,
+                xFactor: 0.10,
+                yFactor: -0.06,
                 springSettings: {
-                    stiffness: 50,
+                    stiffness: 150,
                     damping: 50
                 }
                 }}>
@@ -61,10 +61,10 @@ export default function Background() {
             </ParallaxMousemove.Layer>
 
             <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
-                xFactor: 0.09,
-                yFactor: -0.03,
+                xFactor: 0.15,
+                yFactor: -0.09,
                 springSettings: {
-                    stiffness: 50,
+                    stiffness: 150,
                     damping: 50
                 }
                 }}>
@@ -73,7 +73,7 @@ export default function Background() {
 
             </ParallaxMousemove>
       </div>
-      )
+      </div>)
     
 }
 
