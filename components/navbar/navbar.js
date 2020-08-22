@@ -1,12 +1,25 @@
 import styles from "./navbar.module.css"
+import NavItem from "./nav_item"
+
 
 export default function NavBar(props) {
-
     return (
-    <nav className= {styles.navbar} >
-        <ul className= {styles.navbar_nav} >
-            { props.children }
-        </ul>    
-    </nav>
+        <div className={styles.header}>
+            <div>
+                <img src="fg_logo.svg" className={styles.logo} ></img>
+            </div>
+
+            <div>
+                <nav className={styles.navbar}>
+                        
+                        <NavItem selected={props.selected} itemName = 'HOME' link="#" ></NavItem>
+                        <NavItem selected={props.selected} itemName = 'ABOUT' link="#" ></NavItem>
+                        <NavItem selected={props.selected} itemName = 'PROJECTS' link="#" ></NavItem>
+                        <NavItem selected={props.selected} itemName = 'CONTACT' link="#" ></NavItem>
+                        
+                </nav>
+            </div>
+
+        </div>
     )
   }
