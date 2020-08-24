@@ -970,9 +970,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.module.css */ "./components/home/home.module.css");
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _background_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background.js */ "./components/home/background.js");
+/* harmony import */ var _motion_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./motion_animation */ "./components/home/motion_animation.js");
+/* harmony import */ var _web_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./web_animation */ "./components/home/web_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 function Home(_ref) {
@@ -982,7 +986,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -990,7 +994,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -998,7 +1002,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -1006,7 +1010,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 11
     }
   }, __jsx("h2", {
@@ -1014,7 +1018,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 15
     }
   }, "I,m "), __jsx("h1", {
@@ -1022,7 +1026,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 15
     }
   }, "Franco"), __jsx("h1", {
@@ -1030,7 +1034,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 15
     }
   }, "Gonzalez"), __jsx("h2", {
@@ -1038,45 +1042,43 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 15
     }
   }, " .")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 11
     }
-  }, __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+  }, __jsx(_motion_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 15
+      lineNumber: 18,
+      columnNumber: 13
     }
-  }, "Motion graphics designer and"), __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+  }), __jsx(_web_animation__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 15
+      lineNumber: 19,
+      columnNumber: 13
     }
-  }, "web developer."))), __jsx("div", {
+  }))), __jsx("div", {
     className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.fix_pos,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 9
     }
   }, __jsx(_background_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 11
     }
   }))));
@@ -1140,6 +1142,197 @@ if (true) {
 
   module.hot.dispose(function() { 
     update();
+  });
+}
+
+/***/ }),
+
+/***/ "./components/home/motion_animation.js":
+/*!*********************************************!*\
+  !*** ./components/home/motion_animation.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MotionAnimation; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subtitle_animation.module.css */ "./components/home/subtitle_animation.module.css");
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/motion_animation.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function MotionAnimation() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      playAnimation = _useState[0],
+      setPlayAnimation = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      playAgainAnimation = _useState2[0],
+      setPlayAgainAnimation = _useState2[1];
+
+  var defaultStyle = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation;
+  var animationStyle1 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play;
+  var animationStyle2 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play_again;
+
+  function playAnimationOneTime() {
+    setPlayAnimation(true);
+    setPlayAgainAnimation(!playAgainAnimation);
+  }
+
+  function getStyle() {
+    return playAnimation ? getStyleAgain() : defaultStyle;
+  }
+
+  function getStyleAgain() {
+    if (playAgainAnimation) {
+      return animationStyle1;
+    } else {
+      return animationStyle2;
+    }
+  }
+
+  return __jsx("div", {
+    onClick: function onClick() {
+      return playAnimationOneTime();
+    },
+    className: getStyle(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./components/home/subtitle_animation.module.css":
+/*!*******************************************************!*\
+  !*** ./components/home/subtitle_animation.module.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./subtitle_animation.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/home/subtitle_animation.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./subtitle_animation.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/home/subtitle_animation.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./subtitle_animation.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/home/subtitle_animation.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./components/home/web_animation.js":
+/*!******************************************!*\
+  !*** ./components/home/web_animation.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WebAnimation; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subtitle_animation.module.css */ "./components/home/subtitle_animation.module.css");
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/web_animation.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function WebAnimation() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      playAnimation = _useState[0],
+      setPlayAnimation = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      playAgainAnimation = _useState2[0],
+      setPlayAgainAnimation = _useState2[1];
+
+  var defaultStyle = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation;
+  var animationStyle1 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play;
+  var animationStyle2 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play_again;
+
+  function playAnimationOneTime() {
+    setPlayAnimation(true);
+    setPlayAgainAnimation(!playAgainAnimation);
+  }
+
+  function getStyle() {
+    return playAnimation ? getStyleAgain() : defaultStyle;
+  }
+
+  function getStyleAgain() {
+    if (playAgainAnimation) {
+      return animationStyle1;
+    } else {
+      return animationStyle2;
+    }
+  }
+
+  return __jsx("div", {
+    onClick: function onClick() {
+      return playAnimationOneTime();
+    },
+    className: getStyle(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
   });
 }
 
@@ -2148,7 +2341,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".home_home__3Di1D{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 100px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: -2;\n}\n\n.home_title__12-BX{\n    font-size: 50px;\n    display:flex;\n    margin: 0px;\n}\n\n.home_title_regular__nVw9N{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.home_title_bold__1SHMj{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.home_subtitle__2UEuF{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.home_fix_pos__1u53d{\n    position: fixed;\n    top: 20px;\n    height: auto;\n    width: 100%;\n    z-index: -3;\n}\n\n.home_container_fix_pos__255eJ{\n    overflow: scroll;\n}\n\n.home_plain__bg__QLjwT{\n    background-color: red;\n    z-index: 1;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,oBAAoB;IACpB,YAAY;IACZ,sBAAsB;IACtB,uBAAuB;IACvB,WAAW;AACf;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,WAAW;IACX,WAAW;AACf;;AAEA;IACI,eAAe;IACf,SAAS;IACT,YAAY;IACZ,WAAW;IACX,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,UAAU;AACd","file":"home.module.css","sourcesContent":[".home{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 100px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: -2;\n}\n\n.title{\n    font-size: 50px;\n    display:flex;\n    margin: 0px;\n}\n\n.title_regular{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.title_bold{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.subtitle{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.fix_pos{\n    position: fixed;\n    top: 20px;\n    height: auto;\n    width: 100%;\n    z-index: -3;\n}\n\n.container_fix_pos{\n    overflow: scroll;\n}\n\n.plain__bg{\n    background-color: red;\n    z-index: 1;\n}"]}]);
+exports.push([module.i, ".home_home__3Di1D{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: -2;\n}\n\n.home_title__12-BX{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n}\n\n.home_title_regular__nVw9N{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.home_title_bold__1SHMj{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.home_subtitle__2UEuF{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.home_fix_pos__1u53d{\n    position: fixed;\n    top: 20px;\n    height: auto;\n    width: 100%;\n    z-index: -3;\n}\n\n.home_container_fix_pos__255eJ{\n    overflow: scroll;\n}\n\n.home_plain__bg__QLjwT{\n    background-color: red;\n    z-index: 1;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,oBAAoB;IACpB,YAAY;IACZ,sBAAsB;IACtB,uBAAuB;IACvB,WAAW;AACf;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,WAAW;IACX,WAAW;AACf;;AAEA;IACI,eAAe;IACf,SAAS;IACT,YAAY;IACZ,WAAW;IACX,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,UAAU;AACd","file":"home.module.css","sourcesContent":[".home{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: -2;\n}\n\n.title{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n}\n\n.title_regular{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.title_bold{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.subtitle{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.fix_pos{\n    position: fixed;\n    top: 20px;\n    height: auto;\n    width: 100%;\n    z-index: -3;\n}\n\n.container_fix_pos{\n    overflow: scroll;\n}\n\n.plain__bg{\n    background-color: red;\n    z-index: 1;\n}"]}]);
 // Exports
 exports.locals = {
 	"home": "home_home__3Di1D",
@@ -2159,6 +2352,32 @@ exports.locals = {
 	"fix_pos": "home_fix_pos__1u53d",
 	"container_fix_pos": "home_container_fix_pos__255eJ",
 	"plain__bg": "home_plain__bg__QLjwT"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/home/subtitle_animation.module.css":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/home/subtitle_animation.module.css ***!
+  \**********************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "/* MOTION */\n\n.subtitle_animation_motion_animation__qQubJ{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat; \n}\n\n.subtitle_animation_motion_animation__qQubJ:hover{\n    opacity: 85%;\n}\n\n.subtitle_animation_motion_animation_play__2i4gI{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat;  \n    animation: subtitle_animation_motion_play_animation__m_IY8 2s steps(60) normal; \n}\n\n@keyframes subtitle_animation_motion_play_animation__m_IY8 {\n    100% { background-position: 0 -3600px; }\n}\n\n.subtitle_animation_motion_animation_play__2i4gI:hover{\n    opacity: 85%;\n}\n\n.subtitle_animation_motion_animation_play_again__S7oS2{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat;   \n    animation: subtitle_animation_motion_play_animation_again__3Sp1o 2s steps(60) normal; \n}\n\n\n@keyframes subtitle_animation_motion_play_animation_again__3Sp1o {\n    100% { background-position: 0 -3600px; }\n}\n\n.subtitle_animation_motion_animation_play_again__S7oS2:hover{\n    opacity: 85%;\n}\n\n/* WEB */\n\n.subtitle_animation_web_animation__3F-my{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat; \n}\n\n.subtitle_animation_web_animation__3F-my:hover{\n    opacity: 85%;\n}\n\n.subtitle_animation_web_animation_play__QwtCi{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat;  \n    animation: subtitle_animation_web_play_animation__1OUBA 2500ms steps(75) normal; \n}\n\n@keyframes subtitle_animation_web_play_animation__1OUBA {\n    100% { background-position: 0 -4500px; }\n}\n\n.subtitle_animation_web_animation_play__QwtCi:hover{\n    opacity: 85%;\n}\n\n.subtitle_animation_web_animation_play_again__ZnGD8{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat;   \n    animation: subtitle_animation_web_play_animation_again__3eDrr 2500ms steps(75) normal; \n}\n\n\n@keyframes subtitle_animation_web_play_animation_again__3eDrr {\n    100% { background-position: 0 -4500px; }\n}\n\n.subtitle_animation_web_animation_play_again__ZnGD8:hover{\n    opacity: 85%;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/subtitle_animation.module.css"],"names":[],"mappings":"AAAA,WAAW;;AAEX;IACI,aAAa;IACb,YAAY;IACZ,6EAA6E;AACjF;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,6EAA6E;IAC7E,8EAAoD;AACxD;;AAEA;IACI,OAAO,8BAA8B,EAAE;AAC3C;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,6EAA6E;IAC7E,oFAA0D;AAC9D;;;AAGA;IACI,OAAO,8BAA8B,EAAE;AAC3C;;AAEA;IACI,YAAY;AAChB;;AAEA,QAAQ;;AAER;IACI,aAAa;IACb,YAAY;IACZ,0EAA0E;AAC9E;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,0EAA0E;IAC1E,+EAAqD;AACzD;;AAEA;IACI,OAAO,8BAA8B,EAAE;AAC3C;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,0EAA0E;IAC1E,qFAA2D;AAC/D;;;AAGA;IACI,OAAO,8BAA8B,EAAE;AAC3C;;AAEA;IACI,YAAY;AAChB","file":"subtitle_animation.module.css","sourcesContent":["/* MOTION */\n\n.motion_animation{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat; \n}\n\n.motion_animation:hover{\n    opacity: 85%;\n}\n\n.motion_animation_play{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat;  \n    animation: motion_play_animation 2s steps(60) normal; \n}\n\n@keyframes motion_play_animation {\n    100% { background-position: 0 -3600px; }\n}\n\n.motion_animation_play:hover{\n    opacity: 85%;\n}\n\n.motion_animation_play_again{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/motion_animation.png') 0 0 no-repeat;   \n    animation: motion_play_animation_again 2s steps(60) normal; \n}\n\n\n@keyframes motion_play_animation_again {\n    100% { background-position: 0 -3600px; }\n}\n\n.motion_animation_play_again:hover{\n    opacity: 85%;\n}\n\n/* WEB */\n\n.web_animation{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat; \n}\n\n.web_animation:hover{\n    opacity: 85%;\n}\n\n.web_animation_play{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat;  \n    animation: web_play_animation 2500ms steps(75) normal; \n}\n\n@keyframes web_play_animation {\n    100% { background-position: 0 -4500px; }\n}\n\n.web_animation_play:hover{\n    opacity: 85%;\n}\n\n.web_animation_play_again{\n    width: 1027px;   \n    height: 60px;   \n    background: transparent url('/animations/web_animation.png') 0 0 no-repeat;   \n    animation: web_play_animation_again 2500ms steps(75) normal; \n}\n\n\n@keyframes web_play_animation_again {\n    100% { background-position: 0 -4500px; }\n}\n\n.web_animation_play_again:hover{\n    opacity: 85%;\n}"]}]);
+// Exports
+exports.locals = {
+	"motion_animation": "subtitle_animation_motion_animation__qQubJ",
+	"motion_animation_play": "subtitle_animation_motion_animation_play__2i4gI",
+	"motion_play_animation": "subtitle_animation_motion_play_animation__m_IY8",
+	"motion_animation_play_again": "subtitle_animation_motion_animation_play_again__S7oS2",
+	"motion_play_animation_again": "subtitle_animation_motion_play_animation_again__3Sp1o",
+	"web_animation": "subtitle_animation_web_animation__3F-my",
+	"web_animation_play": "subtitle_animation_web_animation_play__QwtCi",
+	"web_play_animation": "subtitle_animation_web_play_animation__1OUBA",
+	"web_animation_play_again": "subtitle_animation_web_animation_play_again__ZnGD8",
+	"web_play_animation_again": "subtitle_animation_web_play_animation_again__3eDrr"
 };
 
 /***/ }),
@@ -2189,7 +2408,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".navbar_navbar__20tCk a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar_navbar__20tCk a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar_navbar__20tCk a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar_navbar__20tCk{\n    margin-top: 9px;\n}\n\n.navbar_logo__2y0gn{\n    height: 50px;\n}\n\n.navbar_header__3didp{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.navbar_container_header__wrbHl{\n    overflow: scroll;\n\n}\n\n.navbar_selected_nav_item__1uPF3{\n    opacity: 100%;\n}\n\n.navbar_not_selected_nav_item__32hGA{\n    opacity: 70%;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/navbar/navbar.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,gBAAgB;IAChB,qBAAqB;IACrB,yBAAyB;IACzB,kBAAkB;IAClB,eAAe;IACf,qBAAqB;IACrB,gBAAgB;EAClB;;AAEF;IACI,WAAW;IACX,8BAA8B;IAC9B,aAAa;IACb,kBAAkB;IAClB,SAAS;IACT,2BAA2B;EAC7B;;AAEF;IACI,UAAU;IACV,QAAQ;EACV;;AAEF;IACI,OAAO;IACP,WAAW;EACb;;AAEF;IACI,OAAO;IACP,QAAQ;EACV;;AAEF;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,0BAA0B;IAC1B,sBAAsB;IACtB,0GAA0G;AAC9G;;AAEA;IACI,gBAAgB;;AAEpB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","file":"navbar.module.css","sourcesContent":[".navbar a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar{\n    margin-top: 9px;\n}\n\n.logo{\n    height: 50px;\n}\n\n.header{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.container_header{\n    overflow: scroll;\n\n}\n\n.selected_nav_item{\n    opacity: 100%;\n}\n\n.not_selected_nav_item{\n    opacity: 70%;\n}"]}]);
+exports.push([module.i, ".navbar_navbar__20tCk a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar_navbar__20tCk a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar_navbar__20tCk a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar_navbar__20tCk{\n    margin-top: 9px;\n}\n\n.navbar_logo__2y0gn{\n    height: 50px;\n}\n\n\n.navbar_header__3didp{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.navbar_container_header__wrbHl{\n    overflow: scroll;\n\n}\n\n.navbar_selected_nav_item__1uPF3{\n    opacity: 100%;\n}\n\n.navbar_not_selected_nav_item__32hGA{\n    opacity: 70%;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/navbar/navbar.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,gBAAgB;IAChB,qBAAqB;IACrB,yBAAyB;IACzB,kBAAkB;IAClB,eAAe;IACf,qBAAqB;IACrB,gBAAgB;EAClB;;AAEF;IACI,WAAW;IACX,8BAA8B;IAC9B,aAAa;IACb,kBAAkB;IAClB,SAAS;IACT,2BAA2B;EAC7B;;AAEF;IACI,UAAU;IACV,QAAQ;EACV;;AAEF;IACI,OAAO;IACP,WAAW;EACb;;AAEF;IACI,OAAO;IACP,QAAQ;EACV;;AAEF;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;;AAGA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,0BAA0B;IAC1B,sBAAsB;IACtB,0GAA0G;AAC9G;;AAEA;IACI,gBAAgB;;AAEpB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","file":"navbar.module.css","sourcesContent":[".navbar a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar{\n    margin-top: 9px;\n}\n\n.logo{\n    height: 50px;\n}\n\n\n.header{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.container_header{\n    overflow: scroll;\n\n}\n\n.selected_nav_item{\n    opacity: 100%;\n}\n\n.not_selected_nav_item{\n    opacity: 70%;\n}"]}]);
 // Exports
 exports.locals = {
 	"navbar": "navbar_navbar__20tCk",
@@ -6969,7 +7188,7 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 5
     }
   }, __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -6977,28 +7196,28 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 7
     }
   }), __jsx(_components_layout_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("section", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx(_components_home_home__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 11
     }
   }))));
@@ -7006,7 +7225,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Fmy-landing-page%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************/
@@ -7029,5 +7248,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

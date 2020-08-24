@@ -7,6 +7,7 @@ import Projects from '../components/projects/projects'
 import Footer from '../components/footer/footer'
 
 
+
 export default function Main() {
   return ( 
     <div>
@@ -16,6 +17,7 @@ export default function Main() {
           <Home/>  
         </section>
       </Layout>
+
     </div>
     )
 }

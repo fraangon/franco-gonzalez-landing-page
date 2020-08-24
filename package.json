@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "easing-utils": "0.0.7",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-parallax-mousemove": "^1.1.0"
+    "react-parallax-mousemove": "^1.1.0",
+    "react-sequence-animator": "^1.0.0",
+    "react-spring": "^8.0.27"
   }
 }

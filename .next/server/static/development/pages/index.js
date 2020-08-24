@@ -963,9 +963,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.module.css */ "./components/home/home.module.css");
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _background_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background.js */ "./components/home/background.js");
+/* harmony import */ var _motion_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./motion_animation */ "./components/home/motion_animation.js");
+/* harmony import */ var _web_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./web_animation */ "./components/home/web_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/home.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 function Home({
@@ -976,7 +980,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 7,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -984,7 +988,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -992,7 +996,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -1000,7 +1004,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 11
     }
   }, __jsx("h2", {
@@ -1008,7 +1012,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 15
     }
   }, "I,m "), __jsx("h1", {
@@ -1016,7 +1020,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 15
     }
   }, "Franco"), __jsx("h1", {
@@ -1024,7 +1028,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 15
     }
   }, "Gonzalez"), __jsx("h2", {
@@ -1032,45 +1036,43 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 15
     }
   }, " .")), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 11
     }
-  }, __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+  }, __jsx(_motion_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 15
+      lineNumber: 18,
+      columnNumber: 13
     }
-  }, "Motion graphics designer and"), __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+  }), __jsx(_web_animation__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 15
+      lineNumber: 19,
+      columnNumber: 13
     }
-  }, "web developer."))), __jsx("div", {
+  }))), __jsx("div", {
     className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.fix_pos,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 9
     }
   }, __jsx(_background_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 11
     }
   }))));
@@ -1096,6 +1098,155 @@ module.exports = {
 	"container_fix_pos": "home_container_fix_pos__255eJ",
 	"plain__bg": "home_plain__bg__QLjwT"
 };
+
+/***/ }),
+
+/***/ "./components/home/motion_animation.js":
+/*!*********************************************!*\
+  !*** ./components/home/motion_animation.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MotionAnimation; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subtitle_animation.module.css */ "./components/home/subtitle_animation.module.css");
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/motion_animation.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function MotionAnimation() {
+  const {
+    0: playAnimation,
+    1: setPlayAnimation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: playAgainAnimation,
+    1: setPlayAgainAnimation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const defaultStyle = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation;
+  const animationStyle1 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play;
+  const animationStyle2 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play_again;
+
+  function playAnimationOneTime() {
+    setPlayAnimation(true);
+    setPlayAgainAnimation(!playAgainAnimation);
+  }
+
+  function getStyle() {
+    return playAnimation ? getStyleAgain() : defaultStyle;
+  }
+
+  function getStyleAgain() {
+    if (playAgainAnimation) {
+      return animationStyle1;
+    } else {
+      return animationStyle2;
+    }
+  }
+
+  return __jsx("div", {
+    onClick: () => playAnimationOneTime(),
+    className: getStyle(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./components/home/subtitle_animation.module.css":
+/*!*******************************************************!*\
+  !*** ./components/home/subtitle_animation.module.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"motion_animation": "subtitle_animation_motion_animation__qQubJ",
+	"motion_animation_play": "subtitle_animation_motion_animation_play__2i4gI",
+	"motion_play_animation": "subtitle_animation_motion_play_animation__m_IY8",
+	"motion_animation_play_again": "subtitle_animation_motion_animation_play_again__S7oS2",
+	"motion_play_animation_again": "subtitle_animation_motion_play_animation_again__3Sp1o",
+	"web_animation": "subtitle_animation_web_animation__3F-my",
+	"web_animation_play": "subtitle_animation_web_animation_play__QwtCi",
+	"web_play_animation": "subtitle_animation_web_play_animation__1OUBA",
+	"web_animation_play_again": "subtitle_animation_web_animation_play_again__ZnGD8",
+	"web_play_animation_again": "subtitle_animation_web_play_animation_again__3eDrr"
+};
+
+/***/ }),
+
+/***/ "./components/home/web_animation.js":
+/*!******************************************!*\
+  !*** ./components/home/web_animation.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WebAnimation; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subtitle_animation.module.css */ "./components/home/subtitle_animation.module.css");
+/* harmony import */ var _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/my-landing-page/components/home/web_animation.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function WebAnimation() {
+  const {
+    0: playAnimation,
+    1: setPlayAnimation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: playAgainAnimation,
+    1: setPlayAgainAnimation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const defaultStyle = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation;
+  const animationStyle1 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play;
+  const animationStyle2 = _subtitle_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play_again;
+
+  function playAnimationOneTime() {
+    setPlayAnimation(true);
+    setPlayAgainAnimation(!playAgainAnimation);
+  }
+
+  function getStyle() {
+    return playAnimation ? getStyleAgain() : defaultStyle;
+  }
+
+  function getStyleAgain() {
+    if (playAgainAnimation) {
+      return animationStyle1;
+    } else {
+      return animationStyle2;
+    }
+  }
+
+  return __jsx("div", {
+    onClick: () => playAnimationOneTime(),
+    className: getStyle(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  });
+}
 
 /***/ }),
 
@@ -3112,7 +3263,7 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 5
     }
   }, __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -3120,28 +3271,28 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 7
     }
   }), __jsx(_components_layout_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("section", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx(_components_home_home__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 11
     }
   }))));

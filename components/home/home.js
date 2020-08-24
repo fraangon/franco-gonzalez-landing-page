@@ -1,5 +1,7 @@
 import styles from './home.module.css'
 import Background from './background.js'
+import MotionAnimation from './motion_animation'
+import WebAnimation from './web_animation'
 
 export default function Home({ children, home }) {
     return (<div>
@@ -13,8 +15,8 @@ export default function Home({ children, home }) {
               <h2 className={styles.title_regular}> .</h2>
           </div>
           <div>
-              <h2 className={styles.subtitle}>Motion graphics designer and</h2>
-              <h2 className={styles.subtitle}>web developer.</h2>
+            <MotionAnimation/>
+            <WebAnimation/>
           </div>
         </div>
 
