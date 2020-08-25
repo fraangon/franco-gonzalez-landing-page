@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(-color-pallete1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    height: 40px;
+}
+

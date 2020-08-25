@@ -1,0 +1,9 @@
+.contenedor{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 33px;
+}
