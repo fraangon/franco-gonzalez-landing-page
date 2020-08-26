@@ -1,16 +1,17 @@
-import Head from 'next/head'
 import NavBar from '../components/navbar/navbar'
 import Layout, { siteTitle } from '../components/layout/layout'
 import Home from '../components/home/home/home'
-import About from '../components/about/about'
-import Projects from '../components/projects/projects'
-import Footer from '../components/footer/footer/footer'
-
+import { motion } from 'framer-motion';
 
 
 export default function Main() {
   return ( 
-    <div>
+    <motion.div 
+      exit={{ 
+          opacity: 0
+        }}
+    >
+
       <NavBar selected='HOME'/>
       <Layout>
         <section>
@@ -18,6 +19,6 @@ export default function Main() {
         </section>
       </Layout>
 
-    </div>
+    </motion.div>
     )
 }

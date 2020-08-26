@@ -1,4 +1,4 @@
-# My landing page
+# Franco Gonzalez - Landing Page
 
 ## Setup
 
