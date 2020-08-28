@@ -6,5 +6,13 @@
       "file": "static/chunks/0.js",
       "publicPath": "static/chunks/0.js"
     }
+  ],
+  "framer": [
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
   ]
 }

@@ -96,7 +96,6 @@ const stagger = {
 export default function Home({ children, home }) {
     return (<div>
       <div 
-
         className={styles.contaner_fix_pos}
       >
 

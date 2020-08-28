@@ -3,6 +3,12 @@ module.exports =
 /******/ 	// The module cache
 /******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
+/******/ 	// object to store loaded chunks
+/******/ 	// "0" means "already loaded"
+/******/ 	var installedChunks = {
+/******/ 		"static/development/pages/projects.js": 0
+/******/ 	};
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -85,6 +91,13 @@ module.exports =
 /******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// uncaught error handler for webpack runtime
+/******/ 	__webpack_require__.oe = function(err) {
+/******/ 		process.nextTick(function() {
+/******/ 			throw err; // catch this error by using import().catch()
+/******/ 		});
+/******/ 	};
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -577,71 +590,169 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _projects_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects.module.css */ "./components/projects/projects.module.css");
 /* harmony import */ var _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_projects_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _footer_footer_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../footer/footer/footer */ "./components/footer/footer/footer.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "framer-motion");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const Stack = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Stack), {
+  ssr: false,
+  loadableGenerated: {
+    webpack: () => [/*require.resolve*/(/*! framer */ "framer")],
+    modules: ['framer']
+  }
+});
+const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
+  ssr: false,
+  loadableGenerated: {
+    webpack: () => [/*require.resolve*/(/*! framer */ "framer")],
+    modules: ['framer']
+  }
+});
 function Projects() {
-  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
-    exit: {
-      opacity: 0
-    },
+  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 7
+      lineNumber: 15,
+      columnNumber: 13
     }
   }, __jsx("div", {
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.projects,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 11
-    }
-  }, "Projects."), __jsx("h4", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, "Freelance works and personal proyects."), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 11
-    }
-  }, __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 17,
-      columnNumber: 15
+      columnNumber: 7
     }
-  }, "Slider with projects.")), __jsx(_footer_footer_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx("div", {
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.addMargin,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19,
       columnNumber: 11
     }
-  })));
+  }, __jsx("h3", {
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }
+  }, "Projects."), __jsx("h4", {
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }, "Freelance works and personal proyects."), __jsx("div", {
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.slider,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, __jsx(Stack, {
+    size: 100,
+    direction: "horizontal",
+    alignment: "start",
+    gap: "40",
+    distribution: "start",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 15
+    }
+  }, __jsx(Frame, {
+    backgroundColor: "#180233",
+    height: '50vh',
+    width: '40vh',
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 17
+    }
+  }, __jsx("div", {
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 19
+    }
+  }, __jsx("h3", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 21
+    }
+  }, "Name project"), __jsx("h4", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 21
+    }
+  }, "Type of project")), __jsx("img", {
+    src: "/Min_projects.png",
+    alt: "min",
+    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 19
+    }
+  })), __jsx(Frame, {
+    backgroundColor: "#180233",
+    height: '50vh',
+    width: '40vh',
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 17
+    }
+  }), __jsx(Frame, {
+    backgroundColor: "#180233",
+    height: '50vh',
+    width: '40vh',
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 17
+    }
+  }), __jsx(Frame, {
+    backgroundColor: "#180233",
+    height: '50vh',
+    width: '40vh',
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }))))));
 }
+/*
+
+
+*/
 
 /***/ }),
 
@@ -654,7 +765,14 @@ function Projects() {
 
 // Exports
 module.exports = {
-	"projects": "projects_projects__hhO4x"
+	"projects": "projects_projects__hhO4x",
+	"addMargin": "projects_addMargin__NtYUJ",
+	"title": "projects_title__drKv-",
+	"subtitle": "projects_subtitle__2LT97",
+	"slider": "projects_slider__3eskm",
+	"project_item": "projects_project_item__3EjNv",
+	"project_item_text": "projects_project_item_text__2Mta7",
+	"img_min": "projects_img_min__3biAm"
 };
 
 /***/ }),
@@ -2343,9 +2461,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_projects_projects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/projects/projects */ "./components/projects/projects.js");
 /* harmony import */ var _components_navbar_navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navbar/navbar */ "./components/navbar/navbar.js");
 /* harmony import */ var _components_layout_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout/layout */ "./components/layout/layout.js");
+/* harmony import */ var _components_footer_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/footer/footer/footer */ "./components/footer/footer/footer.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/pages/projects.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2354,7 +2474,7 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2362,22 +2482,15 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 7
     }
   }), __jsx(_components_layout_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  }, __jsx("section", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 9
+      columnNumber: 7
     }
   }, __jsx(_components_projects_projects__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: this,
@@ -2386,7 +2499,14 @@ function Main() {
       lineNumber: 11,
       columnNumber: 11
     }
-  }))));
+  }), __jsx(_components_footer_footer_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 11
+    }
+  })));
 }
 
 /***/ }),
@@ -2403,6 +2523,17 @@ module.exports = __webpack_require__(/*! /Users/francogonzalez/Documents/Trabajo
 
 /***/ }),
 
+/***/ "framer":
+/*!*************************!*\
+  !*** external "framer" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("framer");
+
+/***/ }),
+
 /***/ "framer-motion":
 /*!********************************!*\
   !*** external "framer-motion" ***!
@@ -2411,6 +2542,17 @@ module.exports = __webpack_require__(/*! /Users/francogonzalez/Documents/Trabajo
 /***/ (function(module, exports) {
 
 module.exports = require("framer-motion");
+
+/***/ }),
+
+/***/ "next/dynamic":
+/*!*******************************!*\
+  !*** external "next/dynamic" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dynamic");
 
 /***/ }),
 
