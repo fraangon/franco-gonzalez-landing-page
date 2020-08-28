@@ -3,14 +3,9 @@ import Layout, { siteTitle } from '../components/layout/layout'
 import Home from '../components/home/home/home'
 import { motion } from 'framer-motion';
 
-
 export default function Main() {
   return ( 
-    <motion.div 
-      exit={{ 
-          opacity: 0
-        }}
-    >
+    <div >
 
       <NavBar selected='HOME'/>
       <Layout>
@@ -19,6 +14,6 @@ export default function Main() {
         </section>
       </Layout>
 
-    </motion.div>
+    </div>
     )
 }
