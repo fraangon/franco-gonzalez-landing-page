@@ -650,6 +650,7 @@ var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-land
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+ // import {Stack, Frame} from 'framer'
 
 var Stack = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
   return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
@@ -677,12 +678,15 @@ var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
     modules: ['framer']
   }
 });
+var names = ['Name project 1', 'Name project 2', 'Name project 3', 'Name project 4', 'Name project 5'];
 function Projects() {
+  var _this = this;
+
   return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 20,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -690,7 +694,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 22,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -698,7 +702,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 24,
       columnNumber: 11
     }
   }, __jsx("h3", {
@@ -706,7 +710,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 26,
       columnNumber: 13
     }
   }, "Projects."), __jsx("h4", {
@@ -714,7 +718,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 28,
       columnNumber: 13
     }
   }, "Freelance works and personal proyects."), __jsx("div", {
@@ -722,7 +726,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 30,
       columnNumber: 13
     }
   }, __jsx(Stack, {
@@ -734,88 +738,56 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 31,
       columnNumber: 15
     }
-  }, __jsx(Frame, {
-    backgroundColor: "#180233",
-    height: '50vh',
-    width: '40vh',
-    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 19
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 21
-    }
-  }, "Name project"), __jsx("h4", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 21
-    }
-  }, "Type of project")), __jsx("img", {
-    src: "/Min_projects.png",
-    alt: "min",
-    className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 19
-    }
-  })), __jsx(Frame, {
-    backgroundColor: "#180233",
-    height: '50vh',
-    width: '40vh',
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 17
-    }
-  }), __jsx(Frame, {
-    backgroundColor: "#180233",
-    height: '50vh',
-    width: '40vh',
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 17
-    }
-  }), __jsx(Frame, {
-    backgroundColor: "#180233",
-    height: '50vh',
-    width: '40vh',
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 17
-    }
+  }, names.map(function (name) {
+    return __jsx(Frame, {
+      backgroundColor: "#180233",
+      height: '50vh',
+      width: '40vh',
+      className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 17
+      }
+    }, __jsx("div", {
+      className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 19
+      }
+    }, __jsx("h3", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 21
+      }
+    }, name), __jsx("h4", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 21
+      }
+    }, "Type of project")), __jsx("img", {
+      src: "/Min_projects.png",
+      alt: "min",
+      className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 19
+      }
+    }));
   }))))));
 }
-/*
-
-
-*/
 
 /***/ }),
 

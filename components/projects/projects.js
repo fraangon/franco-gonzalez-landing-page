@@ -1,6 +1,8 @@
 import styles from './projects.module.css'
 import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
+// import {Stack, Frame} from 'framer'
+
 
 const Stack = dynamic(
   () => import('framer').then((mod) => mod.Stack),
@@ -10,6 +12,9 @@ const Frame = dynamic(
   () => import('framer').then((mod) => mod.Frame),
   { ssr: false }
 )
+
+
+const names = ['Name project 1', 'Name project 2', 'Name project 3', 'Name project 4', 'Name project 5'];
 
 export default function Projects() {
     return (<motion.div >
@@ -24,18 +29,21 @@ export default function Projects() {
 
             <div className={styles.slider}>
               <Stack size={100} direction="horizontal" alignment="start" gap='40' distribution="start">
+
+                {names.map(name => (
                 <Frame backgroundColor='#180233' height={'50vh'} width={'40vh'} className={styles.project_item}>
                 
                   <div className={styles.project_item_text}>
-                    <h3>Name project</h3>
+                    <h3>{name}</h3>
                     <h4>Type of project</h4>
                   </div>
+
                   <img src='/Min_projects.png' alt='min' className={styles.img_min}></img>
 
                 </Frame>
-                <Frame backgroundColor='#180233' height={'50vh'} width={'40vh'}></Frame>
-                <Frame backgroundColor='#180233' height={'50vh'} width={'40vh'}></Frame>
-                <Frame backgroundColor='#180233' height={'50vh'} width={'40vh'}></Frame>
+                  
+                ))}
+
               </Stack>
             </div>
 
@@ -47,7 +55,3 @@ export default function Projects() {
     )
   }
 
-/*
-
-
-*/
