@@ -17,9 +17,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-parallax-mousemove */ "./node_modules/react-parallax-mousemove/build/index.js");
 /* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
+/* harmony import */ var _bg_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./bg_animation */ "./components/home/bg/bg_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/bg/bg.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -46,7 +50,8 @@ function Bg() {
     setSsrDone(true);
   }, []);
   var widthBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320);
-  var heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])();
+  var heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])(); // Styles for the mouse paralax efect
+
   var style = {
     outter: {
       backgroundPosition: 'center',
@@ -55,7 +60,8 @@ function Bg() {
       position: 'relative',
       overflow: 'hidden',
       marginLeft: 'auto',
-      marginRigth: 'auto'
+      marginRigth: 'auto',
+      pointerEvents: 'none'
     },
     infoLayerStyle: {
       position: 'relative'
@@ -67,11 +73,15 @@ function Bg() {
   };
 
   if (ssrDone) {
-    return __jsx("div", {
+    return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+      exit: "exit",
+      initial: "initial",
+      animate: "animate",
+      variants: _bg_animation__WEBPACK_IMPORTED_MODULE_5__["animationBG"],
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 13
       }
     }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -80,7 +90,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 53,
         columnNumber: 17
       }
     }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -96,7 +106,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 55,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -112,7 +122,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 63,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -128,7 +138,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
+        lineNumber: 76,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -143,7 +153,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 85,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -159,7 +169,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 98,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -174,7 +184,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 107,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -190,7 +200,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111,
+        lineNumber: 120,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -205,7 +215,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 129,
         columnNumber: 25
       }
     }))));
@@ -215,7 +225,7 @@ function Bg() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 146,
       columnNumber: 13
     }
   }, "Loading...");
@@ -223,6 +233,40 @@ function Bg() {
 /*
 
 */
+
+/***/ }),
+
+/***/ "./components/home/bg/bg_animation.js":
+/*!********************************************!*\
+  !*** ./components/home/bg/bg_animation.js ***!
+  \********************************************/
+/*! exports provided: animationBG, easing */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationBG", function() { return animationBG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
+var easing = [0.6, -0.05, 0.01, 0.99];
+var animationBG = {
+  initial: {
+    scale: 1,
+    opacity: 1
+  },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.1,
+      ease: easing
+    }
+  },
+  exit: {
+    scale: 0.95,
+    opacity: 0
+  }
+};
+
 
 /***/ }),
 
@@ -255,19 +299,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_5___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
-    return mod.Frame;
-  });
-}, {
-  ssr: false,
-  loadableGenerated: {
-    webpack: function webpack() {
-      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
-    },
-    modules: ['framer']
-  }
-});
 function Home(_ref) {
   var children = _ref.children,
       home = _ref.home;
@@ -275,7 +306,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -283,7 +314,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -291,7 +322,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -300,7 +331,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 20,
       columnNumber: 11
     }
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -312,7 +343,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx("h2", {
@@ -320,7 +351,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 31,
       columnNumber: 17
     }
   }, "I,m "), __jsx("h1", {
@@ -328,7 +359,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 32,
       columnNumber: 17
     }
   }, "Franco"), __jsx("h1", {
@@ -336,7 +367,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, "Gonzalez"), __jsx("h2", {
@@ -344,7 +375,7 @@ function Home(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 17
     }
   }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -352,17 +383,18 @@ function Home(_ref) {
     initial: "initial",
     animate: "animate",
     variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationMotion"],
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 13
     }
   }, __jsx(_motion_animation_motion_animation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 44,
       columnNumber: 15
     }
   })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -370,10 +402,11 @@ function Home(_ref) {
     initial: "initial",
     animate: "animate",
     variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationWeb"],
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 47,
       columnNumber: 13
     }
   }, __jsx(_web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -967,18 +1000,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navbar_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.module.css */ "./components/navbar/navbar.module.css");
 /* harmony import */ var _navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navbar_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _nav_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav_item */ "./components/navbar/nav_item.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
+/* harmony import */ var _navbar_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navbar_animation */ "./components/navbar/navbar_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/navbar/navbar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
 function NavBar(props) {
-  return __jsx("div", {
+  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _navbar_animation__WEBPACK_IMPORTED_MODULE_4__["animationName"],
     className: _navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container_header,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -986,14 +1027,14 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 17,
       columnNumber: 17
     }
   }, __jsx("img", {
@@ -1002,14 +1043,14 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 18,
       columnNumber: 21
     }
   })), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 21,
       columnNumber: 17
     }
   }, __jsx("nav", {
@@ -1017,7 +1058,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 22,
       columnNumber: 21
     }
   }, __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1027,7 +1068,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 24,
       columnNumber: 29
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1037,7 +1078,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 25,
       columnNumber: 29
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1047,7 +1088,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 26,
       columnNumber: 29
     }
   })))));
@@ -1113,6 +1154,41 @@ if (true) {
     update();
   });
 }
+
+/***/ }),
+
+/***/ "./components/navbar/navbar_animation.js":
+/*!***********************************************!*\
+  !*** ./components/navbar/navbar_animation.js ***!
+  \***********************************************/
+/*! exports provided: easing, animationName */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationName", function() { return animationName; });
+var easing = [0.6, -0.05, 0.01, 0.99];
+var animationName = {
+  initial: {
+    x: -60,
+    opacity: 0
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.9,
+      ease: easing,
+      delay: 0
+    }
+  },
+  exit: {
+    x: 0,
+    opacity: 0
+  }
+};
+
 
 /***/ }),
 
@@ -1679,7 +1755,7 @@ function memoize(fn) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".home_home__1KXP4{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: 100;\n}\n\n.home_title__3Uklb{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n}\n\n.home_title_regular__1sqZG{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.home_title_bold__3TDwb{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.home_subtitle__1Hu2u{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.home_fix_pos__1VXCr{\n    position: fixed;\n    z-index: -3;\n}\n\n.home_container_fix_pos__2eu9g{\n    overflow: scroll;\n}\n\n.home_plain__bg__1qd14{\n    background-color: red;\n    z-index: 1;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,oBAAoB;IACpB,YAAY;IACZ,sBAAsB;IACtB,uBAAuB;IACvB,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,WAAW;IACX,WAAW;AACf;;AAEA;IACI,eAAe;IACf,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,UAAU;AACd","file":"home.module.css","sourcesContent":[".home{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    height: 100vh;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: 100;\n}\n\n.title{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n}\n\n.title_regular{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.title_bold{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.subtitle{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.fix_pos{\n    position: fixed;\n    z-index: -3;\n}\n\n.container_fix_pos{\n    overflow: scroll;\n}\n\n.plain__bg{\n    background-color: red;\n    z-index: 1;\n}"]}]);
+exports.push([module.i, ".home_home__1KXP4{\n    position: fixed;\n    top: 40vh;\n    height: auto;\n    width: 100%;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: 1;\n    pointer-events: unset;\n    \n}\n\n.home_title__3Uklb{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n    pointer-events: none;\n}\n\n.home_title_regular__1sqZG{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.home_title_bold__3TDwb{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.home_subtitle__1Hu2u{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.home_fix_pos__1VXCr{\n    position: fixed;\n    z-index: -3;\n}\n\n.home_container_fix_pos__2eu9g{\n    overflow: scroll;\n}\n\n.home_plain__bg__1qd14{\n    background-color: red;\n    z-index: 1;\n}\n\n.home_animation_text__2hRoG{\n    pointer-events: visible;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/home/home.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,SAAS;IACT,YAAY;IACZ,WAAW;IACX,oBAAoB;IACpB,YAAY;IACZ,sBAAsB;IACtB,uBAAuB;IACvB,UAAU;IACV,qBAAqB;;AAEzB;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,WAAW;IACX,oBAAoB;AACxB;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,WAAW;IACX,WAAW;AACf;;AAEA;IACI,eAAe;IACf,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,UAAU;AACd;;AAEA;IACI,uBAAuB;AAC3B","file":"home.module.css","sourcesContent":[".home{\n    position: fixed;\n    top: 40vh;\n    height: auto;\n    width: 100%;\n    padding-left: 200px ;\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    z-index: 1;\n    pointer-events: unset;\n    \n}\n\n.title{\n    font-size: 58px;\n    display:flex;\n    margin: 0px;\n    pointer-events: none;\n}\n\n.title_regular{\n    font-weight: 600;\n    margin: 0px;\n    margin-right: 15px;\n}\n\n.title_bold{\n    font-weight: 700;\n    margin:0px;\n    margin-right: 15px;\n}\n\n.subtitle{\n    font-size: 45px;\n    font-weight: 600;\n    padding:0px;\n    margin: 0px;\n}\n\n.fix_pos{\n    position: fixed;\n    z-index: -3;\n}\n\n.container_fix_pos{\n    overflow: scroll;\n}\n\n.plain__bg{\n    background-color: red;\n    z-index: 1;\n}\n\n.animation_text{\n    pointer-events: visible;\n}"]}]);
 // Exports
 exports.locals = {
 	"home": "home_home__1KXP4",
@@ -1689,7 +1765,8 @@ exports.locals = {
 	"subtitle": "home_subtitle__1Hu2u",
 	"fix_pos": "home_fix_pos__1VXCr",
 	"container_fix_pos": "home_container_fix_pos__2eu9g",
-	"plain__bg": "home_plain__bg__1qd14"
+	"plain__bg": "home_plain__bg__1qd14",
+	"animation_text": "home_animation_text__2hRoG"
 };
 
 /***/ }),
@@ -1762,7 +1839,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".navbar_navbar__20tCk a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar_navbar__20tCk a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar_navbar__20tCk a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar_navbar__20tCk{\n    margin-top: 9px;\n    z-index: 200;\n}\n\n.navbar_logo__2y0gn{\n    height: 50px;\n}\n\n.navbar_header__3didp{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.navbar_container_header__wrbHl{\n    overflow: scroll;\n\n}\n\n.navbar_selected_nav_item__1uPF3{\n    opacity: 100%;\n}\n\n.navbar_not_selected_nav_item__32hGA{\n    opacity: 70%;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/navbar/navbar.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,gBAAgB;IAChB,qBAAqB;IACrB,yBAAyB;IACzB,kBAAkB;IAClB,eAAe;IACf,qBAAqB;IACrB,gBAAgB;EAClB;;AAEF;IACI,WAAW;IACX,8BAA8B;IAC9B,aAAa;IACb,kBAAkB;IAClB,SAAS;IACT,2BAA2B;EAC7B;;AAEF;IACI,UAAU;IACV,QAAQ;EACV;;AAEF;IACI,OAAO;IACP,WAAW;EACb;;AAEF;IACI,OAAO;IACP,QAAQ;EACV;;AAEF;IACI,eAAe;IACf,YAAY;AAChB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,0BAA0B;IAC1B,sBAAsB;IACtB,0GAA0G;AAC9G;;AAEA;IACI,gBAAgB;;AAEpB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","file":"navbar.module.css","sourcesContent":[".navbar a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n  }\n  \n.navbar a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar{\n    margin-top: 9px;\n    z-index: 200;\n}\n\n.logo{\n    height: 50px;\n}\n\n.header{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.container_header{\n    overflow: scroll;\n\n}\n\n.selected_nav_item{\n    opacity: 100%;\n}\n\n.not_selected_nav_item{\n    opacity: 70%;\n}"]}]);
+exports.push([module.i, ".navbar_navbar__20tCk a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n    z-index: 200;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar_navbar__20tCk a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar_navbar__20tCk a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar_navbar__20tCk a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar_navbar__20tCk{\n    margin-top: 9px;\n}\n\n.navbar_logo__2y0gn{\n    height: 50px;\n}\n\n.navbar_header__3didp{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.navbar_container_header__wrbHl{\n    overflow: hidden;\n}\n\n.navbar_selected_nav_item__1uPF3{\n    opacity: 100%;\n}\n\n.navbar_not_selected_nav_item__32hGA{\n    opacity: 70%;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/navbar/navbar.module.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,gBAAgB;IAChB,qBAAqB;IACrB,yBAAyB;IACzB,kBAAkB;IAClB,eAAe;IACf,qBAAqB;IACrB,gBAAgB;IAChB,YAAY;EACd;;AAEF;IACI,WAAW;IACX,8BAA8B;IAC9B,aAAa;IACb,kBAAkB;IAClB,SAAS;IACT,2BAA2B;EAC7B;;AAEF;IACI,UAAU;IACV,QAAQ;EACV;;AAEF;IACI,OAAO;IACP,WAAW;EACb;;AAEF;IACI,OAAO;IACP,QAAQ;EACV;;AAEF;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,MAAM;IACN,YAAY;IACZ,WAAW;IACX,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,0BAA0B;IAC1B,sBAAsB;IACtB,0GAA0G;AAC9G;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","file":"navbar.module.css","sourcesContent":[".navbar a {\n    font-size: 15px;\n    font-weight: 500;\n    text-decoration: none;\n    color: var(--color-white);;\n    position: relative;\n    margin: 0px 7px;\n    display: inline-block;\n    padding: 5px 7px;\n    z-index: 200;\n  }\n  \n.navbar a::after {\n    content: \"\";\n    background: var(--color-white);\n    height: 1.8px;\n    position: absolute;\n    bottom: 0;\n    transition: .16s all 0.025s;\n  }\n  \n.navbar a::after {\n    left: 100%;\n    right: 0;\n  }\n  \n.navbar a:hover ~ a::after {\n    left: 0;\n    right: 100%;\n  }\n  \n.navbar a:hover::after {\n    left: 0;\n    right: 0;\n  }\n\n.navbar{\n    margin-top: 9px;\n}\n\n.logo{\n    height: 50px;\n}\n\n.header{\n    position: fixed;\n    top: 0;\n    height: auto;\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 40px 0px 30px 0px;\n    background: rgb(0,0,0);\n    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6152836134453781) 44%, rgba(0,0,0,1) 88%);\n}\n\n.container_header{\n    overflow: hidden;\n}\n\n.selected_nav_item{\n    opacity: 100%;\n}\n\n.not_selected_nav_item{\n    opacity: 70%;\n}"]}]);
 // Exports
 exports.locals = {
 	"navbar": "navbar_navbar__20tCk",
@@ -16415,6 +16492,8 @@ function Main() {
     }
   }));
 }
+/*
+ */
 
 /***/ }),
 

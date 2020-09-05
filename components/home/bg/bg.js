@@ -2,6 +2,8 @@ import { getWindowWidth, getWindowHeight } from '../../window/window_dimensions.
 import { useState, useEffect } from "react";
 import dynamic from 'next/dynamic'
 import ParallaxMousemove from 'react-parallax-mousemove'
+import { motion } from 'framer-motion';
+import {animationBG} from './bg_animation';
 
 const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
 
@@ -15,7 +17,8 @@ export default function Bg() {
     
     const widthBg = getWindowHeight() * ( 7680/4320 )
     const heightBg = getWindowHeight()
-
+    
+    // Styles for the mouse paralax efect
     const style = {
         outter: {
             backgroundPosition: 'center',
@@ -24,7 +27,8 @@ export default function Bg() {
             position: 'relative',
             overflow: 'hidden',
             marginLeft: 'auto',
-            marginRigth: 'auto'
+            marginRigth: 'auto',
+            pointerEvents: 'none'
           },
           infoLayerStyle: {
             position: 'relative',
@@ -40,7 +44,12 @@ export default function Bg() {
         
 
         return(
-            <div>
+            <motion.div
+                exit='exit'
+                initial='initial'
+                animate='animate'
+                variants={animationBG}
+            >
                 <ParallaxMousemove containerStyle={style.outter} fullHeight={true}>
                 
                     <ParallaxMousemove.Layer layerStyle={style.bgLayerStyle} config={{
@@ -131,7 +140,7 @@ export default function Bg() {
                     </ParallaxMousemove.Layer>
 
                 </ParallaxMousemove> 
-            </div>
+            </motion.div>
         )
     } 
     return (<div>Loading...</div>)

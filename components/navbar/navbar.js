@@ -1,10 +1,17 @@
 import styles from "./navbar.module.css"
 import NavItem from "./nav_item"
-
+import { motion } from "framer-motion"
+import { animationName} from './navbar_animation'
 
 export default function NavBar(props) {
     return (
-        <div className={styles.container_header}>
+        <motion.div 
+            exit='exit'
+            initial='initial'
+            animate='animate'
+            variants={animationName}
+            className={styles.container_header}
+        >
             <div className={styles.header}>
 
                 <div>
@@ -22,6 +29,6 @@ export default function NavBar(props) {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
   }

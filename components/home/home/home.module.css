@@ -1,20 +1,22 @@
 .home{
     position: fixed;
-    top: 0;
+    top: 40vh;
     height: auto;
     width: 100%;
-    height: 100vh;
     padding-left: 200px ;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 100;
+    z-index: 1;
+    pointer-events: unset;
+    
 }
 
 .title{
     font-size: 58px;
     display:flex;
     margin: 0px;
+    pointer-events: none;
 }
 
 .title_regular{
@@ -48,4 +50,8 @@
 .plain__bg{
     background-color: red;
     z-index: 1;
+}
+
+.animation_text{
+    pointer-events: visible;
 }

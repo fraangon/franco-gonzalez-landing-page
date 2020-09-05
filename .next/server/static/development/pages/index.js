@@ -145,9 +145,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-parallax-mousemove */ "react-parallax-mousemove");
 /* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _bg_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./bg_animation */ "./components/home/bg/bg_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/bg/bg.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -168,7 +173,8 @@ function Bg() {
     setSsrDone(true);
   }, []);
   const widthBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320);
-  const heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])();
+  const heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])(); // Styles for the mouse paralax efect
+
   const style = {
     outter: {
       backgroundPosition: 'center',
@@ -177,7 +183,8 @@ function Bg() {
       position: 'relative',
       overflow: 'hidden',
       marginLeft: 'auto',
-      marginRigth: 'auto'
+      marginRigth: 'auto',
+      pointerEvents: 'none'
     },
     infoLayerStyle: {
       position: 'relative'
@@ -189,11 +196,15 @@ function Bg() {
   };
 
   if (ssrDone) {
-    return __jsx("div", {
+    return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+      exit: "exit",
+      initial: "initial",
+      animate: "animate",
+      variants: _bg_animation__WEBPACK_IMPORTED_MODULE_5__["animationBG"],
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 13
       }
     }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -202,7 +213,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 53,
         columnNumber: 17
       }
     }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -218,7 +229,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 55,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -234,7 +245,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 63,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -250,7 +261,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
+        lineNumber: 76,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -265,7 +276,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 85,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -281,7 +292,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 98,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -296,7 +307,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 107,
         columnNumber: 25
       }
     })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
@@ -312,7 +323,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111,
+        lineNumber: 120,
         columnNumber: 21
       }
     }, __jsx(Frame, {
@@ -327,7 +338,7 @@ function Bg() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 129,
         columnNumber: 25
       }
     }))));
@@ -337,7 +348,7 @@ function Bg() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 146,
       columnNumber: 13
     }
   }, "Loading...");
@@ -345,6 +356,40 @@ function Bg() {
 /*
 
 */
+
+/***/ }),
+
+/***/ "./components/home/bg/bg_animation.js":
+/*!********************************************!*\
+  !*** ./components/home/bg/bg_animation.js ***!
+  \********************************************/
+/*! exports provided: animationBG, easing */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationBG", function() { return animationBG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
+const easing = [0.6, -0.05, 0.01, 0.99];
+const animationBG = {
+  initial: {
+    scale: 1,
+    opacity: 1
+  },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.1,
+      ease: easing
+    }
+  },
+  exit: {
+    scale: 0.95,
+    opacity: 0
+  }
+};
+
 
 /***/ }),
 
@@ -378,13 +423,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_5___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
-  ssr: false,
-  loadableGenerated: {
-    webpack: () => [/*require.resolve*/(/*! framer */ "framer")],
-    modules: ['framer']
-  }
-});
 function Home({
   children,
   home
@@ -393,7 +431,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -401,7 +439,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -409,7 +447,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -418,7 +456,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 20,
       columnNumber: 11
     }
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -430,7 +468,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx("h2", {
@@ -438,7 +476,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 31,
       columnNumber: 17
     }
   }, "I,m "), __jsx("h1", {
@@ -446,7 +484,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 32,
       columnNumber: 17
     }
   }, "Franco"), __jsx("h1", {
@@ -454,7 +492,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, "Gonzalez"), __jsx("h2", {
@@ -462,7 +500,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 17
     }
   }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -470,17 +508,18 @@ function Home({
     initial: "initial",
     animate: "animate",
     variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationMotion"],
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 13
     }
   }, __jsx(_motion_animation_motion_animation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 44,
       columnNumber: 15
     }
   })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
@@ -488,10 +527,11 @@ function Home({
     initial: "initial",
     animate: "animate",
     variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationWeb"],
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 47,
       columnNumber: 13
     }
   }, __jsx(_web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -522,7 +562,8 @@ module.exports = {
 	"subtitle": "home_subtitle__1Hu2u",
 	"fix_pos": "home_fix_pos__1VXCr",
 	"container_fix_pos": "home_container_fix_pos__2eu9g",
-	"plain__bg": "home_plain__bg__1qd14"
+	"plain__bg": "home_plain__bg__1qd14",
+	"animation_text": "home_animation_text__2hRoG"
 };
 
 /***/ }),
@@ -909,18 +950,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navbar_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.module.css */ "./components/navbar/navbar.module.css");
 /* harmony import */ var _navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navbar_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _nav_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav_item */ "./components/navbar/nav_item.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _navbar_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navbar_animation */ "./components/navbar/navbar_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/navbar/navbar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
 function NavBar(props) {
-  return __jsx("div", {
+  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _navbar_animation__WEBPACK_IMPORTED_MODULE_4__["animationName"],
     className: _navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container_header,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -928,14 +978,14 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 17,
       columnNumber: 17
     }
   }, __jsx("img", {
@@ -944,14 +994,14 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 18,
       columnNumber: 21
     }
   })), __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 21,
       columnNumber: 17
     }
   }, __jsx("nav", {
@@ -959,7 +1009,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 22,
       columnNumber: 21
     }
   }, __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -969,7 +1019,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 24,
       columnNumber: 29
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -979,7 +1029,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 25,
       columnNumber: 29
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -989,7 +1039,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 26,
       columnNumber: 29
     }
   })))));
@@ -1013,6 +1063,41 @@ module.exports = {
 	"selected_nav_item": "navbar_selected_nav_item__1uPF3",
 	"not_selected_nav_item": "navbar_not_selected_nav_item__32hGA"
 };
+
+/***/ }),
+
+/***/ "./components/navbar/navbar_animation.js":
+/*!***********************************************!*\
+  !*** ./components/navbar/navbar_animation.js ***!
+  \***********************************************/
+/*! exports provided: easing, animationName */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationName", function() { return animationName; });
+const easing = [0.6, -0.05, 0.01, 0.99];
+const animationName = {
+  initial: {
+    x: -60,
+    opacity: 0
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.9,
+      ease: easing,
+      delay: 0
+    }
+  },
+  exit: {
+    x: 0,
+    opacity: 0
+  }
+};
+
 
 /***/ }),
 
@@ -2781,6 +2866,8 @@ function Main() {
     }
   }));
 }
+/*
+ */
 
 /***/ }),
 

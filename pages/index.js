@@ -8,13 +8,16 @@ import Bg from '../components/home/bg/bg';
 export default function Main() {
   return ( 
     <div >
-      <NavBar selected='HOME'/>
+      <NavBar selected='HOME' />
       <Layout>
         <section>
           <Home/>  
         </section>
       </Layout>
-      <Bg/>
+      <Bg/> 
     </div>
     )
   }
+  /*
+
+  */

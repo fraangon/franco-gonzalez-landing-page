@@ -5,13 +5,11 @@ import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic'
 import {easing, animationName, animationMotion, animationWeb, animationBG, stagger} from './home_animation'
 
-const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
 
 export default function Home({ children, home }) {
     
   return (
     <div>
-     
       <div 
         className={styles.contaner_fix_pos}
       >
@@ -24,11 +22,11 @@ export default function Home({ children, home }) {
             animate='animate'
           >
             <motion.div 
-            exit='exit'
-            initial='initial'
-            animate='animate'
-            variants={animationName}
-            className={styles.title}
+              exit='exit'
+              initial='initial'
+              animate='animate'
+              variants={animationName}
+              className={styles.title}
             >
                 <h2 className={styles.title_regular}>I,m </h2>
                 <h1 className={styles.title_bold}>Franco</h1>
@@ -41,6 +39,7 @@ export default function Home({ children, home }) {
               initial='initial'
               animate='animate'
               variants={animationMotion}
+              className={styles.animation_text}
             >
               <MotionAnimation/>
             </motion.div>
@@ -50,6 +49,7 @@ export default function Home({ children, home }) {
               initial='initial'
               animate='animate'
               variants={animationWeb}
+              className={styles.animation_text}
             >
               <WebAnimation/>
             </motion.div>
