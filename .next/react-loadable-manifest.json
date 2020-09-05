@@ -1,4 +1,18 @@
 {
+  "../carrusel/carrusel": [
+    {
+      "id": "./components/projects/carrusel/carrusel.js",
+      "name": "./components/projects/carrusel/carrusel.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",

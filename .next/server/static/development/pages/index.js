@@ -128,41 +128,38 @@ module.exports = require("next/dist/next-server/lib/utils.js");
 
 /***/ }),
 
-/***/ "./components/home/bg_scroll/bg_scroll.js":
-/*!************************************************!*\
-  !*** ./components/home/bg_scroll/bg_scroll.js ***!
-  \************************************************/
+/***/ "./components/home/bg/bg.js":
+/*!**********************************!*\
+  !*** ./components/home/bg/bg.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BgScroll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Bg; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bg_scroll.module.css */ "./components/home/bg_scroll/bg_scroll.module.css");
-/* harmony import */ var _bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-parallax-mousemove */ "react-parallax-mousemove");
-/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/bg_scroll/bg_scroll.js";
+/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-parallax-mousemove */ "react-parallax-mousemove");
+/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/bg/bg.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-
-const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
+const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/(/*! framer */ "framer")],
     modules: ['framer']
   }
 });
-function BgScroll() {
+function Bg() {
   const {
     0: ssrDone,
     1: setSsrDone
@@ -170,8 +167,8 @@ function BgScroll() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     setSsrDone(true);
   }, []);
-  const widthBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])() * (7680 / 4320);
-  const heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])();
+  const widthBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320);
+  const heightBg = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])();
   const style = {
     outter: {
       backgroundPosition: 'center',
@@ -196,75 +193,19 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 43,
         columnNumber: 13
       }
-    }, __jsx("div", {
-      className: _bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contaner_fix_pos,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 17
-      }
-    }, __jsx("div", {
-      className: _bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.home,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 21
-      }
-    }, __jsx("div", {
-      className: _bg_scroll_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 25
-      }
-    }, __jsx("h2", {
-      className: style.bgLayerStyle,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 29
-      }
-    }, "I,m "), __jsx("h1", {
-      className: style.bgLayerStyle,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 29
-      }
-    }, "Franco"), __jsx("h1", {
-      className: style.bgLayerStyle,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 29
-      }
-    }, "Gonzalez"), __jsx("h2", {
-      className: style.bgLayerStyle,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 29
-      }
-    }, " .")))), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a, {
       containerStyle: style.outter,
       fullHeight: true,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 44,
         columnNumber: 17
       }
-    }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default.a.Layer, {
+    }, __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
       layerStyle: style.bgLayerStyle,
       config: {
         xFactor: -0.03,
@@ -277,14 +218,14 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 46,
         columnNumber: 21
       }
     }, __jsx(Frame, {
       height: heightBg,
       width: widthBg,
       top: 0,
-      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])() - widthBg) / 2,
+      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowWidth"])() - widthBg) / 2,
       image: "/background_parallax/shadow.png",
       style: {
         backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -293,10 +234,10 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 54,
         columnNumber: 25
       }
-    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default.a.Layer, {
+    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
       layerStyle: style.bgLayerStyle,
       config: {
         xFactor: 0.05,
@@ -309,14 +250,14 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 67,
         columnNumber: 21
       }
     }, __jsx(Frame, {
-      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])(),
-      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])() * (7680 / 4320),
+      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])(),
+      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320),
       top: 0,
-      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])() - widthBg) / 2,
+      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowWidth"])() - widthBg) / 2,
       image: "/background_parallax/layer_3.png",
       style: {
         backgroundColor: 'rgba(0, 0, 0, 0)'
@@ -324,10 +265,10 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 76,
         columnNumber: 25
       }
-    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default.a.Layer, {
+    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
       layerStyle: style.bgLayerStyle,
       config: {
         xFactor: 0.10,
@@ -340,14 +281,14 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 89,
         columnNumber: 21
       }
     }, __jsx(Frame, {
-      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])(),
-      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])() * (7680 / 4320),
+      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])(),
+      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320),
       top: 0,
-      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])() - widthBg) / 2,
+      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowWidth"])() - widthBg) / 2,
       image: "/background_parallax/layer_2.png",
       style: {
         backgroundColor: 'rgba(0, 0, 0, 0)'
@@ -355,10 +296,10 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110,
+        lineNumber: 98,
         columnNumber: 25
       }
-    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_4___default.a.Layer, {
+    })), __jsx(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_3___default.a.Layer, {
       layerStyle: style.bgLayerStyle,
       config: {
         xFactor: 0.15,
@@ -371,14 +312,14 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123,
+        lineNumber: 111,
         columnNumber: 21
       }
     }, __jsx(Frame, {
-      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])(),
-      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])() * (7680 / 4320),
+      height: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])(),
+      width: Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowHeight"])() * (7680 / 4320),
       top: 0,
-      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])() - widthBg) / 2,
+      left: (Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_1__["getWindowWidth"])() - widthBg) / 2,
       image: "/background_parallax/layer_1.png",
       style: {
         backgroundColor: 'rgba(0, 0, 0, 0)'
@@ -386,7 +327,7 @@ function BgScroll() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132,
+        lineNumber: 120,
         columnNumber: 25
       }
     }))));
@@ -396,7 +337,7 @@ function BgScroll() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 137,
       columnNumber: 13
     }
   }, "Loading...");
@@ -404,27 +345,6 @@ function BgScroll() {
 /*
 
 */
-
-/***/ }),
-
-/***/ "./components/home/bg_scroll/bg_scroll.module.css":
-/*!********************************************************!*\
-  !*** ./components/home/bg_scroll/bg_scroll.module.css ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"home": "bg_scroll_home__2iBNw",
-	"title": "bg_scroll_title__3np2o",
-	"title_regular": "bg_scroll_title_regular__1TsGr",
-	"title_bold": "bg_scroll_title_bold__1fwC4",
-	"subtitle": "bg_scroll_subtitle__2ZFSB",
-	"fix_pos": "bg_scroll_fix_pos__2oFO-",
-	"container_fix_pos": "bg_scroll_container_fix_pos__1MVDH",
-	"plain__bg": "bg_scroll_plain__bg__1clyI"
-};
 
 /***/ }),
 
@@ -446,11 +366,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../web_animation/web_animation */ "./components/home/web_animation/web_animation.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "framer-motion");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-parallax-mousemove */ "react-parallax-mousemove");
-/* harmony import */ var react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_parallax_mousemove__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _home_animation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home_animation */ "./components/home/home/home_animation.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/home/home.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -460,15 +378,170 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_6___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
+const Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_5___default()(() => Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! framer */ "framer", 7)).then(mod => mod.Frame), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/(/*! framer */ "framer")],
     modules: ['framer']
   }
 });
+function Home({
+  children,
+  home
+}) {
+  return __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contaner_fix_pos,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.home,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["stagger"],
+    animate: "animate",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 11
+    }
+  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationName"],
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }, __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 17
+    }
+  }, "I,m "), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 17
+    }
+  }, "Franco"), __jsx("h1", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 17
+    }
+  }, "Gonzalez"), __jsx("h2", {
+    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 17
+    }
+  }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationMotion"],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 13
+    }
+  }, __jsx(_motion_animation_motion_animation__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 15
+    }
+  })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationWeb"],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 13
+    }
+  }, __jsx(_web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }))))));
+}
+
+/***/ }),
+
+/***/ "./components/home/home/home.module.css":
+/*!**********************************************!*\
+  !*** ./components/home/home/home.module.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"home": "home_home__1KXP4",
+	"title": "home_title__3Uklb",
+	"title_regular": "home_title_regular__1sqZG",
+	"title_bold": "home_title_bold__3TDwb",
+	"subtitle": "home_subtitle__1Hu2u",
+	"fix_pos": "home_fix_pos__1VXCr",
+	"container_fix_pos": "home_container_fix_pos__2eu9g",
+	"plain__bg": "home_plain__bg__1qd14"
+};
+
+/***/ }),
+
+/***/ "./components/home/home/home_animation.js":
+/*!************************************************!*\
+  !*** ./components/home/home/home_animation.js ***!
+  \************************************************/
+/*! exports provided: easing, animationName, animationMotion, animationWeb, animationBG, stagger */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationName", function() { return animationName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationMotion", function() { return animationMotion; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationWeb", function() { return animationWeb; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationBG", function() { return animationBG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stagger", function() { return stagger; });
 const easing = [0.6, -0.05, 0.01, 0.99];
 const animationName = {
   initial: {
@@ -552,145 +625,7 @@ const stagger = {
     }
   }
 };
-function Home({
-  children,
-  home
-}) {
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contaner_fix_pos,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.home,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 9
-    }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
-    variants: stagger,
-    animate: "animate",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 11
-    }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
-    exit: "exit",
-    initial: "initial",
-    animate: "animate",
-    variants: animationName,
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117,
-      columnNumber: 13
-    }
-  }, __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 17
-    }
-  }, "I,m "), __jsx("h1", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125,
-      columnNumber: 17
-    }
-  }, "Franco"), __jsx("h1", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_bold,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 17
-    }
-  }, "Gonzalez"), __jsx("h2", {
-    className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title_regular,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 17
-    }
-  }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
-    exit: "exit",
-    initial: "initial",
-    animate: "animate",
-    variants: animationMotion,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130,
-      columnNumber: 13
-    }
-  }, __jsx(_motion_animation_motion_animation__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 136,
-      columnNumber: 15
-    }
-  })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
-    exit: "exit",
-    initial: "initial",
-    animate: "animate",
-    variants: animationWeb,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 13
-    }
-  }, __jsx(_web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 15
-    }
-  }))))));
-}
 
-/***/ }),
-
-/***/ "./components/home/home/home.module.css":
-/*!**********************************************!*\
-  !*** ./components/home/home/home.module.css ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"home": "home_home__1KXP4",
-	"title": "home_title__3Uklb",
-	"title_regular": "home_title_regular__1sqZG",
-	"title_bold": "home_title_bold__3TDwb",
-	"subtitle": "home_subtitle__1Hu2u",
-	"fix_pos": "home_fix_pos__1VXCr",
-	"container_fix_pos": "home_container_fix_pos__2eu9g",
-	"plain__bg": "home_plain__bg__1qd14"
-};
 
 /***/ }),
 
@@ -1039,22 +974,12 @@ function NavBar(props) {
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
     selected: props.selected,
-    itemName: "ABOUT",
-    link: "#",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 29
-    }
-  }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    selected: props.selected,
     itemName: "PROJECTS",
     link: "/projects",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 29
     }
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1064,7 +989,7 @@ function NavBar(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 19,
       columnNumber: 29
     }
   })))));
@@ -2800,10 +2725,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_home_home_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/home/home/home */ "./components/home/home/home.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "framer-motion");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_home_bg_scroll_bg_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/home/bg_scroll/bg_scroll */ "./components/home/bg_scroll/bg_scroll.js");
+/* harmony import */ var _components_home_bg_bg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/home/bg/bg */ "./components/home/bg/bg.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2814,7 +2740,7 @@ function Main() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -2846,7 +2772,7 @@ function Main() {
       lineNumber: 14,
       columnNumber: 11
     }
-  }))), __jsx(_components_home_bg_scroll_bg_scroll__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), __jsx(_components_home_bg_bg__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,

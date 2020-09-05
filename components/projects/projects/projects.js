@@ -1,7 +1,6 @@
 import styles from './projects.module.css'
 import { motion } from 'framer-motion'
 import ProjectsItems from '../projects_items/projects_items'
-import BgScroll from '../../home/bg_scroll/bg_scroll'
 
 
 export default function Projects() {

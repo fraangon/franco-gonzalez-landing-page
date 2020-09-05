@@ -15,7 +15,6 @@ export default function NavBar(props) {
                     <nav className={styles.navbar}>
                             
                             <NavItem selected={props.selected} itemName = 'HOME' link="/" ></NavItem>
-                            <NavItem selected={props.selected} itemName = 'ABOUT' link="#" ></NavItem>
                             <NavItem selected={props.selected} itemName = 'PROJECTS' link="/projects" ></NavItem>
                             <NavItem selected={props.selected} itemName = 'CONTACT' link="#" ></NavItem>
                             

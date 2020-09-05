@@ -35,12 +35,12 @@
 
 .navbar{
     margin-top: 9px;
+    z-index: 200;
 }
 
 .logo{
     height: 50px;
 }
-
 
 .header{
     position: fixed;
