@@ -1,8 +1,13 @@
 import styles from './home.module.css'
-import Background from '../background/background.js'
 import MotionAnimation from '../motion_animation/motion_animation'
 import WebAnimation from '../web_animation/web_animation'
 import { motion } from 'framer-motion';
+import { getWindowWidth, getWindowHeight } from '../../window/window_dimensions.js';
+import { useState, useEffect } from "react";
+import dynamic from 'next/dynamic'
+import ParallaxMousemove from 'react-parallax-mousemove'
+
+const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -94,7 +99,10 @@ const stagger = {
 }
 
 export default function Home({ children, home }) {
-    return (<div>
+    
+  return (
+    <div>
+     
       <div 
         className={styles.contaner_fix_pos}
       >
@@ -138,20 +146,9 @@ export default function Home({ children, home }) {
             </motion.div>
 
           </motion.div>
-
         </div>
-
-        <motion.div 
-          exit='exit'
-          initial='initial'
-          animate='animate'
-          variants={animationBG}
-          className={styles.fix_pos}
-        >
-          <Background/>
-        </motion.div>
-      
       </div>
-      
-      </div>)
+
+    </div>
+    )
   }

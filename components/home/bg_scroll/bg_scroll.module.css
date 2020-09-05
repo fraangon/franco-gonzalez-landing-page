@@ -1,0 +1,51 @@
+.home{
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    height: 100vh;
+    padding-left: 200px ;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -2;
+}
+
+.title{
+    font-size: 58px;
+    display:flex;
+    margin: 0px;
+}
+
+.title_regular{
+    font-weight: 600;
+    margin: 0px;
+    margin-right: 15px;
+}
+
+.title_bold{
+    font-weight: 700;
+    margin:0px;
+    margin-right: 15px;
+}
+
+.subtitle{
+    font-size: 45px;
+    font-weight: 600;
+    padding:0px;
+    margin: 0px;
+}
+
+.fix_pos{
+    position: fixed;
+    z-index: -3;
+}
+
+.container_fix_pos{
+    overflow: scroll;
+}
+
+.plain__bg{
+    background-color: red;
+    z-index: 1;
+}
