@@ -1,6 +1,7 @@
 .home{
     position: fixed;
-    top: 40vh;
+    top: 50%;
+    bottom: 50%;
     height: auto;
     width: 100%;
     padding-left: 200px ;
@@ -44,7 +45,8 @@
 }
 
 .container_fix_pos{
-    overflow: scroll;
+    overflow: flex;
+    justify-content: center;
 }
 
 .plain__bg{
