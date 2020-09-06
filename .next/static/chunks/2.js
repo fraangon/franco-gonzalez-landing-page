@@ -37,18 +37,11 @@ var items = [{
 function Carrusel() {
   var _this = this;
 
-  var position = Object(framer__WEBPACK_IMPORTED_MODULE_1__["useMotionValue"])(0);
-  return __jsx(framer__WEBPACK_IMPORTED_MODULE_1__["Stack"], {
-    size: 100,
-    direction: "horizontal",
-    alignment: "start",
-    gap: "40",
-    distribution: "start",
-    x: 0,
+  return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 11,
       columnNumber: 9
     }
   }, items.map(function (aItem) {
@@ -61,7 +54,7 @@ function Carrusel() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 15,
         columnNumber: 17
       }
     }, __jsx("div", {
@@ -69,21 +62,21 @@ function Carrusel() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 18,
         columnNumber: 21
       }
     }, __jsx("h3", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 19,
         columnNumber: 21
       }
     }, aItem.name), __jsx("h4", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 20,
         columnNumber: 21
       }
     }, aItem.type)), __jsx("img", {
@@ -93,7 +86,7 @@ function Carrusel() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 23,
         columnNumber: 21
       }
     }));

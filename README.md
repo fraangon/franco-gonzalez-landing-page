@@ -26,3 +26,31 @@ The app should now be up and running at http://localhost:3000 🚀
 ## Prototype:
 
 https://xd.adobe.com/view/6050f04c-5084-4ea1-97cf-611402c9d291-3503/
+
+## To solve 'window is not defined' 
+
+```
+const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
+```
+
+or
+
+```
+import { useState, useEffect } from "react";
+
+export default function AComponent() {
+    
+    const [ssrDone, setSsrDone ] = useState(false);
+    
+    useEffect(() => {
+        setSsrDone(true)
+        }, [])
+
+    if(ssrDone) {
+        return( <div> Component content </div> )
+    } 
+    return (<div> Loading... </div>)
+
+};
+```
+

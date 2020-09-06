@@ -1688,49 +1688,208 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_projects_items_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../posts/posts.js */ "./posts/posts.js");
+/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
- //import Carrusel from '../carrusel/carrusel';
 
-var Carrusel = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../carrusel/carrusel */ "./components/projects/carrusel/carrusel.js")).then(function (mod) {
-    return mod.Carrusel;
+
+
+
+var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
+    return mod.Frame;
   });
 }, {
   ssr: false,
   loadableGenerated: {
     webpack: function webpack() {
-      return [/*require.resolve*/(/*! ../carrusel/carrusel */ "./components/projects/carrusel/carrusel.js")];
+      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
     },
-    modules: ['../carrusel/carrusel']
+    modules: ['framer']
   }
 });
-/*
-const Rail = dynamic(
-  () => import('../rail/rail').then((mod) => mod.Rail),
-  { ssr: false }
-)
-*/
-
+var Stack = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
+    return mod.Stack;
+  });
+}, {
+  ssr: false,
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
+    },
+    modules: ['framer']
+  }
+});
+var Page = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
+    return mod.Page;
+  });
+}, {
+  ssr: false,
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
+    },
+    modules: ['framer']
+  }
+});
 function ProjectsItems() {
+  var _this = this;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      ssrDone = _useState[0],
+      setSsrDone = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setSsrDone(true);
+  }, []);
+
+  if (ssrDone) {
+    return __jsx("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 14
+      }
+    }, __jsx(Frame, {
+      name: "Mask",
+      overflow: "hidden",
+      height: "50vh",
+      width: Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920) - 200,
+      x: -100,
+      backgroundColor: "#200a48",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 9
+      }
+    }, __jsx(Stack, {
+      size: 100,
+      direction: "horizontal",
+      alignment: "start",
+      gap: "40",
+      distribution: "start",
+      x: -100,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 11
+      }
+    }, _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].map(function (aPost) {
+      return __jsx(Frame, {
+        key: aPost.title,
+        backgroundColor: "#180233",
+        height: '50vh',
+        width: '40vh',
+        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 15
+        }
+      }, __jsx("div", {
+        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 17
+        }
+      }, __jsx("h3", {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 17
+        }
+      }, aPost.title), __jsx("h4", {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 17
+        }
+      }, aPost.type)), __jsx("img", {
+        src: "/Min_projects.png",
+        alt: "min",
+        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 17
+        }
+      }));
+    }))), __jsx(Frame, {
+      name: "Mask Izq",
+      width: 120,
+      backgroundColor: "#200a48",
+      height: "55vh",
+      x: -180,
+      y: "-2.5vh",
+      style: {
+        filter: 'blur(15px)'
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 9
+      }
+    }), __jsx(Frame, {
+      name: "Mask Der",
+      width: 120,
+      backgroundColor: "#200a48",
+      height: "55vh",
+      x: Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920) - 340,
+      y: "-2.5vh",
+      style: {
+        filter: 'blur(15px)'
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69,
+        columnNumber: 9
+      }
+    }));
+  }
+
   return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 9
-    }
-  }, __jsx(Carrusel, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 86,
       columnNumber: 11
     }
-  }));
-} //<Rail></Rail>
+  }, " Loading... ");
+}
+/*
+{items.map(aItem => (
+        
+        <Frame key={aItem.name} backgroundColor='#180233' height={'50vh'} width={'40vh'} className={styles.project_item}>
+        
+            
+            <div className={styles.project_item_text}>
+            <h3>{aItem.name}</h3>
+            <h4>{aItem.type}</h4>
+            </div>
+
+            <img src='/Min_projects.png' alt='min' className={styles.img_min}></img>
+
+        </Frame>
+            
+        ))}
+
+*/
 
 /***/ }),
 
@@ -2521,7 +2680,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".projects_items_project_item__3HfLu{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.projects_items_project_item_text__1_wIr{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.projects_items_project_item_text__1_wIr h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.projects_items_project_item_text__1_wIr h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.projects_items_img_min__2_Z5e{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_projects_items_container__3KltH{\n    display: flex;\n    flex-direction: column;\n    \n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,QAAQ;IACR,UAAU;AACd;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;AACzB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,sBAAsB;;AAE1B","file":"projects_items.module.css","sourcesContent":[".project_item{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.project_item_text{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.project_item_text h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.project_item_text h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.img_min{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_container{\n    display: flex;\n    flex-direction: column;\n    \n}"]}]);
+exports.push([module.i, ".projects_items_project_item__3HfLu{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.projects_items_project_item_text__1_wIr{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.projects_items_project_item_text__1_wIr h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.projects_items_project_item_text__1_wIr h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.projects_items_img_min__2_Z5e{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_projects_items_container__3KltH{\n    display: flex;\n    flex-direction: column;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,QAAQ;IACR,UAAU;AACd;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;AACzB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B","file":"projects_items.module.css","sourcesContent":[".project_item{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.project_item_text{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.project_item_text h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.project_item_text h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.img_min{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_container{\n    display: flex;\n    flex-direction: column;\n}"]}]);
 // Exports
 exports.locals = {
 	"project_item": "projects_items_project_item__3HfLu",
@@ -17169,7 +17328,47 @@ function Main() {
 
 /***/ }),
 
-/***/ 1:
+/***/ "./posts/posts.js":
+/*!************************!*\
+  !*** ./posts/posts.js ***!
+  \************************/
+/*! exports provided: posts */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "posts", function() { return posts; });
+var posts = [{
+  title: 'Luli Gonzalez',
+  type: 'Motion Graphics',
+  thumbnail: 'luli_gonzalez_thumb.png',
+  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+}, {
+  title: 'Marti Benza',
+  type: 'Motion Graphics',
+  thumbnail: 'marti_benza_thumb.png',
+  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+}, {
+  title: 'Personal Portfolio',
+  type: 'Web Develop',
+  thumbnail: 'luli_gonzalez_thumb.png',
+  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+}, {
+  title: 'Paralax Background',
+  type: 'Ux/Ui Desing',
+  thumbnail: 'marti_benza_thumb.png',
+  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+}, {
+  title: 'Behanse Redisign',
+  type: 'Ux/Ui Design',
+  thumbnail: 'marti_benza_thumb.png',
+  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+}];
+
+
+/***/ }),
+
+/***/ 2:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Fprojects.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -17192,5 +17391,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=projects.js.map
