@@ -3,14 +3,14 @@
     {
       "id": "./components/projects/carrusel/carrusel.js",
       "name": "./components/projects/carrusel/carrusel.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [
@@ -25,8 +25,8 @@
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ]
 }

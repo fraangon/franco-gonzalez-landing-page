@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -606,11 +606,9 @@ __webpack_require__.r(__webpack_exports__);
 const easing = [0.6, -0.05, 0.01, 0.99];
 const animationBG = {
   initial: {
-    scale: 1,
     opacity: 1
   },
   animate: {
-    scale: 1,
     opacity: 1,
     transition: {
       duration: 0.1,
@@ -618,8 +616,7 @@ const animationBG = {
     }
   },
   exit: {
-    scale: 0.95,
-    opacity: 0
+    opacity: 1
   }
 };
 
@@ -1310,23 +1307,20 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationName", function() { return animationName; });
-const easing = [0.6, -0.05, 0.01, 0.99];
+const easing = [0, 0, 0, 0];
 const animationName = {
   initial: {
-    x: -60,
     opacity: 0
   },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
-      duration: 0.9,
+      duration: 1,
       ease: easing,
       delay: 0
     }
   },
   exit: {
-    x: 0,
     opacity: 0
   }
 };
@@ -1455,20 +1449,17 @@ __webpack_require__.r(__webpack_exports__);
 const easing = [0.6, -0.05, 0.01, 0.99];
 const animationProject = {
   initial: {
-    x: -60,
-    opacity: 0
+    opacity: 1
   },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
-      duration: 0.9,
+      duration: 0.5,
       ease: easing,
       delay: 0
     }
   },
   exit: {
-    x: 0,
     opacity: 0
   }
 };
@@ -3310,7 +3301,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/

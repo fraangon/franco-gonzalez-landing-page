@@ -29,7 +29,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
     return mod.Frame;
   });
 }, {
@@ -250,11 +250,9 @@ __webpack_require__.r(__webpack_exports__);
 var easing = [0.6, -0.05, 0.01, 0.99];
 var animationBG = {
   initial: {
-    scale: 1,
     opacity: 1
   },
   animate: {
-    scale: 1,
     opacity: 1,
     transition: {
       duration: 0.1,
@@ -262,8 +260,7 @@ var animationBG = {
     }
   },
   exit: {
-    scale: 0.95,
-    opacity: 0
+    opacity: 1
   }
 };
 
@@ -1168,23 +1165,20 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationName", function() { return animationName; });
-var easing = [0.6, -0.05, 0.01, 0.99];
+var easing = [0, 0, 0, 0];
 var animationName = {
   initial: {
-    x: -60,
     opacity: 0
   },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
-      duration: 0.9,
+      duration: 1,
       ease: easing,
       delay: 0
     }
   },
   exit: {
-    x: 0,
     opacity: 0
   }
 };
@@ -16497,7 +16491,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Findex.js ***!
   \******************************************************************************************************************************************************************/
@@ -16520,5 +16514,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
