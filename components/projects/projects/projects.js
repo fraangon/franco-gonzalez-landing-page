@@ -1,7 +1,14 @@
 import styles from './projects.module.css'
 import { motion } from 'framer-motion'
-import ProjectsItems from '../projects_items/projects_items'
+// import ProjectsItems from '../projects_items/projects_items'
 import { animationProject } from './projects_animations'
+import dynamic from 'next/dynamic'
+
+const ProjectsItems = dynamic( 
+  () => import('../projects_items/projects_items'),
+  { ssr: false } 
+);
+
 
 export default function Projects() {
     return (

@@ -1506,25 +1506,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _projects_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects.module.css */ "./components/projects/projects/projects.module.css");
 /* harmony import */ var _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_projects_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
-/* harmony import */ var _projects_items_projects_items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../projects_items/projects_items */ "./components/projects/projects_items/projects_items.js");
-/* harmony import */ var _projects_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./projects_animations */ "./components/projects/projects/projects_animations.js");
+/* harmony import */ var _projects_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects_animations */ "./components/projects/projects/projects_animations.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects/projects.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+ // import ProjectsItems from '../projects_items/projects_items'
 
 
 
+var ProjectsItems = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(function () {
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../projects_items/projects_items */ "./components/projects/projects_items/projects_items.js"));
+}, {
+  ssr: false,
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! ../projects_items/projects_items */ "./components/projects/projects_items/projects_items.js")];
+    },
+    modules: ['../projects_items/projects_items']
+  }
+});
 function Projects() {
   return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     exit: "exit",
     initial: "initial",
     animate: "animate",
-    variants: _projects_animations__WEBPACK_IMPORTED_MODULE_4__["animationProject"],
+    variants: _projects_animations__WEBPACK_IMPORTED_MODULE_3__["animationProject"],
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 16,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -1532,7 +1545,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 23,
       columnNumber: 11
     }
   }, __jsx("div", {
@@ -1540,7 +1553,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 25,
       columnNumber: 15
     }
   }, __jsx("h3", {
@@ -1548,7 +1561,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 27,
       columnNumber: 17
     }
   }, "Projects."), __jsx("h4", {
@@ -1556,7 +1569,7 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 29,
       columnNumber: 17
     }
   }, "Freelance works and personal proyects."), __jsx("div", {
@@ -1564,14 +1577,14 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 31,
       columnNumber: 17
     }
-  }, __jsx(_projects_items_projects_items__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(ProjectsItems, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 32,
       columnNumber: 19
     }
   })))));
@@ -1669,288 +1682,6 @@ var animationProject = {
   }
 };
 
-
-/***/ }),
-
-/***/ "./components/projects/projects_items/projects_items.js":
-/*!**************************************************************!*\
-  !*** ./components/projects/projects_items/projects_items.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectsItems; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects_items.module.css */ "./components/projects/projects_items/projects_items.module.css");
-/* harmony import */ var _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_projects_items_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../posts/posts.js */ "./posts/posts.js");
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
-    return mod.Frame;
-  });
-}, {
-  ssr: false,
-  loadableGenerated: {
-    webpack: function webpack() {
-      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
-    },
-    modules: ['framer']
-  }
-});
-var Stack = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
-    return mod.Stack;
-  });
-}, {
-  ssr: false,
-  loadableGenerated: {
-    webpack: function webpack() {
-      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
-    },
-    modules: ['framer']
-  }
-});
-var Page = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
-    return mod.Page;
-  });
-}, {
-  ssr: false,
-  loadableGenerated: {
-    webpack: function webpack() {
-      return [/*require.resolve*/(/*! framer */ "./node_modules/framer/build/framer.js")];
-    },
-    modules: ['framer']
-  }
-});
-function ProjectsItems() {
-  var _this = this;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      ssrDone = _useState[0],
-      setSsrDone = _useState[1];
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setSsrDone(true);
-  }, []);
-
-  if (ssrDone) {
-    return __jsx("div", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 14
-      }
-    }, __jsx(Frame, {
-      name: "Mask",
-      overflow: "hidden",
-      height: "50vh",
-      width: Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920) - 200,
-      x: -100,
-      backgroundColor: "#200a48",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 9
-      }
-    }, __jsx(Stack, {
-      size: 100,
-      direction: "horizontal",
-      alignment: "start",
-      gap: "40",
-      distribution: "start",
-      x: -100,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 11
-      }
-    }, _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].map(function (aPost) {
-      return __jsx(Frame, {
-        key: aPost.title,
-        backgroundColor: "#180233",
-        height: '50vh',
-        width: '40vh',
-        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42,
-          columnNumber: 15
-        }
-      }, __jsx("div", {
-        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44,
-          columnNumber: 17
-        }
-      }, __jsx("h3", {
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45,
-          columnNumber: 17
-        }
-      }, aPost.title), __jsx("h4", {
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46,
-          columnNumber: 17
-        }
-      }, aPost.type)), __jsx("img", {
-        src: "/Min_projects.png",
-        alt: "min",
-        className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49,
-          columnNumber: 17
-        }
-      }));
-    }))), __jsx(Frame, {
-      name: "Mask Izq",
-      width: 120,
-      backgroundColor: "#200a48",
-      height: "55vh",
-      x: -180,
-      y: "-2.5vh",
-      style: {
-        filter: 'blur(15px)'
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 9
-      }
-    }), __jsx(Frame, {
-      name: "Mask Der",
-      width: 120,
-      backgroundColor: "#200a48",
-      height: "55vh",
-      x: Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920) - 340,
-      y: "-2.5vh",
-      style: {
-        filter: 'blur(15px)'
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 9
-      }
-    }));
-  }
-
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86,
-      columnNumber: 11
-    }
-  }, " Loading... ");
-}
-/*
-{items.map(aItem => (
-        
-        <Frame key={aItem.name} backgroundColor='#180233' height={'50vh'} width={'40vh'} className={styles.project_item}>
-        
-            
-            <div className={styles.project_item_text}>
-            <h3>{aItem.name}</h3>
-            <h4>{aItem.type}</h4>
-            </div>
-
-            <img src='/Min_projects.png' alt='min' className={styles.img_min}></img>
-
-        </Frame>
-            
-        ))}
-
-*/
-
-/***/ }),
-
-/***/ "./components/projects/projects_items/projects_items.module.css":
-/*!**********************************************************************!*\
-  !*** ./components/projects/projects_items/projects_items.module.css ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./projects_items.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./projects_items.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css",
-      function () {
-        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./projects_items.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css");
-
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
-        
-        update(newContent);
-      }
-    )
-  }
-
-  module.hot.dispose(function() { 
-    update();
-  });
-}
 
 /***/ }),
 
@@ -2667,26 +2398,6 @@ exports.locals = {
 	"title": "projects_title__brs8Z",
 	"subtitle": "projects_subtitle__Dy3K0",
 	"slider": "projects_slider__-1pjF"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/projects/projects_items/projects_items.module.css ***!
-  \*************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Module
-exports.push([module.i, ".projects_items_project_item__3HfLu{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.projects_items_project_item_text__1_wIr{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.projects_items_project_item_text__1_wIr h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.projects_items_project_item_text__1_wIr h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.projects_items_img_min__2_Z5e{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_projects_items_container__3KltH{\n    display: flex;\n    flex-direction: column;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,QAAQ;IACR,UAAU;AACd;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;AACzB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B","file":"projects_items.module.css","sourcesContent":[".project_item{\n    display: flex;\n    flex-direction: column ;\n    justify-content: space-between;\n    margin:0;\n    padding: 0;\n}\n\n.project_item_text{\n    padding: 4vh;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.project_item_text h3 {\n    font-weight: 400;\n    font-size: 2.1vh;\n}\n\n.project_item_text h4 {\n    font-weight: 400;\n    font-size: 1.5vh;\n}\n\n.img_min{\n    width: 40vh;\n    margin-top: 3.95vh;\n}\n\n.projects_items_container{\n    display: flex;\n    flex-direction: column;\n}"]}]);
-// Exports
-exports.locals = {
-	"project_item": "projects_items_project_item__3HfLu",
-	"project_item_text": "projects_items_project_item_text__1_wIr",
-	"img_min": "projects_items_img_min__2_Z5e",
-	"projects_items_container": "projects_items_projects_items_container__3KltH"
 };
 
 /***/ }),
@@ -17328,47 +17039,7 @@ function Main() {
 
 /***/ }),
 
-/***/ "./posts/posts.js":
-/*!************************!*\
-  !*** ./posts/posts.js ***!
-  \************************/
-/*! exports provided: posts */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "posts", function() { return posts; });
-var posts = [{
-  title: 'Luli Gonzalez',
-  type: 'Motion Graphics',
-  thumbnail: 'luli_gonzalez_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Marti Benza',
-  type: 'Motion Graphics',
-  thumbnail: 'marti_benza_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Personal Portfolio',
-  type: 'Web Develop',
-  thumbnail: 'luli_gonzalez_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Paralax Background',
-  type: 'Ux/Ui Desing',
-  thumbnail: 'marti_benza_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Behanse Redisign',
-  type: 'Ux/Ui Design',
-  thumbnail: 'marti_benza_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}];
-
-
-/***/ }),
-
-/***/ 2:
+/***/ 1:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Fprojects.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -17391,5 +17062,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=projects.js.map
