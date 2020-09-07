@@ -4,6 +4,9 @@ import {posts} from '../../../posts/posts.js'
 import { useState, useEffect } from "react";
 import { getWindowWidth, getWindowHeight } from '../../window/window_dimensions.js';
 import { Frame, Stack, useMotionValue, useTransform } from "framer";
+import { itemAnimation, imgItemAnimation, sliderAnimation } from './projects_items_animation.js'
+import { motion } from 'framer-motion';
+
 
 // TBR: No necesito importar dinamicamente.
 //const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
@@ -55,14 +58,32 @@ export default function ProjectsItems() {
           >
 
             {posts.map(aPost => ( 
-              <Frame key={i++} backgroundColor='#180233' height={'50vh'} width={'40vh'} className={styles.project_item}>
+              <Frame
+                exit='exit'
+                initial='initial'
+                animate='animate'
+                variants={itemAnimation(i)}
+                key={i++}
+                backgroundColor='#180233' 
+                height={'50vh'} 
+                width={'40vh'} 
+                className={styles.project_item}
+              >
                 
                 <div className={styles.project_item_text}>
                 <h3>{aPost.title}</h3>
                 <h4>{aPost.type}</h4>
                 </div>
 
-                <img src='/Min_projects.png' alt='min' className={styles.img_min}></img>
+                <motion.img 
+                  exit='exit'
+                  initial='initial'
+                  animate='animate'
+                  variants={imgItemAnimation(i)}
+                  src='/Min_projects.png' 
+                  alt='min' 
+                  className={styles.img_min}
+                ></motion.img>
 
             </Frame>
             ))}
@@ -95,14 +116,18 @@ export default function ProjectsItems() {
         />
         
         <Frame 
-            name={'Rail'}
-            width={ widthLayer - 400 }
-            height={'1.6vh'}
-            radius={0}
-            position={"relative"}
-            left={'0px'}
-            background={"rgba(255,255,255,.1)"}
-            top={'55vh'}
+          name={'Rail'}
+          exit='exit'
+          initial='initial'
+          animate='animate'
+          variants={sliderAnimation()}
+          width={ widthLayer - 400 }
+          height={'1.6vh'}
+          radius={0}
+          position={"relative"}
+          left={'0px'}
+          background={"rgba(255,255,255,.1)"}
+          top={'55vh'}
         >
             <Frame
                 name={'Knob'}
@@ -122,7 +147,7 @@ export default function ProjectsItems() {
                 x={position}
                 onDrag={ function() {
                   setXOffset( 
-                   (itemsPosition.get())  
+                    (itemsPosition.get())  
                   );
                 }}
             ></Frame>
@@ -136,22 +161,3 @@ export default function ProjectsItems() {
   
   
 }
-
-/*
-{items.map(aItem => (
-        
-        <Frame key={aItem.name} backgroundColor='#180233' height={'50vh'} width={'40vh'} className={styles.project_item}>
-        
-            
-            <div className={styles.project_item_text}>
-            <h3>{aItem.name}</h3>
-            <h4>{aItem.type}</h4>
-            </div>
-
-            <img src='/Min_projects.png' alt='min' className={styles.img_min}></img>
-
-        </Frame>
-            
-        ))}
-
-*/

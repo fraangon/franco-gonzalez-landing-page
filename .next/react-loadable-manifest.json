@@ -13,6 +13,12 @@
       "publicPath": "static/chunks/2.js"
     },
     {
+      "id": "./components/projects/projects_items/projects_items_animation.js",
+      "name": "./components/projects/projects_items/projects_items_animation.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
       "name": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
       "file": "static/chunks/2.js",

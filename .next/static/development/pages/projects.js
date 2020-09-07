@@ -1537,55 +1537,63 @@ function Projects() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 7
+      lineNumber: 15,
+      columnNumber: 5
     }
   }, __jsx("div", {
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.projects,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 11
+      lineNumber: 21,
+      columnNumber: 7
     }
   }, __jsx("div", {
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.addMargin,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 15
+      lineNumber: 22,
+      columnNumber: 9
     }
-  }, __jsx("h3", {
+  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].h3, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _projects_animations__WEBPACK_IMPORTED_MODULE_3__["projectTitleAnimation"],
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 17
+      lineNumber: 24,
+      columnNumber: 11
     }
-  }, "Projects."), __jsx("h4", {
+  }, "Projects."), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].h4, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: _projects_animations__WEBPACK_IMPORTED_MODULE_3__["projectSubtitleAnimation"],
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.subtitle,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 17
+      lineNumber: 34,
+      columnNumber: 11
     }
   }, "Freelance works and personal proyects."), __jsx("div", {
     className: _projects_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.slider,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 17
+      lineNumber: 44,
+      columnNumber: 11
     }
   }, __jsx(ProjectsItems, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 19
+      lineNumber: 45,
+      columnNumber: 13
     }
   })))));
 }
@@ -1657,13 +1665,15 @@ if (true) {
 /*!*************************************************************!*\
   !*** ./components/projects/projects/projects_animations.js ***!
   \*************************************************************/
-/*! exports provided: easing, animationProject */
+/*! exports provided: easing, animationProject, projectTitleAnimation, projectSubtitleAnimation */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return easing; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationProject", function() { return animationProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projectTitleAnimation", function() { return projectTitleAnimation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projectSubtitleAnimation", function() { return projectSubtitleAnimation; });
 var easing = [0.6, -0.05, 0.01, 0.99];
 var animationProject = {
   initial: {
@@ -1679,6 +1689,44 @@ var animationProject = {
   },
   exit: {
     opacity: 0
+  }
+};
+var projectTitleAnimation = {
+  initial: {
+    opacity: 0,
+    x: -30
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: easing,
+      delay: 0.1
+    }
+  },
+  exit: {
+    opacity: 0,
+    x: 0
+  }
+};
+var projectSubtitleAnimation = {
+  initial: {
+    opacity: 0,
+    x: -30
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: easing,
+      delay: 0.2
+    }
+  },
+  exit: {
+    opacity: 0,
+    x: 0
   }
 };
 
@@ -17039,7 +17087,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Fprojects.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -17062,5 +17110,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=projects.js.map
