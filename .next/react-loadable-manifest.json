@@ -3,62 +3,62 @@
     {
       "id": "./components/projects/projects_items/projects_items.js",
       "name": "./components/projects/projects_items/projects_items.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./components/projects/projects_items/projects_items.module.css",
       "name": "./components/projects/projects_items/projects_items.module.css",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./components/projects/projects_items/projects_items_animation.js",
       "name": "./components/projects/projects_items/projects_items_animation.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
       "name": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
       "name": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
       "name": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
       "name": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css",
       "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./posts/posts.js",
       "name": "./posts/posts.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [
@@ -73,8 +73,8 @@
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ]
 }

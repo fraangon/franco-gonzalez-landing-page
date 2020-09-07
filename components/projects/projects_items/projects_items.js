@@ -42,7 +42,7 @@ export default function ProjectsItems() {
         <Frame
           name={"Mask"}
           overflow={"hidden"}
-          height= '50vh'
+          height= '52vh'
           width= {widthLayer - 200}
           x={-100}
           backgroundColor='#200a48'
@@ -51,6 +51,7 @@ export default function ProjectsItems() {
           <Stack 
             size={100} 
             direction="horizontal" 
+            top='2vh'
             alignment="start" 
             gap='40' 
             distribution="start"  
@@ -62,6 +63,8 @@ export default function ProjectsItems() {
                 exit='exit'
                 initial='initial'
                 animate='animate'
+                whileHover='whileHover'
+                whileTap='whileTap'
                 variants={itemAnimation(i)}
                 key={i++}
                 backgroundColor='#180233' 
@@ -95,7 +98,7 @@ export default function ProjectsItems() {
           name={"Mask Izq"}
           width= {120}
           backgroundColor='#200a48'
-          height= '55vh'
+          height= '62vh'
           x={-180}
           y='-2.5vh'
           style={{
@@ -107,7 +110,7 @@ export default function ProjectsItems() {
           name={"Mask Der"}
           width= {120}
           backgroundColor='#200a48'
-          height= '55vh'
+          height= '62vh'
           x={ widthLayer - 340 }
           y='-2.5vh'
           style={{

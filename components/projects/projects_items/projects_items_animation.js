@@ -10,6 +10,7 @@ function itemAnimation(aIndex) {
             animate: {
                 y: 0,
                 opacity: 1,
+                scale: 1,
                 transition: {
                     duration: 0.9,
                     ease: easing,
@@ -20,6 +21,12 @@ function itemAnimation(aIndex) {
                 y: -60,
                 opacity: 0,
             },
+            whileHover:{
+                scale: 1.07
+            },
+            whileTap:{
+                scale: 1.05
+            }
         }
     );
 } 

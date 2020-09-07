@@ -29,7 +29,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Frame = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.t.bind(null, /*! framer */ "./node_modules/framer/build/framer.js", 7)).then(function (mod) {
     return mod.Frame;
   });
 }, {
@@ -16491,7 +16491,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Findex.js ***!
   \******************************************************************************************************************************************************************/
@@ -16514,5 +16514,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

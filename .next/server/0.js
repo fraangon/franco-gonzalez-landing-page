@@ -69,7 +69,7 @@ function ProjectsItems() {
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
     name: "Mask",
     overflow: "hidden",
-    height: "50vh",
+    height: "52vh",
     width: widthLayer - 200,
     x: -100,
     backgroundColor: "#200a48",
@@ -82,6 +82,7 @@ function ProjectsItems() {
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Stack"], {
     size: 100,
     direction: "horizontal",
+    top: "2vh",
     alignment: "start",
     gap: "40",
     distribution: "start",
@@ -96,6 +97,8 @@ function ProjectsItems() {
     exit: "exit",
     initial: "initial",
     animate: "animate",
+    whileHover: "whileHover",
+    whileTap: "whileTap",
     variants: Object(_projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__["itemAnimation"])(i),
     key: i++,
     backgroundColor: "#180233",
@@ -105,7 +108,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 62,
       columnNumber: 15
     }
   }, __jsx("div", {
@@ -113,21 +116,21 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 76,
       columnNumber: 17
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 77,
       columnNumber: 17
     }
   }, aPost.title), __jsx("h4", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 78,
       columnNumber: 17
     }
   }, aPost.type)), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_7__["motion"].img, {
@@ -141,14 +144,14 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 81,
       columnNumber: 17
     }
   }))))), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
     name: "Mask Izq",
     width: 120,
     backgroundColor: "#200a48",
-    height: "55vh",
+    height: "62vh",
     x: -180,
     y: "-2.5vh",
     style: {
@@ -157,14 +160,14 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 97,
       columnNumber: 9
     }
   }), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
     name: "Mask Der",
     width: 120,
     backgroundColor: "#200a48",
-    height: "55vh",
+    height: "62vh",
     x: widthLayer - 340,
     y: "-2.5vh",
     style: {
@@ -173,7 +176,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 109,
       columnNumber: 9
     }
   }), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
@@ -192,7 +195,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 121,
       columnNumber: 9
     }
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
@@ -217,7 +220,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 135,
       columnNumber: 13
     }
   })));
@@ -265,6 +268,7 @@ function itemAnimation(aIndex) {
     animate: {
       y: 0,
       opacity: 1,
+      scale: 1,
       transition: {
         duration: 0.9,
         ease: easing,
@@ -274,6 +278,12 @@ function itemAnimation(aIndex) {
     exit: {
       y: -60,
       opacity: 0
+    },
+    whileHover: {
+      scale: 1.07
+    },
+    whileTap: {
+      scale: 1.05
     }
   };
 }
