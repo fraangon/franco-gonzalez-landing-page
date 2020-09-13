@@ -83,7 +83,7 @@ export default function ProjectsItems() {
                   initial='initial'
                   animate='animate'
                   variants={imgItemAnimation(i)}
-                  src='/Min_projects.png' 
+                  src={aPost.thumbnail} 
                   alt='min' 
                   className={styles.img_min}
                 ></motion.img>

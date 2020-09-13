@@ -138,7 +138,7 @@ function ProjectsItems() {
     initial: "initial",
     animate: "animate",
     variants: Object(_projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__["imgItemAnimation"])(i),
-    src: "/Min_projects.png",
+    src: aPost.thumbnail,
     alt: "min",
     className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
     __self: this,
@@ -280,10 +280,11 @@ function itemAnimation(aIndex) {
       opacity: 0
     },
     whileHover: {
-      scale: 1.07
+      y: -7,
+      scale: 1.05
     },
     whileTap: {
-      scale: 1.05
+      scale: 1.03
     }
   };
 }
@@ -352,27 +353,27 @@ __webpack_require__.r(__webpack_exports__);
 const posts = [{
   title: 'Luli Gonzalez',
   type: 'Motion Graphics',
-  thumbnail: 'luli_gonzalez_thumb.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
+  thumbnail: '/project_items/luli_gonzalez/thumb_luli_gonzalez.png',
+  content: ['/public/project_items/luli_gonzalez/1.gif', '/public/project_items/luli_gonzalez/2.gif', '/public/project_items/luli_gonzalez/3.gif', '/public/project_items/luli_gonzalez/4.gif', '/public/project_items/luli_gonzalez/5.png']
 }, {
   title: 'Marti Benza',
   type: 'Motion Graphics',
-  thumbnail: 'marti_benza_thumb.png',
+  thumbnail: '/project_items/default_thumb_projects.png',
   content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
 }, {
   title: 'Personal Portfolio',
   type: 'Web Develop',
-  thumbnail: 'luli_gonzalez_thumb.png',
+  thumbnail: '/project_items/default_thumb_projects.png',
   content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
 }, {
   title: 'Paralax Background',
   type: 'Ux/Ui Desing',
-  thumbnail: 'marti_benza_thumb.png',
+  thumbnail: '/project_items/default_thumb_projects.png',
   content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
 }, {
   title: 'Behanse Redisign',
   type: 'Ux/Ui Design',
-  thumbnail: 'marti_benza_thumb.png',
+  thumbnail: '/project_items/default_thumb_projects.png',
   content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
 }];
 

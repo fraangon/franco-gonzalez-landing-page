@@ -22,10 +22,11 @@ function itemAnimation(aIndex) {
                 opacity: 0,
             },
             whileHover:{
-                scale: 1.07
+                y: -7,
+                scale: 1.05
             },
             whileTap:{
-                scale: 1.05
+                scale: 1.03
             }
         }
     );
