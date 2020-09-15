@@ -3,24 +3,44 @@
     {
       "id": "./components/projectPage/project_page.js",
       "name": "./components/projectPage/project_page.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
     },
     {
       "id": "./components/projectPage/project_page.module.css",
       "name": "./components/projectPage/project_page.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/window/window_dimensions.js",
+      "name": "./components/window/window_dimensions.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    }
+  ],
+  "../components/contact/contact": [
+    {
+      "id": "./components/contact/contact.js",
+      "name": "./components/contact/contact.js",
       "file": "static/chunks/4.js",
       "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./components/window/window_dimensions.js",
       "name": "./components/window/window_dimensions.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
-    },
-    {
-      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
-      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
       "file": "static/chunks/4.js",
       "publicPath": "static/chunks/4.js"
     },
@@ -105,8 +125,8 @@
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ]
 }

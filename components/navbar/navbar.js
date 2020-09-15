@@ -23,7 +23,7 @@ export default function NavBar(props) {
                         
                             <NavItem selected={props.selected} itemName = 'HOME' link="/" ></NavItem>
                             <NavItem selected={props.selected} itemName = 'PROJECTS' link="/projects" ></NavItem>
-                            <NavItem selected={props.selected} itemName = 'CONTACT' link="#" ></NavItem>
+                            <NavItem selected={props.selected} itemName = 'CONTACT' link="/contact" ></NavItem>
                         
                     </nav>
                 </div>

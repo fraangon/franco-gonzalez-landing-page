@@ -1,4 +1,4 @@
-import { Frame } from "framer";
+import { Frame, FramerAnimation } from "framer";
 import { getWindowWidth, getWindowHeight } from '../window/window_dimensions.js';
 import styles from './project_page.module.css'
 import Link from 'next/link';
@@ -24,7 +24,9 @@ export default function ProjectPage(props) {
                     {
                         props.dataProject.content.map(
                             (aContentPath) => (
-                                <img src={ aContentPath } />
+                                <div>
+                                    <img src={ aContentPath } className={ styles.img } />
+                                </div>
                             )
                         )
                     }

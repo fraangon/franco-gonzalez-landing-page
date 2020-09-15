@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -351,7 +351,7 @@ function NavBar(props) {
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
     selected: props.selected,
     itemName: "CONTACT",
-    link: "#",
+    link: "/contact",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -2109,7 +2109,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")), {
+const ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/(/*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")],
@@ -2226,7 +2226,7 @@ const posts = [{
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!**************************************!*\
   !*** multi ./pages/projects/[id].js ***!
   \**************************************/

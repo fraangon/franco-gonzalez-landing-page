@@ -248,7 +248,7 @@ function NavBar(props) {
   }), __jsx(_nav_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
     selected: props.selected,
     itemName: "CONTACT",
-    link: "#",
+    link: "/contact",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -15504,7 +15504,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
-  return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js"));
+  return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js"));
 }, {
   ssr: false,
   loadableGenerated: {
@@ -15548,7 +15548,7 @@ function titleToId(aTitle) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2F%5Bid%5D&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Fprojects%2F%5Bid%5D.js ***!
   \***************************************************************************************************************************************************************************************************/
@@ -15571,5 +15571,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

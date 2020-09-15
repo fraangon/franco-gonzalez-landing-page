@@ -1,182 +1,87 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
-/***/ "./components/projectPage/project_page.js":
-/*!************************************************!*\
-  !*** ./components/projectPage/project_page.js ***!
-  \************************************************/
+/***/ "./components/contact/contact.js":
+/*!***************************************!*\
+  !*** ./components/contact/contact.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer */ "./node_modules/framer/build/framer.js");
 /* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./project_page.module.css */ "./components/projectPage/project_page.module.css");
-/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_project_page_module_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-function ProjectPage(props) {
-  var _this = this;
-
-  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])(), 1400);
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 9
-    }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_1__["Frame"], {
-    top: 225,
+function Contact() {
+  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])(), 1920);
+  var heightLayer = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowHeight"])();
+  return __jsx(framer__WEBPACK_IMPORTED_MODULE_1__["Frame"], {
     width: widthLayer,
+    height: heightLayer,
     center: true,
-    background: "1b1b1b",
+    background: "200a48",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 13
+      columnNumber: 9
     }
   }, __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_general,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17,
+      columnNumber: 13
+    }
+  }, __jsx("h4", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
       columnNumber: 17
     }
-  }, __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_header,
+  }, "Contact me"), __jsx("h4", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19,
-      columnNumber: 21
+      columnNumber: 17
     }
-  }, __jsx("h3", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.title,
+  }, "hello@frangon.com.ar"), __jsx("h4", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
-      columnNumber: 25
+      columnNumber: 17
     }
-  }, props.dataProject.title), __jsx("h4", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.type,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 25
-    }
-  }, props.dataProject.type)), props.dataProject.content.map(function (aContentPath) {
-    return __jsx("img", {
-      src: aContentPath,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 33
-      }
-    });
-  }), __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_back,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/projects",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.back,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 29
-    }
-  }, " Back to Projects "))))));
+  }, "Social")));
 }
-
-/***/ }),
-
-/***/ "./components/projectPage/project_page.module.css":
-/*!********************************************************!*\
-  !*** ./components/projectPage/project_page.module.css ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
-      function () {
-        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
-
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
+/*
+<div>
+    {
         
-        update(newContent);
-      }
-    )
-  }
-
-  module.hot.dispose(function() { 
-    update();
-  });
-}
+        [logo1.svg, logo2.svg].map(
+            (unLogo) => (
+                <Link>
+                    <img/>
+                </Link>
+            )
+        )
+        
+    }
+</div>
+*/
 
 /***/ }),
 
@@ -200,28 +105,6 @@ function getWindowWidth() {
   var width = hasWindow ? window.innerWidth : null;
   return width;
 }
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css":
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/projectPage/project_page.module.css ***!
-  \***********************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Module
-exports.push([module.i, ".project_page_contenedor_general__3gzUf{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.project_page_contenedor_header__1Jj3T{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.project_page_title__1U8-2{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.project_page_type__tt6nn{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_contenedor_back__3qSlj{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.project_page_back__L62mm{\n    font-size: 30px;\n    font-weight: 500;\n    \n}\n\n\n\n", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;IACrB,iBAAiB;IACjB,oBAAoB;AACxB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;AACrB;;AAEA;IACI,eAAe;IACf,gBAAgB;;AAEpB","file":"project_page.module.css","sourcesContent":[".contenedor_general{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.contenedor_header{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.title{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.type{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contenedor_back{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.back{\n    font-size: 30px;\n    font-weight: 500;\n    \n}\n\n\n\n"]}]);
-// Exports
-exports.locals = {
-	"contenedor_general": "project_page_contenedor_general__3gzUf",
-	"contenedor_header": "project_page_contenedor_header__1Jj3T",
-	"title": "project_page_title__1U8-2",
-	"type": "project_page_type__tt6nn",
-	"contenedor_back": "project_page_contenedor_back__3qSlj",
-	"back": "project_page_back__L62mm"
-};
 
 /***/ }),
 

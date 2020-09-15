@@ -33,8 +33,20 @@
 .back{
     font-size: 30px;
     font-weight: 500;
-    
 }
 
+.back{
+    font-size: 30px;
+    font-weight: 500;
+}
 
+.back:hover {
+    opacity: 0.8;
+}
+
+.img{
+    display: block;
+    max-width: 100%;
+    width: auto;
+}
 
