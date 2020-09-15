@@ -23,6 +23,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _projects_items_animation_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./projects_items_animation.js */ "./components/projects/projects_items/projects_items_animation.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
 
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.js";
 
@@ -34,10 +36,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
- // TBR: No necesito importar dinamicamente.
-//const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
-//const Stack = dynamic( () => import('framer').then((mod) => mod.Stack), { ssr: false } );
-//const useMotionValue = dynamic( () => import('framer').then((mod) => mod.useMotionValue), { ssr: false } );
+
 
 function ProjectsItems() {
   var _this = this;
@@ -69,7 +68,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 36,
       columnNumber: 5
     }
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
@@ -82,7 +81,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 37,
       columnNumber: 9
     }
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Stack"], {
@@ -96,11 +95,19 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 46,
       columnNumber: 11
     }
   }, _posts_posts_js__WEBPACK_IMPORTED_MODULE_4__["posts"].map(function (aPost) {
-    return __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+      href: '/projects/' + aPost.title.replace(' ', '_').toLowerCase(),
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 15
+      }
+    }, __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
       exit: "exit",
       initial: "initial",
       animate: "animate",
@@ -115,30 +122,30 @@ function ProjectsItems() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62,
-        columnNumber: 15
+        lineNumber: 58,
+        columnNumber: 17
       }
     }, __jsx("div", {
       className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.project_item_text,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 17
+        lineNumber: 72,
+        columnNumber: 19
       }
     }, __jsx("h3", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77,
-        columnNumber: 17
+        lineNumber: 73,
+        columnNumber: 19
       }
     }, aPost.title), __jsx("h4", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
-        columnNumber: 17
+        lineNumber: 74,
+        columnNumber: 19
       }
     }, aPost.type)), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_8__["motion"].img, {
       exit: "exit",
@@ -151,10 +158,10 @@ function ProjectsItems() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
-        columnNumber: 17
+        lineNumber: 77,
+        columnNumber: 19
       }
-    }));
+    })));
   }))), __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
     name: "Mask Izq",
     width: 120,
@@ -168,7 +175,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 94,
       columnNumber: 9
     }
   }), __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
@@ -184,7 +191,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 106,
       columnNumber: 9
     }
   }), __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
@@ -203,7 +210,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 118,
       columnNumber: 9
     }
   }, __jsx(framer__WEBPACK_IMPORTED_MODULE_6__["Frame"], {
@@ -228,7 +235,7 @@ function ProjectsItems() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 132,
       columnNumber: 13
     }
   })));
@@ -534,7 +541,7 @@ var posts = [{
   title: 'Luli Gonzalez',
   type: 'Motion Graphics',
   thumbnail: '/project_items/luli_gonzalez/thumb_luli_gonzalez.png',
-  content: ['/public/project_items/luli_gonzalez/1.gif', '/public/project_items/luli_gonzalez/2.gif', '/public/project_items/luli_gonzalez/3.gif', '/public/project_items/luli_gonzalez/4.gif', '/public/project_items/luli_gonzalez/5.png']
+  content: ['/project_items/luli_gonzalez/1.gif', '/project_items/luli_gonzalez/2.gif', '/project_items/luli_gonzalez/3.gif', '/project_items/luli_gonzalez/4.gif', '/project_items/luli_gonzalez/5.png']
 }, {
   title: 'Marti Benza',
   type: 'Motion Graphics',

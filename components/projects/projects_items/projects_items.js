@@ -6,12 +6,7 @@ import { getWindowWidth, getWindowHeight } from '../../window/window_dimensions.
 import { Frame, Stack, useMotionValue, useTransform } from "framer";
 import { itemAnimation, imgItemAnimation, sliderAnimation } from './projects_items_animation.js'
 import { motion } from 'framer-motion';
-
-
-// TBR: No necesito importar dinamicamente.
-//const Frame = dynamic( () => import('framer').then((mod) => mod.Frame), { ssr: false } );
-//const Stack = dynamic( () => import('framer').then((mod) => mod.Stack), { ssr: false } );
-//const useMotionValue = dynamic( () => import('framer').then((mod) => mod.useMotionValue), { ssr: false } );
+import Link from 'next/link';
 
 
 export default function ProjectsItems() { 
@@ -59,36 +54,38 @@ export default function ProjectsItems() {
           >
 
             {posts.map(aPost => ( 
-              <Frame
-                exit='exit'
-                initial='initial'
-                animate='animate'
-                whileHover='whileHover'
-                whileTap='whileTap'
-                variants={itemAnimation(i)}
-                key={i++}
-                backgroundColor='#180233' 
-                height={'50vh'} 
-                width={'40vh'} 
-                className={styles.project_item}
-              >
-                
-                <div className={styles.project_item_text}>
-                <h3>{aPost.title}</h3>
-                <h4>{aPost.type}</h4>
-                </div>
-
-                <motion.img 
+              <Link href={'/projects/' + aPost.title.replace(' ', '_').toLowerCase() }>
+                <Frame
                   exit='exit'
                   initial='initial'
                   animate='animate'
-                  variants={imgItemAnimation(i)}
-                  src={aPost.thumbnail} 
-                  alt='min' 
-                  className={styles.img_min}
-                ></motion.img>
+                  whileHover='whileHover'
+                  whileTap='whileTap'
+                  variants={itemAnimation(i)}
+                  key={i++}
+                  backgroundColor='#180233' 
+                  height={'50vh'} 
+                  width={'40vh'} 
+                  className={styles.project_item}
+                >
+                  
+                  <div className={styles.project_item_text}>
+                  <h3>{aPost.title}</h3>
+                  <h4>{aPost.type}</h4>
+                  </div>
 
-            </Frame>
+                  <motion.img 
+                    exit='exit'
+                    initial='initial'
+                    animate='animate'
+                    variants={imgItemAnimation(i)}
+                    src={aPost.thumbnail} 
+                    alt='min' 
+                    className={styles.img_min}
+                  ></motion.img>
+
+                </Frame>
+              </Link>
             ))}
 
           </Stack>

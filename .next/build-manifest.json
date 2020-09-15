@@ -24,6 +24,10 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/projects": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/projects/[id]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

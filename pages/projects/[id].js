@@ -1,14 +1,19 @@
 import NavBar from '../../components/navbar/navbar'
-import ProjectPage from '../../components/projectPage/projectPage'
 import Layout, { siteTitle } from '../../components/layout/layout'
 import {posts} from '../../posts/posts.js'
+import dynamic from 'next/dynamic'
+
+const ProjectPage = dynamic( 
+    () => import('../../components/projectPage/project_page'),
+    { ssr: false } 
+);
 
 
 export default function Project(props) {
     return ( 
         <div>
-            <NavBar selected='PROJECTS'/>
             <ProjectPage dataProject = {props.dataProject} />
+            <NavBar selected='PROJECTS'/>
         </div> 
     )
 }

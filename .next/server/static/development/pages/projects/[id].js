@@ -3,6 +3,12 @@ module.exports =
 /******/ 	// The module cache
 /******/ 	var installedModules = require('../../../../ssr-module-cache.js');
 /******/
+/******/ 	// object to store loaded chunks
+/******/ 	// "0" means "already loaded"
+/******/ 	var installedChunks = {
+/******/ 		"static/development/pages/projects/[id].js": 0
+/******/ 	};
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -33,6 +39,26 @@ module.exports =
 /******/ 		return module.exports;
 /******/ 	}
 /******/
+/******/ 	// This file contains only the entry chunk.
+/******/ 	// The chunk loading function for additional chunks
+/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
+/******/ 		var promises = [];
+/******/
+/******/
+/******/ 		// require() chunk loading for javascript
+/******/
+/******/ 		// "0" is the signal for "already loaded"
+/******/ 		if(installedChunks[chunkId] !== 0) {
+/******/ 			var chunk = require("../../../../" + ({}[chunkId]||chunkId) + ".js");
+/******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
+/******/ 			for(var moduleId in moreModules) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 			for(var i = 0; i < chunkIds.length; i++)
+/******/ 				installedChunks[chunkIds[i]] = 0;
+/******/ 		}
+/******/ 		return Promise.all(promises);
+/******/ 	};
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
@@ -86,9 +112,16 @@ module.exports =
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/ 	// uncaught error handler for webpack runtime
+/******/ 	__webpack_require__.oe = function(err) {
+/******/ 		process.nextTick(function() {
+/******/ 			throw err; // catch this error by using import().catch()
+/******/ 		});
+/******/ 	};
+/******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -272,7 +305,7 @@ function NavBar(props) {
       columnNumber: 17
     }
   }, __jsx("img", {
-    src: "fg_logo.svg",
+    src: "../fg_logo.svg",
     className: _navbar_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
     __self: this,
     __source: {
@@ -378,139 +411,6 @@ const animationName = {
   }
 };
 
-
-/***/ }),
-
-/***/ "./components/projectPage/projectPage.js":
-/*!***********************************************!*\
-  !*** ./components/projectPage/projectPage.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/projectPage.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-function ProjectPage(props) {
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3,
-      columnNumber: 9
-    }
-  }, __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 13
-    }
-  }, "Hola"), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }, props.dataProject.title));
-}
 
 /***/ }),
 
@@ -2198,9 +2098,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_navbar_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/navbar/navbar */ "./components/navbar/navbar.js");
-/* harmony import */ var _components_projectPage_projectPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/projectPage/projectPage */ "./components/projectPage/projectPage.js");
-/* harmony import */ var _components_layout_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/layout/layout */ "./components/layout/layout.js");
-/* harmony import */ var _posts_posts_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../posts/posts.js */ "./posts/posts.js");
+/* harmony import */ var _components_layout_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/layout/layout */ "./components/layout/layout.js");
+/* harmony import */ var _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../posts/posts.js */ "./posts/posts.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/pages/projects/[id].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2208,28 +2109,35 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")), {
+  ssr: false,
+  loadableGenerated: {
+    webpack: () => [/*require.resolve*/(/*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")],
+    modules: ['../../components/projectPage/project_page']
+  }
+});
 function Project(props) {
   return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 14,
       columnNumber: 9
     }
-  }, __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    selected: "PROJECTS",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 13
-    }
-  }), __jsx(_components_projectPage_projectPage__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(ProjectPage, {
     dataProject: props.dataProject,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }), __jsx(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    selected: "PROJECTS",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
       columnNumber: 13
     }
   }));
@@ -2252,7 +2160,7 @@ async function getStaticProps({
 }
 
 function getAllIds() {
-  return _posts_posts_js__WEBPACK_IMPORTED_MODULE_4__["posts"].map(aPost => {
+  return _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].map(aPost => {
     return {
       params: {
         id: aPost.title.replace(' ', '_').toLowerCase()
@@ -2270,7 +2178,7 @@ function idIsPost(aId, aPost) {
 }
 
 function getDataProjectFromId(aId) {
-  const fintredPosts = _posts_posts_js__WEBPACK_IMPORTED_MODULE_4__["posts"].filter(aPost => {
+  const fintredPosts = _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].filter(aPost => {
     return idIsPost(aId, aPost);
   });
   return fintredPosts[0];
@@ -2292,7 +2200,7 @@ const posts = [{
   title: 'Luli Gonzalez',
   type: 'Motion Graphics',
   thumbnail: '/project_items/luli_gonzalez/thumb_luli_gonzalez.png',
-  content: ['/public/project_items/luli_gonzalez/1.gif', '/public/project_items/luli_gonzalez/2.gif', '/public/project_items/luli_gonzalez/3.gif', '/public/project_items/luli_gonzalez/4.gif', '/public/project_items/luli_gonzalez/5.png']
+  content: ['/project_items/luli_gonzalez/1.gif', '/project_items/luli_gonzalez/2.gif', '/project_items/luli_gonzalez/3.gif', '/project_items/luli_gonzalez/4.gif', '/project_items/luli_gonzalez/5.png']
 }, {
   title: 'Marti Benza',
   type: 'Motion Graphics',
@@ -2318,7 +2226,7 @@ const posts = [{
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************!*\
   !*** multi ./pages/projects/[id].js ***!
   \**************************************/
@@ -2330,6 +2238,17 @@ module.exports = __webpack_require__(/*! /Users/francogonzalez/Documents/Trabajo
 
 /***/ }),
 
+/***/ "framer":
+/*!*************************!*\
+  !*** external "framer" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("framer");
+
+/***/ }),
+
 /***/ "framer-motion":
 /*!********************************!*\
   !*** external "framer-motion" ***!
@@ -2338,6 +2257,17 @@ module.exports = __webpack_require__(/*! /Users/francogonzalez/Documents/Trabajo
 /***/ (function(module, exports) {
 
 module.exports = require("framer-motion");
+
+/***/ }),
+
+/***/ "next/dynamic":
+/*!*******************************!*\
+  !*** external "next/dynamic" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dynamic");
 
 /***/ }),
 

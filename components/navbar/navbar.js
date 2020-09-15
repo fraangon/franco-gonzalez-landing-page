@@ -15,16 +15,16 @@ export default function NavBar(props) {
             <div className={styles.header}>
 
                 <div>
-                    <img src="fg_logo.svg" className={styles.logo} ></img>
+                    <img src="../fg_logo.svg" className={styles.logo} ></img>
                 </div>
 
                 <div>
                     <nav className={styles.navbar}>
-                            
+                        
                             <NavItem selected={props.selected} itemName = 'HOME' link="/" ></NavItem>
                             <NavItem selected={props.selected} itemName = 'PROJECTS' link="/projects" ></NavItem>
                             <NavItem selected={props.selected} itemName = 'CONTACT' link="#" ></NavItem>
-                            
+                        
                     </nav>
                 </div>
 

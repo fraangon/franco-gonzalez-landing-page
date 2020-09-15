@@ -4,11 +4,11 @@ const posts = [
         type: 'Motion Graphics',
         thumbnail: '/project_items/luli_gonzalez/thumb_luli_gonzalez.png',
         content: [
-            '/public/project_items/luli_gonzalez/1.gif', 
-            '/public/project_items/luli_gonzalez/2.gif',
-            '/public/project_items/luli_gonzalez/3.gif',
-            '/public/project_items/luli_gonzalez/4.gif',
-            '/public/project_items/luli_gonzalez/5.png'
+            '/project_items/luli_gonzalez/1.gif', 
+            '/project_items/luli_gonzalez/2.gif',
+            '/project_items/luli_gonzalez/3.gif',
+            '/project_items/luli_gonzalez/4.gif',
+            '/project_items/luli_gonzalez/5.png'
         ]
     },
     {
