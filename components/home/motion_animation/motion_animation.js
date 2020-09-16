@@ -2,7 +2,7 @@ import styles from './motion_animation.module.css';
 import {useState} from 'react';
 
 export default function MotionAnimation() {
-    
+
     const [ playAnimation, setPlayAnimation ] = useState(false);
     const [ playAgainAnimation, setPlayAgainAnimation ] = useState(false);
 

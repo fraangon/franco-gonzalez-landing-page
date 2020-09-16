@@ -1,0 +1,35 @@
+.container{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    padding-top: 45vh;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.mail{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.social{
+    padding-top: 33vh;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.social_container{
+    display: flex;
+
+}
+
+.social_logo{
+    height: 50px;
+    padding: 0px 10px;
+}
