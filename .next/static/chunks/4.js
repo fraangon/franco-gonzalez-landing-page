@@ -1,139 +1,140 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
-/***/ "./components/contact/contact.js":
-/*!***************************************!*\
-  !*** ./components/contact/contact.js ***!
-  \***************************************/
+/***/ "./components/projectPage/project_page.js":
+/*!************************************************!*\
+  !*** ./components/projectPage/project_page.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectPage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.module.css */ "./components/contact/contact.module.css");
-/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer */ "./node_modules/framer/build/framer.js");
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer */ "./node_modules/framer/build/framer.js");
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
+/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./project_page.module.css */ "./components/projectPage/project_page.module.css");
+/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_project_page_module_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.js";
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-function Contact() {
+function ProjectPage(props) {
   var _this = this;
 
-  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_3__["getWindowWidth"])(), 1920);
-  var heightLayer = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_3__["getWindowHeight"])();
-  var social = [{
-    link: '',
-    src: '/sw_icons_svg/BE.svg',
-    alt: 'logo behanse'
-  }, {
-    link: '',
-    src: '/sw_icons_svg/Insta.svg',
-    alt: 'logo behanse'
-  }, {
-    link: '',
-    src: '/sw_icons_svg/Linked.svg',
-    alt: 'logo behanse'
-  }, {
-    link: '',
-    src: '/sw_icons_svg/Tw.svg',
-    alt: 'logo behanse'
-  }];
-  return __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])(), 1400);
+  return __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_1__["Frame"], {
+    top: 225,
     width: widthLayer,
-    height: heightLayer,
     center: true,
-    background: "200a48",
+    background: "1b1b1b",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_general,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 17
+    }
+  }, __jsx("div", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_header,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 21
+    }
+  }, __jsx("h3", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.title,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 25
+    }
+  }, props.dataProject.title), __jsx("h4", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.type,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 25
+    }
+  }, props.dataProject.type)), props.dataProject.content.map(function (aContentPath) {
+    return __jsx("div", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 33
+      }
+    }, __jsx("img", {
+      src: aContentPath,
+      className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.img,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 37
+      }
+    }));
+  }), __jsx("div", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_back,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34,
-      columnNumber: 9
+      columnNumber: 21
     }
-  }, __jsx("div", {
-    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container,
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    href: "/projects",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 13
+      lineNumber: 35,
+      columnNumber: 25
     }
-  }, __jsx("h4", {
-    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contact,
+  }, __jsx("a", {
+    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.back,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 17
+      lineNumber: 36,
+      columnNumber: 29
     }
-  }, "Contact me"), __jsx("h4", {
-    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.mail,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 17
-    }
-  }, "hello@frangon.com.ar"), __jsx("h4", {
-    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 17
-    }
-  }, "Social"), __jsx("div", {
-    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_container,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 17
-    }
-  }, social.map(function (x) {
-    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      href: x.link,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 29
-      }
-    }, __jsx("img", {
-      src: x.src,
-      alt: x.alt,
-      className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_logo,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 33
-      }
-    }));
-  }))));
+  }, " Back to Projects "))))));
 }
-/*
-*/
 
 /***/ }),
 
-/***/ "./components/contact/contact.module.css":
-/*!***********************************************!*\
-  !*** ./components/contact/contact.module.css ***!
-  \***********************************************/
+/***/ "./components/projectPage/project_page.module.css":
+/*!********************************************************!*\
+  !*** ./components/projectPage/project_page.module.css ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css");
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -167,9 +168,9 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
       function () {
-        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css");
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -210,24 +211,25 @@ function getWindowWidth() {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/contact/contact.module.css ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/projectPage/project_page.module.css ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".contact_container__MyePu{\n    color: var(--color-white);\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.contact_contact__2mLcb{\n    padding-top: 45vh;\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contact_mail__1Ys6r{\n    font-size: 70px;\n    font-weight: 600;\n}\n\n.contact_social__1cKKB{\n    padding-top: 33vh;\n    padding-bottom: 10px;\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contact_social_container__3Er-7{\n    display: flex;\n\n}\n\n.contact_social_logo__31o0h{\n    height: 50px;\n    padding: 0px 10px;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.module.css"],"names":[],"mappings":"AAAA;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,iBAAiB;IACjB,oBAAoB;IACpB,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;;AAEjB;;AAEA;IACI,YAAY;IACZ,iBAAiB;AACrB","file":"contact.module.css","sourcesContent":[".container{\n    color: var(--color-white);\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.contact{\n    padding-top: 45vh;\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.mail{\n    font-size: 70px;\n    font-weight: 600;\n}\n\n.social{\n    padding-top: 33vh;\n    padding-bottom: 10px;\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.social_container{\n    display: flex;\n\n}\n\n.social_logo{\n    height: 50px;\n    padding: 0px 10px;\n}"]}]);
+exports.push([module.i, ".project_page_contenedor_general__3gzUf{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.project_page_contenedor_header__1Jj3T{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.project_page_title__1U8-2{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.project_page_type__tt6nn{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_contenedor_back__3qSlj{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.project_page_back__L62mm{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_back__L62mm{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_back__L62mm:hover {\n    opacity: 0.8;\n}\n\n.project_page_img__14CWK{\n    display: block;\n    max-width: 100%;\n    width: auto;\n}\n\n", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;IACrB,iBAAiB;IACjB,oBAAoB;AACxB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;AACrB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,cAAc;IACd,eAAe;IACf,WAAW;AACf","file":"project_page.module.css","sourcesContent":[".contenedor_general{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.contenedor_header{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.title{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.type{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contenedor_back{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.back{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.back{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.back:hover {\n    opacity: 0.8;\n}\n\n.img{\n    display: block;\n    max-width: 100%;\n    width: auto;\n}\n\n"]}]);
 // Exports
 exports.locals = {
-	"container": "contact_container__MyePu",
-	"contact": "contact_contact__2mLcb",
-	"mail": "contact_mail__1Ys6r",
-	"social": "contact_social__1cKKB",
-	"social_container": "contact_social_container__3Er-7",
-	"social_logo": "contact_social_logo__31o0h"
+	"contenedor_general": "project_page_contenedor_general__3gzUf",
+	"contenedor_header": "project_page_contenedor_header__1Jj3T",
+	"title": "project_page_title__1U8-2",
+	"type": "project_page_type__tt6nn",
+	"contenedor_back": "project_page_contenedor_back__3qSlj",
+	"back": "project_page_back__L62mm",
+	"img": "project_page_img__14CWK"
 };
 
 /***/ }),

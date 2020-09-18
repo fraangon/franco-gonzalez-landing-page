@@ -1,32 +1,29 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ "./components/projects/projects_items/projects_items.js":
-/*!**************************************************************!*\
-  !*** ./components/projects/projects_items/projects_items.js ***!
-  \**************************************************************/
+/***/ "./components/contact/contact.js":
+/*!***************************************!*\
+  !*** ./components/contact/contact.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectsItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects_items.module.css */ "./components/projects/projects_items/projects_items.module.css");
-/* harmony import */ var _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_projects_items_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../posts/posts.js */ "./posts/posts.js");
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! framer */ "framer");
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./projects_items_animation.js */ "./components/projects/projects_items/projects_items_animation.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! framer-motion */ "framer-motion");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projects/projects_items/projects_items.js";
+/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.module.css */ "./components/contact/contact.module.css");
+/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_module_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer */ "framer");
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _contact_animation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact_animation */ "./components/contact/contact_animation.js");
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -35,309 +32,234 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-function ProjectsItems() {
-  const {
-    0: ssrDone,
-    1: setSsrDone
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const position = Object(framer__WEBPACK_IMPORTED_MODULE_5__["useMotionValue"])(0);
-  let i = 1;
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    setSsrDone(true);
-  }, []); // width consts
-
+function Contact() {
   const widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920);
-  const widthItem = 40 * 0.01 * Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowHeight"])();
-  const widthItemAndGap = widthItem + 40;
-  const lengthItems = _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].length;
-  const widthSliderTotal = (lengthItems - 1) * widthItemAndGap + widthItem;
-  const widthSlider = (widthLayer - 400) * 0.92; // slider controller
-
-  const [xOffset, setXOffset] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(100);
-  const itemsPosition = Object(framer__WEBPACK_IMPORTED_MODULE_5__["useTransform"])(position, [0, widthSlider], [100, 100 - (widthSliderTotal - (widthLayer - 400))]);
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 5
-    }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
-    name: "Mask",
-    overflow: "hidden",
-    height: "52vh",
-    width: widthLayer - 200,
-    x: -100,
-    backgroundColor: "#200a48",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Stack"], {
-    size: 100,
-    direction: "horizontal",
-    top: "2vh",
-    alignment: "start",
-    gap: "40",
-    distribution: "start",
-    x: xOffset,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 11
-    }
-  }, _posts_posts_js__WEBPACK_IMPORTED_MODULE_3__["posts"].map(aPost => __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-    href: '/projects/' + aPost.title.replace(' ', '_').toLowerCase(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 15
-    }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
+  const heightLayer = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowHeight"])();
+  const social = [{
+    link: '',
+    src: '/sw_icons_svg/BE.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Insta_2.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Linked.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Tw.svg',
+    alt: 'logo behanse'
+  }];
+  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
     exit: "exit",
     initial: "initial",
     animate: "animate",
-    whileHover: "whileHover",
-    whileTap: "whileTap",
-    variants: Object(_projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__["itemAnimation"])(i),
-    key: i++,
-    backgroundColor: "#180233",
-    height: '50vh',
-    width: '40vh',
-    className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item,
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationContactPage"])(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 17
+      lineNumber: 38,
+      columnNumber: 9
+    }
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: widthLayer,
+    height: heightLayer,
+    center: true,
+    background: "200a48",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 13
     }
   }, __jsx("div", {
-    className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.project_item_text,
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 17
+    }
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Stack"], {
+    center: true,
+    width: "100%",
+    background: "200a48",
+    direction: "vertical",
+    gap: "0px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 21
+    }
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    height: "25px",
+    center: "x",
+    background: "200a48",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contact,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.2),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 29
+    }
+  }, "Contact me"), __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    height: "100px",
+    center: "x",
+    background: "200a48",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.mail,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.4),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72,
-      columnNumber: 19
+      columnNumber: 29
     }
-  }, __jsx("h3", {
+  }, "hello@frangon.com.ar")), __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Stack"], {
+    center: "x",
+    bottom: 0,
+    width: "100%",
+    background: "200a48",
+    direction: "vertical",
+    gap: "px",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 19
+      lineNumber: 87,
+      columnNumber: 21
     }
-  }, aPost.title), __jsx("h4", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 19
-    }
-  }, aPost.type)), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_7__["motion"].img, {
-    exit: "exit",
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    background: "200a48",
+    height: "50px",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social,
     initial: "initial",
     animate: "animate",
-    variants: Object(_projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__["imgItemAnimation"])(i),
-    src: aPost.thumbnail,
-    alt: "min",
-    className: _projects_items_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.img_min,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 19
-    }
-  })))))), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
-    name: "Mask Izq",
-    width: 120,
-    backgroundColor: "#200a48",
-    height: "62vh",
-    x: -180,
-    y: "-2.5vh",
-    style: {
-      filter: 'blur(15px)'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 9
-    }
-  }), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
-    name: "Mask Der",
-    width: 120,
-    backgroundColor: "#200a48",
-    height: "62vh",
-    x: widthLayer - 340,
-    y: "-2.5vh",
-    style: {
-      filter: 'blur(15px)'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 9
-    }
-  }), __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
-    name: 'Rail',
     exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.6),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95,
+      columnNumber: 25
+    }
+  }, "Social"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_container,
     initial: "initial",
     animate: "animate",
-    variants: Object(_projects_items_animation_js__WEBPACK_IMPORTED_MODULE_6__["sliderAnimation"])(),
-    width: widthLayer - 400,
-    height: '1.6vh',
-    radius: 0,
-    position: "relative",
-    left: '0px',
-    background: "rgba(255,255,255,.1)",
-    top: '55vh',
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.8),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
-      columnNumber: 9
+      lineNumber: 107,
+      columnNumber: 25
     }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_5__["Frame"], {
-    name: 'Knob',
-    width: '8%',
-    height: '1.6vh',
-    radius: 0,
-    position: "relative",
-    left: '0%',
-    background: "rgba(255,255,255,.1)",
-    drag: "x",
-    dragConstraints: {
-      left: 0,
-      right: (widthLayer - 400) * 0.92
-    },
-    dragElastic: 0,
-    dragMomentum: false,
-    x: position,
-    onDrag: function () {
-      setXOffset(itemsPosition.get());
-    },
+  }, social.map(x => __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: x.link,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 13
+      lineNumber: 116,
+      columnNumber: 37
     }
-  })));
+  }, __jsx("img", {
+    src: x.src,
+    alt: x.alt,
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_logo,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 41
+    }
+  }))))))));
 }
+/*
+*/
 
 /***/ }),
 
-/***/ "./components/projects/projects_items/projects_items.module.css":
-/*!**********************************************************************!*\
-  !*** ./components/projects/projects_items/projects_items.module.css ***!
-  \**********************************************************************/
+/***/ "./components/contact/contact.module.css":
+/*!***********************************************!*\
+  !*** ./components/contact/contact.module.css ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 // Exports
 module.exports = {
-	"project_item": "projects_items_project_item__3HfLu",
-	"project_item_text": "projects_items_project_item_text__1_wIr",
-	"img_min": "projects_items_img_min__2_Z5e",
-	"projects_items_container": "projects_items_projects_items_container__3KltH"
+	"container": "contact_container__MyePu",
+	"contact": "contact_contact__2mLcb",
+	"mail": "contact_mail__1Ys6r",
+	"social": "contact_social__1cKKB",
+	"social_container": "contact_social_container__3Er-7",
+	"social_logo": "contact_social_logo__31o0h",
+	"center_items": "contact_center_items__2-kyY"
 };
 
 /***/ }),
 
-/***/ "./components/projects/projects_items/projects_items_animation.js":
-/*!************************************************************************!*\
-  !*** ./components/projects/projects_items/projects_items_animation.js ***!
-  \************************************************************************/
-/*! exports provided: itemAnimation, imgItemAnimation, sliderAnimation */
+/***/ "./components/contact/contact_animation.js":
+/*!*************************************************!*\
+  !*** ./components/contact/contact_animation.js ***!
+  \*************************************************/
+/*! exports provided: animationElement, animationContactPage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "itemAnimation", function() { return itemAnimation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "imgItemAnimation", function() { return imgItemAnimation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sliderAnimation", function() { return sliderAnimation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationElement", function() { return animationElement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationContactPage", function() { return animationContactPage; });
 const easing = [0.6, -0.05, 0.01, 0.99];
 
-function itemAnimation(aIndex) {
+function animationElement(unDelay) {
   return {
     initial: {
-      y: 60,
-      opacity: 0
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.9,
-        ease: easing,
-        delay: aIndex * 0.1
-      }
-    },
-    exit: {
-      y: -60,
-      opacity: 0
-    },
-    whileHover: {
-      y: -7,
-      scale: 1.05
-    },
-    whileTap: {
-      scale: 1.03
-    }
-  };
-}
-
-function imgItemAnimation(aIndex) {
-  return {
-    initial: {
-      y: 100,
-      scale: 1,
-      opacity: 0
-    },
-    animate: {
-      y: 0,
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.4,
-        ease: easing,
-        delay: aIndex * 0.1 + 0.05
-      }
-    },
-    exit: {
-      y: 0,
-      scale: 1,
-      opacity: 0
-    }
-  };
-}
-
-function sliderAnimation() {
-  return {
-    initial: {
-      x: -100,
-      opacity: 0
+      opacity: 0,
+      x: -40
     },
     animate: {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.9,
+        duration: 0.5,
         ease: easing,
-        delay: 0.5
+        delay: unDelay
       }
     },
     exit: {
-      x: -100,
+      opacity: 0,
+      x: 0
+    }
+  };
+}
+
+function animationContactPage() {
+  return {
+    initial: {
+      opacity: 0
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: easing,
+        delay: 0
+      }
+    },
+    exit: {
       opacity: 0
     }
   };
@@ -347,43 +269,26 @@ function sliderAnimation() {
 
 /***/ }),
 
-/***/ "./posts/posts.js":
-/*!************************!*\
-  !*** ./posts/posts.js ***!
-  \************************/
-/*! exports provided: posts */
+/***/ "./components/window/window_dimensions.js":
+/*!************************************************!*\
+  !*** ./components/window/window_dimensions.js ***!
+  \************************************************/
+/*! exports provided: getWindowHeight, getWindowWidth */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "posts", function() { return posts; });
-const posts = [{
-  title: 'Luli Gonzalez',
-  type: 'Motion Graphics',
-  thumbnail: '/project_items/luli_gonzalez/thumb_luli_gonzalez.png',
-  content: ['/project_items/luli_gonzalez/1.gif', '/project_items/luli_gonzalez/2.gif', '/project_items/luli_gonzalez/3.gif', '/project_items/luli_gonzalez/4.gif', '/project_items/luli_gonzalez/5.png']
-}, {
-  title: 'Marti Benza',
-  type: 'Motion Graphics',
-  thumbnail: '/project_items/default_thumb_projects.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Personal Portfolio',
-  type: 'Web Develop',
-  thumbnail: '/project_items/default_thumb_projects.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Paralax Background',
-  type: 'Ux/Ui Desing',
-  thumbnail: '/project_items/default_thumb_projects.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}, {
-  title: 'Behanse Redisign',
-  type: 'Ux/Ui Design',
-  thumbnail: '/project_items/default_thumb_projects.png',
-  content: ['lg_photo1.png', 'lg_photo2.png', 'lg_photo3.png']
-}];
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getWindowHeight", function() { return getWindowHeight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getWindowWidth", function() { return getWindowWidth; });
+const hasWindow = false;
+function getWindowHeight() {
+  const height = hasWindow ? window.innerHeight : null;
+  return height;
+}
+function getWindowWidth() {
+  const width = hasWindow ? window.innerWidth : null;
+  return width;
+}
 
 /***/ })
 

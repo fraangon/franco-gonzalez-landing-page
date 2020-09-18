@@ -7,7 +7,6 @@
 }
 
 .contact{
-    padding-top: 45vh;
     font-size: 30px;
     font-weight: 500;
 }
@@ -18,9 +17,7 @@
 }
 
 .social{
-    padding-top: 33vh;
-    padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
 }
 
@@ -30,6 +27,16 @@
 }
 
 .social_logo{
-    height: 50px;
-    padding: 0px 10px;
+    height: 40px;
+    padding: 0px 5px;
+}
+
+.social_logo:hover{
+    opacity: 0.8;
+}
+
+.center_items{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }

@@ -2044,7 +2044,7 @@ var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-land
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Contact = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/contact/contact */ "./components/contact/contact.js")), {
+const Contact = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../components/contact/contact */ "./components/contact/contact.js")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/(/*! ../components/contact/contact */ "./components/contact/contact.js")],
