@@ -80,7 +80,7 @@ export default function Contact() {
                                 exit="exit"
                                 variants={ animationElement(0.4) }
                             >
-                                hello@frangon.com.ar
+                                hello@frangon.ar
                             </Frame>
 
                     </Stack>

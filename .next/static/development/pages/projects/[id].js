@@ -15504,14 +15504,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
-  return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js"));
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../../components/project_page/project_page */ "./components/project_page/project_page.js"));
 }, {
   ssr: false,
   loadableGenerated: {
     webpack: function webpack() {
-      return [/*require.resolve*/(/*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")];
+      return [/*require.resolve*/(/*! ../../components/project_page/project_page */ "./components/project_page/project_page.js")];
     },
-    modules: ['../../components/projectPage/project_page']
+    modules: ['../../components/project_page/project_page']
   }
 });
 var __N_SSG = true;
@@ -15548,7 +15548,7 @@ function titleToId(aTitle) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2F%5Bid%5D&absolutePagePath=%2FUsers%2Ffrancogonzalez%2FDocuments%2FTrabajo%2Ffranco-gonzalez-landing-page%2Fpages%2Fprojects%2F%5Bid%5D.js ***!
   \***************************************************************************************************************************************************************************************************/
@@ -15571,5 +15571,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

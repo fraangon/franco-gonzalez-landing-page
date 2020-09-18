@@ -1,72 +1,78 @@
 {
-  "../../components/projectPage/project_page": [
+  "../../components/project_page/project_page": [
     {
-      "id": "./components/projectPage/project_page.js",
-      "name": "./components/projectPage/project_page.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "id": "./components/project_page/project_page.js",
+      "name": "./components/project_page/project_page.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
-      "id": "./components/projectPage/project_page.module.css",
-      "name": "./components/projectPage/project_page.module.css",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "id": "./components/project_page/project_page.module.css",
+      "name": "./components/project_page/project_page.module.css",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./components/project_page/project_page_animation.js",
+      "name": "./components/project_page/project_page_animation.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./components/window/window_dimensions.js",
       "name": "./components/window/window_dimensions.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
-      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
-      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project_page/project_page.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project_page/project_page.module.css",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ],
   "../components/contact/contact": [
     {
       "id": "./components/contact/contact.js",
       "name": "./components/contact/contact.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./components/contact/contact.module.css",
       "name": "./components/contact/contact.module.css",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./components/contact/contact_animation.js",
       "name": "./components/contact/contact_animation.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./components/window/window_dimensions.js",
       "name": "./components/window/window_dimensions.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
       "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     },
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     }
   ],
   "../projects_items/projects_items": [
@@ -143,8 +149,8 @@
     {
       "id": "./node_modules/framer/build/framer.js",
       "name": "./node_modules/framer/build/framer.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ]
 }

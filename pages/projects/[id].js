@@ -4,7 +4,7 @@ import {posts} from '../../posts/posts.js'
 import dynamic from 'next/dynamic'
 
 const ProjectPage = dynamic( 
-    () => import('../../components/projectPage/project_page'),
+    () => import('../../components/project_page/project_page'),
     { ssr: false } 
 );
 

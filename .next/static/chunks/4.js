@@ -1,140 +1,206 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
-/***/ "./components/projectPage/project_page.js":
-/*!************************************************!*\
-  !*** ./components/projectPage/project_page.js ***!
-  \************************************************/
+/***/ "./components/contact/contact.js":
+/*!***************************************!*\
+  !*** ./components/contact/contact.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProjectPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer */ "./node_modules/framer/build/framer.js");
-/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
-/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./project_page.module.css */ "./components/projectPage/project_page.module.css");
-/* harmony import */ var _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_project_page_module_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.js";
+/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.module.css */ "./components/contact/contact.module.css");
+/* harmony import */ var _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_module_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer */ "./node_modules/framer/build/framer.js");
+/* harmony import */ var framer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
+/* harmony import */ var _window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../window/window_dimensions.js */ "./components/window/window_dimensions.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _contact_animation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact_animation */ "./components/contact/contact_animation.js");
+var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-function ProjectPage(props) {
+
+
+function Contact() {
   var _this = this;
 
-  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_2__["getWindowWidth"])(), 1400);
-  return __jsx("div", {
+  var widthLayer = Math.min(Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowWidth"])(), 1920);
+  var heightLayer = Object(_window_window_dimensions_js__WEBPACK_IMPORTED_MODULE_4__["getWindowHeight"])();
+  var social = [{
+    link: '',
+    src: '/sw_icons_svg/BE.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Insta_2.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Linked.svg',
+    alt: 'logo behanse'
+  }, {
+    link: '',
+    src: '/sw_icons_svg/Tw.svg',
+    alt: 'logo behanse'
+  }];
+  return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+    exit: "exit",
+    initial: "initial",
+    animate: "animate",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationContactPage"])(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 38,
       columnNumber: 9
     }
-  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_1__["Frame"], {
-    top: 225,
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
     width: widthLayer,
+    height: heightLayer,
     center: true,
-    background: "1b1b1b",
+    background: "200a48",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 45,
       columnNumber: 13
     }
   }, __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_general,
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 51,
       columnNumber: 17
     }
-  }, __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_header,
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Stack"], {
+    center: true,
+    width: "100%",
+    background: "200a48",
+    direction: "vertical",
+    gap: "0px",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 52,
       columnNumber: 21
     }
-  }, __jsx("h3", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.title,
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    height: "25px",
+    center: "x",
+    background: "200a48",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.contact,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.2),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 25
-    }
-  }, props.dataProject.title), __jsx("h4", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.type,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 25
-    }
-  }, props.dataProject.type)), props.dataProject.content.map(function (aContentPath) {
-    return __jsx("div", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 33
-      }
-    }, __jsx("img", {
-      src: aContentPath,
-      className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.img,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 37
-      }
-    }));
-  }), __jsx("div", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.contenedor_back,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/projects",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    className: _project_page_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.back,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 59,
       columnNumber: 29
     }
-  }, " Back to Projects "))))));
+  }, "Contact me"), __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    height: "100px",
+    center: "x",
+    background: "200a48",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.mail,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.4),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 29
+    }
+  }, "hello@frangon.ar")), __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Stack"], {
+    center: "x",
+    bottom: 0,
+    width: "100%",
+    background: "200a48",
+    direction: "vertical",
+    gap: "px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 21
+    }
+  }, __jsx(framer__WEBPACK_IMPORTED_MODULE_2__["Frame"], {
+    width: "100%",
+    background: "200a48",
+    height: "50px",
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.6),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95,
+      columnNumber: 25
+    }
+  }, "Social"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+    className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_container,
+    initial: "initial",
+    animate: "animate",
+    exit: "exit",
+    variants: Object(_contact_animation__WEBPACK_IMPORTED_MODULE_6__["animationElement"])(0.8),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 25
+    }
+  }, social.map(function (x) {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      href: x.link,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116,
+        columnNumber: 37
+      }
+    }, __jsx("img", {
+      src: x.src,
+      alt: x.alt,
+      className: _contact_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.social_logo,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117,
+        columnNumber: 41
+      }
+    }));
+  }))))));
 }
+/*
+*/
 
 /***/ }),
 
-/***/ "./components/projectPage/project_page.module.css":
-/*!********************************************************!*\
-  !*** ./components/projectPage/project_page.module.css ***!
-  \********************************************************/
+/***/ "./components/contact/contact.module.css":
+/*!***********************************************!*\
+  !*** ./components/contact/contact.module.css ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -168,9 +234,9 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css",
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
       function () {
-        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project_page.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css");
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./contact.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -185,6 +251,64 @@ if (true) {
     update();
   });
 }
+
+/***/ }),
+
+/***/ "./components/contact/contact_animation.js":
+/*!*************************************************!*\
+  !*** ./components/contact/contact_animation.js ***!
+  \*************************************************/
+/*! exports provided: animationElement, animationContactPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationElement", function() { return animationElement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animationContactPage", function() { return animationContactPage; });
+var easing = [0.6, -0.05, 0.01, 0.99];
+
+function animationElement(unDelay) {
+  return {
+    initial: {
+      opacity: 0,
+      x: -40
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: easing,
+        delay: unDelay
+      }
+    },
+    exit: {
+      opacity: 0,
+      x: 0
+    }
+  };
+}
+
+function animationContactPage() {
+  return {
+    initial: {
+      opacity: 0
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: easing,
+        delay: 0
+      }
+    },
+    exit: {
+      opacity: 0
+    }
+  };
+}
+
+
 
 /***/ }),
 
@@ -211,25 +335,25 @@ function getWindowWidth() {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projectPage/project_page.module.css":
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/projectPage/project_page.module.css ***!
-  \***********************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/contact/contact.module.css ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".project_page_contenedor_general__3gzUf{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.project_page_contenedor_header__1Jj3T{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.project_page_title__1U8-2{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.project_page_type__tt6nn{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_contenedor_back__3qSlj{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.project_page_back__L62mm{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_back__L62mm{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.project_page_back__L62mm:hover {\n    opacity: 0.8;\n}\n\n.project_page_img__14CWK{\n    display: block;\n    max-width: 100%;\n    width: auto;\n}\n\n", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/projectPage/project_page.module.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,qBAAqB;IACrB,iBAAiB;IACjB,oBAAoB;AACxB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;AACrB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,cAAc;IACd,eAAe;IACf,WAAW;AACf","file":"project_page.module.css","sourcesContent":[".contenedor_general{\n    display: flex;\n    flex-direction: column;\n    color: var(--color-white);\n}\n\n.contenedor_header{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-end;\n    padding: 0px 20px;\n    padding-bottom: 25px;\n}\n\n.title{\n    font-size: 50px;\n    font-weight: 600;\n}\n\n.type{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contenedor_back{\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    padding: 30px 0px;\n}\n\n.back{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.back{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.back:hover {\n    opacity: 0.8;\n}\n\n.img{\n    display: block;\n    max-width: 100%;\n    width: auto;\n}\n\n"]}]);
+exports.push([module.i, ".contact_container__MyePu{\n    color: var(--color-white);\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.contact_contact__2mLcb{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.contact_mail__1Ys6r{\n    font-size: 70px;\n    font-weight: 600;\n}\n\n.contact_social__1cKKB{\n    font-size: 25px;\n    font-weight: 500;\n}\n\n.contact_social_container__3Er-7{\n    display: flex;\n\n}\n\n.contact_social_logo__31o0h{\n    height: 40px;\n    padding: 0px 5px;\n}\n\n.contact_social_logo__31o0h:hover{\n    opacity: 0.8;\n}\n\n.contact_center_items__2-kyY{\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n}", "",{"version":3,"sources":["/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/contact/contact.module.css"],"names":[],"mappings":"AAAA;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;;AAEjB;;AAEA;IACI,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,qBAAqB;AACzB","file":"contact.module.css","sourcesContent":[".container{\n    color: var(--color-white);\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.contact{\n    font-size: 30px;\n    font-weight: 500;\n}\n\n.mail{\n    font-size: 70px;\n    font-weight: 600;\n}\n\n.social{\n    font-size: 25px;\n    font-weight: 500;\n}\n\n.social_container{\n    display: flex;\n\n}\n\n.social_logo{\n    height: 40px;\n    padding: 0px 5px;\n}\n\n.social_logo:hover{\n    opacity: 0.8;\n}\n\n.center_items{\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n}"]}]);
 // Exports
 exports.locals = {
-	"contenedor_general": "project_page_contenedor_general__3gzUf",
-	"contenedor_header": "project_page_contenedor_header__1Jj3T",
-	"title": "project_page_title__1U8-2",
-	"type": "project_page_type__tt6nn",
-	"contenedor_back": "project_page_contenedor_back__3qSlj",
-	"back": "project_page_back__L62mm",
-	"img": "project_page_img__14CWK"
+	"container": "contact_container__MyePu",
+	"contact": "contact_contact__2mLcb",
+	"mail": "contact_mail__1Ys6r",
+	"social": "contact_social__1cKKB",
+	"social_container": "contact_social_container__3Er-7",
+	"social_logo": "contact_social_logo__31o0h",
+	"center_items": "contact_center_items__2-kyY"
 };
 
 /***/ }),

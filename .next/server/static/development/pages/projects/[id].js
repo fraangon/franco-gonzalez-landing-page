@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2109,11 +2109,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")), {
+const ProjectPage = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../../components/project_page/project_page */ "./components/project_page/project_page.js")), {
   ssr: false,
   loadableGenerated: {
-    webpack: () => [/*require.resolve*/(/*! ../../components/projectPage/project_page */ "./components/projectPage/project_page.js")],
-    modules: ['../../components/projectPage/project_page']
+    webpack: () => [/*require.resolve*/(/*! ../../components/project_page/project_page */ "./components/project_page/project_page.js")],
+    modules: ['../../components/project_page/project_page']
   }
 });
 function Project(props) {
@@ -2226,7 +2226,7 @@ const posts = [{
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************!*\
   !*** multi ./pages/projects/[id].js ***!
   \**************************************/
