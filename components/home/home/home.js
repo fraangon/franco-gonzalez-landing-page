@@ -4,7 +4,9 @@ import WebAnimation from '../web_animation/web_animation'
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic'
 import {easing, animationName, animationMotion, animationWeb, animationBG, stagger} from './home_animation'
-
+import PngSecuenceAnimation from '../../png_sequence_animation/png_secuence_animation'
+import stylesAnimationWeb from '../animations_css/web_animation.module.css'
+import stylesAnimationMotion from '../animations_css/motion_animation.module.css'
 
 export default function Home({ children, home }) {
     
@@ -41,7 +43,7 @@ export default function Home({ children, home }) {
               variants={animationMotion}
               className={styles.animation_text}
             >
-              <MotionAnimation/>
+              <PngSecuenceAnimation styles={stylesAnimationMotion} />
             </motion.div>
 
             <motion.div
@@ -51,7 +53,7 @@ export default function Home({ children, home }) {
               variants={animationWeb}
               className={styles.animation_text}
             >
-              <WebAnimation/>
+              <PngSecuenceAnimation styles={stylesAnimationWeb} />
             </motion.div>
 
           </motion.div>
