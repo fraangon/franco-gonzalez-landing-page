@@ -101,7 +101,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -440,23 +440,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.module.css */ "./components/home/home/home.module.css");
 /* harmony import */ var _home_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _motion_animation_motion_animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../motion_animation/motion_animation */ "./components/home/motion_animation/motion_animation.js");
-/* harmony import */ var _web_animation_web_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../web_animation/web_animation */ "./components/home/web_animation/web_animation.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "framer-motion");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _home_animation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home_animation */ "./components/home/home/home_animation.js");
-/* harmony import */ var _png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../png_sequence_animation/png_secuence_animation */ "./components/png_sequence_animation/png_secuence_animation.js");
-/* harmony import */ var _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../animations_css/web_animation.module.css */ "./components/home/animations_css/web_animation.module.css");
-/* harmony import */ var _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../animations_css/motion_animation.module.css */ "./components/home/animations_css/motion_animation.module.css");
-/* harmony import */ var _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _home_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home_animation */ "./components/home/home/home_animation.js");
+/* harmony import */ var _png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../png_sequence_animation/png_secuence_animation */ "./components/png_sequence_animation/png_secuence_animation.js");
+/* harmony import */ var _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../animations_css/web_animation.module.css */ "./components/home/animations_css/web_animation.module.css");
+/* harmony import */ var _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../animations_css/motion_animation.module.css */ "./components/home/animations_css/motion_animation.module.css");
+/* harmony import */ var _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/home/home.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 
@@ -472,7 +468,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -480,7 +476,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -488,28 +484,28 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
-    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["stagger"],
+  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_4__["stagger"],
     animate: "animate",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 20,
       columnNumber: 11
     }
-  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+  }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     exit: "exit",
     initial: "initial",
     animate: "animate",
-    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationName"],
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_4__["animationName"],
     className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx("h2", {
@@ -517,7 +513,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 31,
       columnNumber: 17
     }
   }, "I,m "), __jsx("h1", {
@@ -525,7 +521,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 32,
       columnNumber: 17
     }
   }, "Franco"), __jsx("h1", {
@@ -533,7 +529,7 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, "Gonzalez"), __jsx("h2", {
@@ -541,47 +537,47 @@ function Home({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 17
     }
-  }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+  }, " .")), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     exit: "exit",
     initial: "initial",
     animate: "animate",
-    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationMotion"],
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_4__["animationMotion"],
     className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 13
     }
-  }, __jsx(_png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    styles: _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_9___default.a,
+  }, __jsx(_png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    styles: _animations_css_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_7___default.a,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 44,
       columnNumber: 15
     }
-  })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+  })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
     exit: "exit",
     initial: "initial",
     animate: "animate",
-    variants: _home_animation__WEBPACK_IMPORTED_MODULE_6__["animationWeb"],
+    variants: _home_animation__WEBPACK_IMPORTED_MODULE_4__["animationWeb"],
     className: _home_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.animation_text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 47,
       columnNumber: 13
     }
-  }, __jsx(_png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    styles: _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_8___default.a,
+  }, __jsx(_png_sequence_animation_png_secuence_animation__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    styles: _animations_css_web_animation_module_css__WEBPACK_IMPORTED_MODULE_6___default.a,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 54,
       columnNumber: 15
     }
   }))))));
@@ -710,168 +706,6 @@ const stagger = {
   }
 };
 
-
-/***/ }),
-
-/***/ "./components/home/motion_animation/motion_animation.js":
-/*!**************************************************************!*\
-  !*** ./components/home/motion_animation/motion_animation.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MotionAnimation; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./motion_animation.module.css */ "./components/home/motion_animation/motion_animation.module.css");
-/* harmony import */ var _motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/motion_animation/motion_animation.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function MotionAnimation() {
-  const {
-    0: playAnimation,
-    1: setPlayAnimation
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
-    0: playAgainAnimation,
-    1: setPlayAgainAnimation
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const defaultStyle = _motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation;
-  const animationStyle1 = _motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play;
-  const animationStyle2 = _motion_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.motion_animation_play_again;
-
-  function playAnimationOneTime() {
-    setPlayAnimation(true);
-    setPlayAgainAnimation(!playAgainAnimation);
-  }
-
-  function getStyle() {
-    return playAnimation ? getStyleAgain() : defaultStyle;
-  }
-
-  function getStyleAgain() {
-    if (playAgainAnimation) {
-      return animationStyle1;
-    } else {
-      return animationStyle2;
-    }
-  }
-
-  return __jsx("div", {
-    onClick: () => playAnimationOneTime(),
-    className: getStyle(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 9
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./components/home/motion_animation/motion_animation.module.css":
-/*!**********************************************************************!*\
-  !*** ./components/home/motion_animation/motion_animation.module.css ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"motion_animation": "motion_animation_motion_animation__3S-hR",
-	"motion_animation_play": "motion_animation_motion_animation_play__1rhud",
-	"motion_play_animation": "motion_animation_motion_play_animation__symkI",
-	"motion_animation_play_again": "motion_animation_motion_animation_play_again__3OWCP",
-	"motion_play_animation_again": "motion_animation_motion_play_animation_again__Vp_TY"
-};
-
-/***/ }),
-
-/***/ "./components/home/web_animation/web_animation.js":
-/*!********************************************************!*\
-  !*** ./components/home/web_animation/web_animation.js ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WebAnimation; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _web_animation_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./web_animation.module.css */ "./components/home/web_animation/web_animation.module.css");
-/* harmony import */ var _web_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_web_animation_module_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/francogonzalez/Documents/Trabajo/franco-gonzalez-landing-page/components/home/web_animation/web_animation.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function WebAnimation() {
-  const {
-    0: playAnimation,
-    1: setPlayAnimation
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
-    0: playAgainAnimation,
-    1: setPlayAgainAnimation
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const defaultStyle = _web_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation;
-  const animationStyle1 = _web_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play;
-  const animationStyle2 = _web_animation_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.web_animation_play_again;
-
-  function playAnimationOneTime() {
-    setPlayAnimation(true);
-    setPlayAgainAnimation(!playAgainAnimation);
-  }
-
-  function getStyle() {
-    return playAnimation ? getStyleAgain() : defaultStyle;
-  }
-
-  function getStyleAgain() {
-    if (playAgainAnimation) {
-      return animationStyle1;
-    } else {
-      return animationStyle2;
-    }
-  }
-
-  return __jsx("div", {
-    onClick: () => playAnimationOneTime(),
-    className: getStyle(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 9
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./components/home/web_animation/web_animation.module.css":
-/*!****************************************************************!*\
-  !*** ./components/home/web_animation/web_animation.module.css ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"web_animation": "web_animation_web_animation__Tj3Yu",
-	"web_animation_play": "web_animation_web_animation_play__2eRan",
-	"web_play_animation": "web_animation_web_play_animation__3zLSW",
-	"web_animation_play_again": "web_animation_web_animation_play_again__22skn",
-	"web_play_animation_again": "web_animation_web_play_animation_again__3aZm_"
-};
 
 /***/ }),
 
@@ -2971,7 +2805,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

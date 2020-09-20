@@ -1,6 +1,4 @@
 import styles from './home.module.css'
-import MotionAnimation from '../motion_animation/motion_animation'
-import WebAnimation from '../web_animation/web_animation'
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic'
 import {easing, animationName, animationMotion, animationWeb, animationBG, stagger} from './home_animation'

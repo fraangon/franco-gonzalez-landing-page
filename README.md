@@ -54,7 +54,7 @@ export default function AComponent() {
 };
 ```
 
-## Use of <PngSequenceAnimation> component
+## Use of PngSequenceAnimation component
 
 ```
 import aStyle from './a_style.module.css'
