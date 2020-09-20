@@ -29,13 +29,13 @@ https://xd.adobe.com/view/6050f04c-5084-4ea1-97cf-611402c9d291-3503/
 
 ## To solve 'window is not defined' 
 
-```
+```javascript
 const AComponent = dynamic( () => import('/path').then((mod) => mod.AComponent), { ssr: false } );
 ```
 
 or
 
-```
+```javascript
 import { useState, useEffect } from "react";
 
 export default function AComponent() {
@@ -56,7 +56,7 @@ export default function AComponent() {
 
 ## Use of PngSequenceAnimation component
 
-```
+```javascript
 import aStyle from './a_style.module.css'
 
 <PngSecuenceAnimation styles={aStyle} />
@@ -65,7 +65,7 @@ import aStyle from './a_style.module.css'
 
 And in the .module.css file:
 
-```
+```css
 .animation{
     width: 1027px;  // A frame width
     height: 60px;   // A frame height
