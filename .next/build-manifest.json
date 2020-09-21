@@ -24,11 +24,23 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/contact": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/projects": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/projects/[id]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

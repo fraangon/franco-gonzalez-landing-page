@@ -1,4 +1,160 @@
 {
+  "../../components/project_page/project_page": [
+    {
+      "id": "./components/project_page/project_page.js",
+      "name": "./components/project_page/project_page.js",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    },
+    {
+      "id": "./components/project_page/project_page.module.css",
+      "name": "./components/project_page/project_page.module.css",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    },
+    {
+      "id": "./components/project_page/project_page_animation.js",
+      "name": "./components/project_page/project_page_animation.js",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    },
+    {
+      "id": "./components/window/window_dimensions.js",
+      "name": "./components/window/window_dimensions.js",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project_page/project_page.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project_page/project_page.module.css",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    },
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    }
+  ],
+  "../components/contact/contact": [
+    {
+      "id": "./components/contact/contact.js",
+      "name": "./components/contact/contact.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/contact/contact.module.css",
+      "name": "./components/contact/contact.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/contact/contact_animation.js",
+      "name": "./components/contact/contact_animation.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/contact/contact_animation.module.css",
+      "name": "./components/contact/contact_animation.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/png_sequence_animation/png_secuence_animation.js",
+      "name": "./components/png_sequence_animation/png_secuence_animation.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./components/window/window_dimensions.js",
+      "name": "./components/window/window_dimensions.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact_animation.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/contact/contact_animation.module.css",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    }
+  ],
+  "../projects_items/projects_items": [
+    {
+      "id": "./components/projects/projects_items/projects_items.js",
+      "name": "./components/projects/projects_items/projects_items.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./components/projects/projects_items/projects_items.module.css",
+      "name": "./components/projects/projects_items/projects_items.module.css",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./components/projects/projects_items/projects_items_animation.js",
+      "name": "./components/projects/projects_items/projects_items_animation.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/projects/projects_items/projects_items.module.css",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/framer/build/framer.js",
+      "name": "./node_modules/framer/build/framer.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    },
+    {
+      "id": "./posts/posts.js",
+      "name": "./posts/posts.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",

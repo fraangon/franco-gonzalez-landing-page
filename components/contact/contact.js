@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import { getWindowWidth, getWindowHeight } from '../window/window_dimensions.js';
 import Link from 'next/link';
 import { animationElement, animationContactPage } from "./contact_animation";
-
-
+import PngSecuenceAnimation from "../png_sequence_animation/png_secuence_animation";
+import styleContactMe from './contact_animation.module.css'
 
 export default function Contact() {
     const widthLayer = Math.min( getWindowWidth(), 1920 )
@@ -41,7 +41,6 @@ export default function Contact() {
             animate="animate"
             variants={animationContactPage()}
         >
-
             <Frame
                 width={widthLayer} 
                 height={heightLayer}
@@ -58,31 +57,25 @@ export default function Contact() {
                     >
                             <Frame 
                                 width='100%' 
-                                height='25px'
+                                height='0px'
                                 center='x' 
-                                background="200a48"
+                                background="red"
                                 className={styles.contact}
                                 initial="initial"
                                 animate="animate"
                                 exit="exit"
                                 variants={ animationElement(0.2) }
                             >
-                                Contact me
+                                <Frame
+                                    width= '1027px'   
+                                    height= '0px'
+                                    top='-50px'
+                                    center='x'
+                                    background="blue"
+                                >
+                                    <PngSecuenceAnimation styles={styleContactMe}/>
+                                </Frame>
                             </Frame>
-                            <Frame 
-                                width='100%' 
-                                height='100px'
-                                center='x' 
-                                background="200a48"
-                                className={styles.mail} 
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                variants={ animationElement(0.4) }
-                            >
-                                hello@frangon.ar
-                            </Frame>
-
                     </Stack>
                     <Stack 
                         center = 'x' 

@@ -1,0 +1,40 @@
+.animation{
+    width: 1060px;   
+    height: 262px;   
+    background: transparent url('/animations/contact_animation.png') 0 0 no-repeat; 
+}
+
+.animation:hover{
+    opacity: 85%;
+}
+
+.animation_play{
+    width: 1060px;   
+    height: 262px;     
+    background: transparent url('/animations/contact_animation.png') 0 0 no-repeat;  
+    animation: play_animation 2s steps(60) normal; 
+}
+
+@keyframes play_animation {
+    100% { background-position: 0 -15720px; }
+}
+
+.animation_play:hover{
+    opacity: 85%;
+}
+
+.animation_play_again{
+    width: 1060px;   
+    height: 262px;     
+    background: transparent url('/animations/contact_animation.png') 0 0 no-repeat;   
+    animation: play_animation_again 2s steps(60) normal; 
+}
+
+
+@keyframes play_animation_again {
+    100% { background-position: 0 -15720px; }
+}
+
+.animation_play_again:hover{
+    opacity: 85%;
+}
