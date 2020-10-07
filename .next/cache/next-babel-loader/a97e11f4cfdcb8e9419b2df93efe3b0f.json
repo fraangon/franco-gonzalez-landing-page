@@ -1,0 +1,1 @@
+{"ast":null,"code":"var hasWindow = true;\nexport function getWindowHeight() {\n  var height = hasWindow ? window.innerHeight : null;\n  return height;\n}\nexport function getWindowWidth() {\n  var width = hasWindow ? window.innerWidth : null;\n  return width;\n}","map":null,"metadata":{},"sourceType":"module"}

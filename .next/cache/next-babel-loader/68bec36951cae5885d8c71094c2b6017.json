@@ -1,0 +1,1 @@
+{"ast":null,"code":"var easing = [0, 0, 0, 0];\nvar animationName = {\n  initial: {\n    opacity: 0\n  },\n  animate: {\n    opacity: 1,\n    transition: {\n      duration: 1,\n      ease: easing,\n      delay: 0\n    }\n  },\n  exit: {\n    opacity: 0\n  }\n};\nexport { easing, animationName };","map":null,"metadata":{},"sourceType":"module"}

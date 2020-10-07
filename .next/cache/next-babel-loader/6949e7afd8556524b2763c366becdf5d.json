@@ -1,0 +1,1 @@
+{"ast":null,"code":"const hasWindow = false;\nexport function getWindowHeight() {\n  const height = hasWindow ? window.innerHeight : null;\n  return height;\n}\nexport function getWindowWidth() {\n  const width = hasWindow ? window.innerWidth : null;\n  return width;\n}","map":null,"metadata":{},"sourceType":"module"}

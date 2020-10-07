@@ -1,0 +1,1 @@
+{"ast":null,"code":"const easing = [0.6, -0.05, 0.01, 0.99];\nconst animationBG = {\n  initial: {\n    opacity: 1\n  },\n  animate: {\n    opacity: 1,\n    transition: {\n      duration: 0.1,\n      ease: easing\n    }\n  },\n  exit: {\n    opacity: 1\n  }\n};\nexport { animationBG, easing };","map":null,"metadata":{},"sourceType":"module"}
